@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO: Primary Meta Tags -->
+    <title>Kusanagi-AI: Free & Open-Source Local AI Toolkit for Researchers</title>
+    <meta name="description" content="Discover Kusanagi-AI, a free and open-source Python toolkit for running local large language models (LLMs) on standard laptops. Built for researchers with a focus on privacy, data ownership, and accessibility.">
+    <meta name="keywords" content="Kusanagi-AI, Local AI, Ollama, Python, LLM, RAG, Physics, Materials Science, Research AI, Prathamesh Deshmukh">
+    <meta name="author" content="Prathamesh Deshmukh">
+
+    <!-- SEO: Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Kusanagi-AI: Free & Open-Source Local AI Toolkit">
+    <meta property="og:description" content="A privacy-focused toolkit for running local LLMs on standard laptops, designed for researchers in Physics and Material Science.">
+    <meta property="og:image" content="https://www.prathameshdeshmukh.site/_assets/banner.png">
+    <meta property="og:url" content="https://prathameshdeshmukh.site/pages/Project_Kusanagi-AI.html">
+
+    <!-- SEO: Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Kusanagi-AI: Free & Open-Source Local AI Toolkit">
+    <meta property="twitter:description" content="A privacy-focused toolkit for running local LLMs on standard laptops, designed for researchers.">
+    <meta property="twitter:image" content="https://www.prathameshdeshmukh.site/_assets/banner.png">
+
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; font-src 'self' https://cdnjs.cloudflare.com; img-src 'self' data: https://raw.githubusercontent.com https://static.wikia.nocookie.net https://encrypted-tbn0.gstatic.com https://seeklogo.com https://mixedbread.ai https://img.shields.io;">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <!-- Styles and Fonts -->
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="manifest" href="../site.webmanifest">
+    <link rel="stylesheet" href="../_assets/fonts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- SEO: JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Kusanagi-AI: Free & Open-Source Local AI Toolkit for Researchers",
+      "description": "A robust, open-source platform for local AI experimentation, leveraging Ollama for LLM inference on standard laptops to ensure data privacy and control for researchers.",
+      "applicationCategory": "ScientificApplication",
+      "operatingSystem": "Windows, macOS, Linux",
+      "author": {
+        "@type": "Person",
+        "name": "Prathamesh Deshmukh"
+      },
+      "license": "https://opensource.org/licenses/MIT",
+      "codeRepository": "https://github.com/prathameshnium/Kusanagi-AI"
+    }
+    </script>
+    <link rel="stylesheet" href="../_assets/style.css">
+</head>
+<body class="antialiased font-sans">
+    <div id="preloader"><div class="loader"></div></div>
+    <!-- Header & Navigation -->
+    <header class="bg-dark-bg/80 backdrop-blur-sm sticky top-0 z-50 border-b border-gray-700">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="../index.html" class="text-2xl font-bold text-white font-serif">Prathamesh Deshmukh</a>
+            <nav class="hidden md:flex items-center space-x-6">
+                <a href="../index.html#about" class="nav-link">About</a>
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#getting-started" class="nav-link">Get Started</a>
+                <div class="relative">
+                    <button id="portfolio-button" class="nav-link flex items-center" aria-haspopup="true" aria-expanded="false" aria-controls="portfolio-menu">
+                        Portfolio <i class="fas fa-chevron-down text-xs ml-2"></i>
+                    </button>
+                    <div id="portfolio-menu" class="absolute hidden dropdown-menu border border-gray-700 rounded-md shadow-lg py-2 w-56 top-full right-0 mt-2 z-50">
+                        <!-- Submenu Item -->
+                        <div id="core-portfolio-item" class="relative">
+                            <a href="#" class="w-full text-left px-4 py-2 text-sm text-white hover:bg-accent-orange flex justify-between items-center">
+                                Core Portfolio <i class="fas fa-chevron-right text-xs" aria-hidden="true"></i>
+                            </a>
+                            <div id="core-portfolio-submenu" class="absolute hidden dropdown-menu border border-gray-700 rounded-md shadow-lg py-2 w-48 top-0 left-full -mt-2 z-50">
+                                <a href="research.html" class="block px-4 py-2 text-sm text-white hover:bg-accent-orange">Research & Pubs</a>
+                                <div id="comp-works-item" class="relative">
+                                    <a href="computational-works.html" class="w-full text-left px-4 py-2 text-sm text-white hover:bg-accent-orange flex justify-between items-center">
+                                        Computational Works <i class="fas fa-chevron-right text-xs" aria-hidden="true"></i>
+                                    </a>
+                                    <div id="comp-works-submenu" class="absolute hidden dropdown-menu border border-gray-700 rounded-md shadow-lg py-2 w-48 top-0 left-full -mt-9 z-50">
+                                        <a href="computational-works.html" class="block px-4 py-2 text-sm text-white hover:bg-accent-orange">Overview</a>
+                                        <a href="project-pica.html" class="block px-4 py-2 text-sm text-white hover:bg-accent-orange">Project PICA</a>
+                                        <a href="Project_Kusanagi-AI.html" class="block px-4 py-2 text-sm text-white hover:bg-accent-orange">Project Kusanagi-AI</a>
+                                    </div>
+                                </div>
+                                <a href="presentations.html" class="block px-4 py-2 text-sm text-white hover:bg-accent-orange">Presentations</a>
+                                <a href="cv.html" class="block px-4 py-2 text-sm text-white hover:bg-accent-orange">CV</a>
+                            </div>
+                        </div>
+                        <div class="border-t border-gray-600 my-1"></div>
+                        <div id="additional-content-item" class="relative">
+                            <a href="#" class="w-full text-left px-4 py-2 text-sm text-white hover:bg-accent-orange flex justify-between items-center">
+                                Additional Content <i class="fas fa-chevron-right text-xs" aria-hidden="true"></i>
+                            </a>
+                            <div id="additional-content-submenu" class="absolute hidden dropdown-menu border border-gray-700 rounded-md shadow-lg py-2 w-48 top-0 left-full -mt-2 z-50">
+                                <a href="blog.html" class="block px-4 py-2 text-sm text-white hover:bg-accent-orange">Blog</a>
+                                <a href="gallery.html" class="block px-4 py-2 text-sm text-white hover:bg-accent-orange">Gallery</a>
+                                <a href="resources.html" class="block px-4 py-2 text-sm text-white hover:bg-accent-orange">Resources</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="../index.html#contact" class="nav-link">Contact</a>
+            </nav>
+            <button id="mobile-menu-button" class="md-hidden text-white text-2xl" aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false">
+                <i class="fas fa-bars" aria-hidden="true"></i>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4"></div>
+    </header>
+
+    <main class="container mx-auto px-6 py-12">
+        <section id="kusanagi-summary" class="py-20 text-center">
+            <div class="max-w-3xl mx-auto">
+                <div class="card p-8 md:p-12 rounded-lg">
+                    <img src="https://static.wikia.nocookie.net/sword/images/5/54/Orochimaru%27s_Sword_of_Kusanagi.png/revision/latest?cb=20240901080411" 
+                         alt="Kusanagi-AI Project Logo" width="128" height="128"
+                         class="w-32 h-32 mx-auto mb-6">
+                    <h1 class="text-4xl md:text-5xl font-bold section-title mb-4">Kusanagi-AI: Free & Open-Source Local AI Toolkit</h1>
+                    <p class="text-lg text-slate max-w-2xl mx-auto mb-8">
+                        Empowering researchers with accessible, privacy-focused AI tools designed to run efficiently on standard home laptops. Kusanagi-AI provides a robust, open-source platform for local AI experimentation, ensuring complete data ownership and control.
+                    </p>
+                    <a href="https://github.com/prathameshnium/Kusanagi-AI" target="_blank" rel="noopener noreferrer" class="cta-button inline-block bg-accent-orange border-2 border-accent-orange text-dark-bg font-semibold py-3 px-8 rounded-lg text-lg">
+                        <i class="fab fa-github mr-2" aria-hidden="true"></i> View on GitHub
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about-project" class="py-10 max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold section-title mb-6 text-center">About This Project</h2>
+            <p class="text-lg text-light-slate text-center">
+                Kusanagi-AI was developed to address the growing need for accessible and privacy-conscious AI solutions within the research community. Our mission is to provide a free, open-source toolkit that enables researchers, especially those in Physics and Material Science, to leverage advanced AI capabilities directly on their personal computers. By focusing on local execution, Kusanagi-AI ensures complete data privacy and eliminates reliance on cloud services, making sophisticated AI analysis available without specialized hardware or extensive technical expertise. This project is a testament to the power of local AI, offering a controlled environment for deep learning and practical application.
+            </p>
+        </section>
+
+        <section id="tech-stack" class="py-20 max-w-5xl mx-auto">
+            <h2 class="text-3xl font-bold section-title mb-8 text-center">Technology Stack</h2>
+            <div class="grid md:grid-cols-1 lg:grid-cols-3 gap-8">
+                <div class="card p-6 rounded-lg text-center flex flex-col items-center">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkdgUkYVq9-UPHtkrQyNzA1t-hCdSG65-XYw&s" alt="Python Logo" class="w-16 h-16 mb-4">
+                    <h3 class="text-xl font-semibold text-accent-orange mb-2">Python</h3>
+                    <p class="text-light-slate">The entire frontend and application logic are developed in Python, ensuring readability and a vast ecosystem of libraries.</p>
+                </div>
+                <div class="card p-6 rounded-lg text-center flex flex-col items-center">
+                    <img src="https://seeklogo.com/images/O/ollama-logo-F62D6B7A7F-seeklogo.com.png" alt="Ollama Logo" class="w-16 h-16 mb-4">
+                    <h3 class="text-xl font-semibold text-accent-orange mb-2">Ollama</h3>
+                    <p class="text-light-slate">Powers local LLM inference, allowing Kusanagi-AI to run models like Llama3 and Gemma efficiently without cloud dependencies.</p>
+                </div>
+                <div class="card p-6 rounded-lg text-center flex flex-col items-center">
+                    <img src="https://mixedbread.ai/favicon.ico" alt="Mixedbread AI Logo" class="w-16 h-16 mb-4">
+                    <h3 class="text-xl font-semibold text-accent-orange mb-2">MXBAI Embeddings</h3>
+                    <p class="text-light-slate">Utilizes the `mxbai-embed-large` model for high-quality document embeddings, crucial for RAG and semantic search.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="py-10 max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold section-title mb-8 text-center">Features</h2>
+            <ul class="space-y-4">
+                <li class="card p-4 rounded-lg"><i class="fas fa-lock text-accent-orange mr-3"></i><strong>Local & Private:</strong> All operations are 100% offline, guaranteeing your research data remains secure.</li>
+                <li class="card p-4 rounded-lg"><i class="fas fa-cogs text-accent-orange mr-3"></i><strong>Efficient Local LLM Inference:</strong> Run up to three LLMs concurrently on a decent laptop.</li>
+                <li class="card p-4 rounded-lg"><i class="fas fa-user-robot text-accent-orange mr-3"></i><strong>Research Assistant (Orochimaru):</strong> A flagship application for academic use with a Python-based frontend.</li>
+                <li class="card p-4 rounded-lg ml-6"><i class="fas fa-file-pdf text-accent-orange/80 mr-3"></i>Engage in RAG with your PDF documents for in-depth analysis.</li>
+                <li class="card p-4 rounded-lg ml-6"><i class="fas fa-book-open text-accent-orange/80 mr-3"></i>Generate summaries and peer reviews of research papers.</li>
+                <li class="card p-4 rounded-lg"><i class="fas fa-comments text-accent-orange mr-3"></i><strong>Experimental Chatbots:</strong> A collection of scripts for exploring different AI models.</li>
+                <li class="card p-4 rounded-lg"><i class="fas fa-chart-bar text-accent-orange mr-3"></i><strong>AI Visualizer:</strong> Tools for visualizing AI-related data and model outputs.</li>
+            </ul>
+        </section>
+
+        <section id="getting-started" class="py-20 max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold section-title mb-8 text-center">Getting Started</h2>
+            <div class="card p-8 rounded-lg">
+                <h3 class="text-2xl font-semibold text-accent-orange mb-4">Prerequisites</h3>
+                <ul class="list-disc list-inside space-y-2 text-light-slate mb-6">
+                    <li><strong>Python 3.8+</strong>: The core programming language.</li>
+                    <li><strong>Ollama</strong>: Essential for running local LLMs. Download from <a href="https://ollama.com/" target="_blank" rel="noopener noreferrer" class="text-accent-orange hover:underline">ollama.com</a>.</li>
+                </ul>
+
+                <h3 class="text-2xl font-semibold text-accent-orange mb-4">Installation & Usage</h3>
+                <p class="text-light-slate mb-4">1. Clone the repository:</p>
+                <pre class="code-block rounded-lg mb-4"><code>git clone https://github.com/prathameshnium/Kusanagi-AI.git
+cd Kusanagi-AI</code></pre>
+
+                <p class="text-light-slate mb-4">2. Install dependencies (preferably in a virtual environment):</p>
+                <pre class="code-block rounded-lg mb-4"><code>pip install -r requirements.txt</code></pre>
+
+                <p class="text-light-slate mb-4">3. Configure `System_Config.json` with the correct paths for your Ollama executable and model folder.</p>
+
+                <p class="text-light-slate mb-4">4. Pull the required models via the Ollama CLI:</p>
+                <pre class="code-block rounded-lg mb-4"><code>ollama pull mxbai-embed-large
+ollama pull llama3</code></pre>
+
+                <p class="text-light-slate mb-4">5. Launch the Research Assistant:</p>
+                <pre class="code-block rounded-lg"><code>python Orochimaru_Local_Research_Assistent.py</code></pre>
+            </div>
+        </section>
+
+        <section id="license-disclaimer" class="py-10 max-w-4xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="card p-6 rounded-lg">
+                    <h3 class="text-2xl font-semibold text-accent-orange mb-4">License</h3>
+                    <p class="text-light-slate">This project is released under the <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener noreferrer" class="text-accent-orange hover:underline">MIT License</a>.</p>
+                </div>
+                <div class="card p-6 rounded-lg">
+                    <h3 class="text-2xl font-semibold text-accent-orange mb-4">Disclaimer</h3>
+                    <p class="text-light-slate">Kusanagi-AI is an open-source project for educational and research purposes, provided "as-is" without warranty.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-800 bg-dark-bg py-8 mt-12">
+        <div class="container mx-auto px-6 text-center text-slate">
+            <div class="flex justify-center items-center flex-wrap gap-6 mb-6">
+                <a href="../index.html#contact" class="social-icon text-2xl" aria-label="Email"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+                <a href="https://scholar.google.com/citations?user=DJgzI30AAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer" class="social-icon text-2xl" aria-label="Google Scholar"><i class="fas fa-graduation-cap" aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com/in/prathamesh-k-deshmukh" target="_blank" rel="noopener noreferrer" class="social-icon text-2xl" aria-label="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                <a href="https://github.com/prathameshnium" target="_blank" rel="noopener noreferrer" class="social-icon text-2xl" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
+                <a href="https://x.com/prathameshnium" target="_blank" rel="noopener noreferrer" class="social-icon text-2xl" aria-label="X (formerly Twitter)"><i class="fab fa-x-twitter" aria-hidden="true"></i></a>
+            </div>
+            <div class="mb-6">
+                <a href="sitemap.html" class="hover:text-accent-orange transition-colors">Sitemap & Link Directory</a>
+            </div>
+             <p><a href="https://github.com/prathameshnium/prathameshnium.github.io/blob/main/LICENSE" target="_blank" rel="noopener noreferrer" class="hover:text-accent-orange transition-colors">&copy; 2024 Prathamesh Keshao Deshmukh. All Rights Reserved.</a></p>
+        </div>
+    </footer>
+
+    <script src="../_assets/js/main.js" defer></script> 
+</body>
+</html>
