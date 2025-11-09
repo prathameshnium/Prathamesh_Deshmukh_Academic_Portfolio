@@ -1,0 +1,7 @@
+# Security Policy for prathameshdeshmukh.site
+
+Contact: mailto:prathameshdeshmukh.site@gmail.com
+Expires: 2025-12-31T23:59:59Z
+Encryption: https://prathameshdeshmukh.site/pgp-key.txt
+Acknowledgements: https://prathameshdeshmukh.site/security-acknowledgements.html
+Policy: https://prathameshdeshmukh.site/security-policy.html
