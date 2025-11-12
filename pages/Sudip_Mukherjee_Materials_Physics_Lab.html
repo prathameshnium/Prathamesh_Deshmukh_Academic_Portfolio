@@ -98,37 +98,68 @@
 
         <section id="equipment" class="py-20">
             <h2 class="text-4xl font-bold section-title mb-10 text-center">Our Equipment</h2>
-            <div class="grid md:grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto equipment-list">
                 <div class="card p-6 rounded-lg">
-                    <h4 class="font-semibold text-xl text-accent-orange mb-2">Broadband Dielectric Spectroscopy (BDS)</h4>
-                    <p class="text-light-slate">Advanced characterization with a Novocontrol Alpha AN Analyzer. Features an ultra-wide frequency range (3 µHz to 20 MHz, with RF extension to 3 GHz), extreme temperature control (-160°C to +1200°C), and an impedance range of 0.01 Ω to 10¹⁴ Ω.</p>
+                    <h4 class="font-semibold text-xl text-accent-orange mb-4">Broadband Dielectric Spectroscopy (BDS)</h4>
+                    <p class="text-light-slate mb-4">Advanced characterization of molecular dynamics and charge transport using a <strong>Novocontrol Alpha AN Analyzer</strong> with Quatro Cryo-system.</p>
+                    <ul class="space-y-2">
+                        <li><strong>Frequency Range:</strong> 3 µHz to 20 MHz, with <strong>Keysight E4991B</strong> RF extension up to 3 GHz.</li>
+                        <li><strong>Temperature Range:</strong> Cryogenic (-160°C) to High Temperature (+1200°C) with oven option.</li>
+                        <li><strong>Impedance Range:</strong> 0.01 Ω to 10<sup>14</sup> Ω, for conductors to insulators.</li>
+                        <li><strong>Precision:</strong> Loss tangent (tan δ) accuracy better than 10<sup>-4</sup>.</li>
+                    </ul>
                 </div>
                 <div class="card p-6 rounded-lg">
-                    <h4 class="font-semibold text-xl text-accent-orange mb-2">UV-VIS Spectroscopy</h4>
-                    <p class="text-light-slate">High-accuracy absorption and transmission analysis using a Motras Scientific MS UV Plus double-beam system, covering a wavelength range of 180 nm to 1100 nm with high-spec optics.</p>
+                    <h4 class="font-semibold text-xl text-accent-orange mb-4">UV-VIS Spectroscopy</h4>
+                    <p class="text-light-slate mb-4">High-accuracy absorption and transmission analysis using a <strong>Motras Scientific MS UV Plus</strong> double-beam system.</p>
+                    <ul class="space-y-2">
+                        <li><strong>Wavelength Range:</strong> 180 nm to 1100 nm.</li>
+                        <li><strong>Optics:</strong> Double-beam, Czerny-Turner mounting with a 1200 lines/mm holographic grating.</li>
+                        <li><strong>Detection:</strong> Dual Silicon Photodiode detectors with ±0.05 nm accuracy.</li>
+                        <li><strong>Modules:</strong> Scan Spectrum, Quantization, Kinetics, and DNA/Protein analysis.</li>
+                    </ul>
                 </div>
                 <div class="card p-6 rounded-lg">
-                    <h4 class="font-semibold text-xl text-accent-orange mb-2">Ferroelectric (PE Loop) Testing</h4>
-                    <p class="text-light-slate">A dual-system facility for comprehensive ferroelectric characterization, featuring a Radiant Technologies Precision Multiferroic II for high-voltage bulk samples (up to 10kV) and an aixACCT Systems Easy Check for thin films.</p>
+                    <h4 class="font-semibold text-xl text-accent-orange mb-4">Ferroelectric (PE Loop) Testing</h4>
+                    <p class="text-light-slate mb-4">Dual-system facility for comprehensive ferroelectric characterization from bulk to thin films.</p>
+                    <ul class="space-y-2">
+                        <li><strong>High Voltage (Bulk):</strong> Radiant Technologies Precision Multiferroic II, expandable to 10 kV.</li>
+                        <li><strong>Thin Film System:</strong> aixACCT Systems Easy Check FE Loop Tracer, optimized for thin-film-on-substrate samples.</li>
+                        <li><strong>Capabilities:</strong> Hysteresis, Leakage, PUND, Fatigue, I-V, and C-V measurements.</li>
+                    </ul>
                 </div>
                 <div class="card p-6 rounded-lg">
-                    <h4 class="font-semibold text-xl text-accent-orange mb-2">Advanced Transport Measurement</h4>
-                    <p class="text-light-slate">Full-spectrum characterization using dedicated modules for low (Keithley 6221/2182), mid (Keithley 2400), and high (Keithley 6517B) resistance samples, automated with our <a href="project-pica.html" class="font-bold text-accent-orange/90 hover:text-accent-orange">PICA</a> software.</p>
+                    <h4 class="font-semibold text-xl text-accent-orange mb-4">Advanced Transport Measurement</h4>
+                    <p class="text-light-slate mb-4">Full-spectrum characterization using dedicated modules, automated with our <a href="project-pica.html" class="font-bold text-accent-orange/90 hover:text-accent-orange">PICA</a> software.</p>
+                    <ul class="space-y-2">
+                        <li><strong>Low-Resistance:</strong> Keithley 6221 / 2182A using Delta Mode to measure from 10 nΩ to 100 MΩ.</li>
+                        <li><strong>Mid-Resistance:</strong> Keithley 2400 SMU in a 4-wire setup for 1 Ω to 200 MΩ.</li>
+                        <li><strong>High-Resistance:</strong> Keithley 6517B Electrometer for ultra-high resistance up to 10<sup>15</sup> Ω.</li>
+                    </ul>
                 </div>
                 <div class="card p-6 rounded-lg">
-                    <h4 class="font-semibold text-xl text-accent-orange mb-2">Pyroelectric Measurement</h4>
-                    <p class="text-light-slate">Measures the pyroelectric coefficient by detecting the small current generated during a precise, linear temperature ramp (80 K - 340 K) using a Keithley 6517B Electrometer and a LakeShore 340 Temperature Controller.</p>
+                    <h4 class="font-semibold text-xl text-accent-orange mb-4">Pyroelectric Measurement</h4>
+                    <p class="text-light-slate mb-4">Measures the pyroelectric coefficient (p) by detecting current during a precise, linear temperature ramp.</p>
+                    <ul class="space-y-2">
+                        <li><strong>Core Equation:</strong> I = p ⋅ A ⋅ (dT/dt).</li>
+                        <li><strong>Key Instruments:</strong> <strong>Keithley 6517B Electrometer</strong> for femtoampere-level current detection.</li>
+                        <li><strong>Precision Control:</strong> <strong>LakeShore 340 Controller</strong> for stable ramps (80 K - 340 K).</li>
+                    </ul>
                 </div>
                 <div class="card p-6 rounded-lg">
-                    <h4 class="font-semibold text-xl text-accent-orange mb-2">Advanced Dielectric Measurements</h4>
-                    <p class="text-light-slate">Unique capabilities to probe coupling phenomena. This includes magnetodielectric studies (up to 14T in a PPMS) and laser-assisted measurements to characterize photoconductivity and the photo-ferroelectric effect.</p>
+                    <h4 class="font-semibold text-xl text-accent-orange mb-4">Advanced Dielectric Measurements</h4>
+                    <p class="text-light-slate mb-4">Unique capabilities to probe coupling phenomena in advanced materials.</p>
+                    <ul class="space-y-2">
+                        <li><strong>Magnetodielectric Studies:</strong> LCR Meter (Keysight E4980A) combined with a 14 Tesla PPMS to measure dielectric properties as a function of T and B field.</li>
+                        <li><strong>Laser-Assisted Studies:</strong> Integrates a laser source with dielectric, transport, and pyroelectric systems to characterize photoconductivity and photo-ferroelectric effects.</li>
+                    </ul>
                 </div>
                 <div class="card p-6 rounded-lg">
-                    <h4 class="font-semibold text-xl text-accent-orange mb-2">Environment Control</h4>
+                    <h4 class="font-semibold text-xl text-accent-orange mb-4">Environment Control</h4>
                     <p class="text-light-slate">Pfeiffer HiCube Vacuum Station & LakeShore 350/340 Controllers for temperature control (5-370K).</p>
                 </div>
                 <div class="card p-6 rounded-lg">
-                    <h4 class="font-semibold text-xl text-accent-orange mb-2">High-Field Studies</h4>
+                    <h4 class="font-semibold text-xl text-accent-orange mb-4">High-Field Studies</h4>
                     <p class="text-light-slate">Access to a Physical Property Measurement System (PPMS) for studies up to 14T.</p>
                 </div>
             </div>
