@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="referrer" content="strict-origin-when-cross-origin">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; font-src 'self' https://cdnjs.cloudflare.com; img-src 'self' data: https://placehold.co;">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; font-src 'self' https://cdnjs.cloudflare.com; img-src 'self' data: https://raw.githubusercontent.com https://placehold.co;">
     <title>Gallery | Prathamesh Deshmukh</title>
     <meta name="description" content="A visual gallery of scientific visualizations, experimental setups, and data plots from the research of Prathamesh Deshmukh.">
     <meta name="keywords" content="scientific visualizations, experimental setups, data plots, research gallery, physics, programming, Prathamesh Deshmukh">
@@ -22,8 +22,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="../_assets/style.css">
 </head>
-<body class="antialiased font-sans">
-    <div id="preloader">
+<body class="antialiased font-sans bg-dark-bg text-gray-200">
+    <div id="preloader" class="fixed top-0 left-0 w-full h-full bg-dark-bg flex justify-center items-center z-[100]">
         <div class="loader"></div>
     </div>
     <!-- Header & Navigation -->
@@ -91,36 +91,38 @@
             
             <!-- Gallery Grid -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Placeholder Item 1 -->
+                <!-- Item 1 -->
                 <div class="card rounded-lg overflow-hidden">
-                    <img src="https://placehold.co/600x400/2d3748/a8b2d1?text=Coming+Soon" alt="Placeholder Image" class="w-full h-48 object-cover">
+                    <a href="https://raw.githubusercontent.com/prathameshnium/static-files/main/projects/kusanagi-ai/One_Tail_Screenshot.jpg" data-lightbox="gallery" data-title="Kusanagi-AI: One Tail Screenshot">
+                        <img src="https://raw.githubusercontent.com/prathameshnium/static-files/main/projects/kusanagi-ai/One_Tail_Screenshot.jpg" alt="Kusanagi-AI: One Tail Screenshot" class="w-full h-48 object-cover">
+                    </a>
                     <div class="p-4 text-center">
-                        <h3 class="font-semibold text-white">Experimental Setup</h3>
-                        <p class="text-sm text-light-slate">Dielectric Measurement Probe</p>
+                        <h3 class="font-semibold text-white">Kusanagi-AI</h3>
+                        <p class="text-sm text-light-slate">One Tail Screenshot</p>
+                        <a href="Project_Kusanagi-AI.html" class="text-accent-orange hover:underline text-sm mt-2 inline-block">Read More</a>
                     </div>
                 </div>
-                 <!-- Placeholder Item 2 -->
+                <!-- Item 2 -->
                 <div class="card rounded-lg overflow-hidden">
-                    <img src="https://placehold.co/600x400/2d3748/a8b2d1?text=Coming+Soon" alt="Placeholder Image" class="w-full h-48 object-cover">
+                    <a href="https://raw.githubusercontent.com/prathameshnium/static-files/main/projects/pica/PICA_Laucher_V4.png" data-lightbox="gallery" data-title="PICA Launcher">
+                        <img src="https://raw.githubusercontent.com/prathameshnium/static-files/main/projects/pica/PICA_Laucher_V4.png" alt="PICA Launcher" class="w-full h-48 object-cover">
+                    </a>
                     <div class="p-4 text-center">
-                        <h3 class="font-semibold text-white">Data Visualization</h3>
-                        <p class="text-sm text-light-slate">Neutron Diffraction Pattern</p>
+                        <h3 class="font-semibold text-white">Project PICA</h3>
+                        <p class="text-sm text-light-slate">PICA Launcher UI</p>
+                        <a href="project-pica.html" class="text-accent-orange hover:underline text-sm mt-2 inline-block">Read More</a>
                     </div>
                 </div>
-                 <!-- Placeholder Item 3 -->
+                <!-- Item 3 -->
                 <div class="card rounded-lg overflow-hidden">
-                    <img src="https://placehold.co/600x400/2d3748/a8b2d1?text=Coming+Soon" alt="Placeholder Image" class="w-full h-48 object-cover">
+                    <a href="https://raw.githubusercontent.com/prathameshnium/static-files/main/profile/Profile_avatar_1.png" data-lightbox="gallery" data-title="Profile Avatar">
+                        <img src="https://raw.githubusercontent.com/prathameshnium/static-files/main/profile/Profile_avatar_1.png" alt="Profile Avatar" class="w-full h-48 object-cover">
+                    </a>
                     <div class="p-4 text-center">
-                        <h3 class="font-semibold text-white">Simulation Result</h3>
-                        <p class="text-sm text-light-slate">COMSOL Electric Potential Plot</p>
+                        <h3 class="font-semibold text-white">Profile Avatar</h3>
+                        <p class="text-sm text-light-slate">A profile avatar</p>
                     </div>
                 </div>
-                <!-- Placeholder for more items -->
-            </div>
-             <div class="card p-8 rounded-lg text-center mt-12" role="status" aria-live="polite">
-                <i class="fas fa-images text-5xl text-accent-orange mb-4" aria-hidden="true"></i>
-                <h3 class="text-3xl font-semibold text-white mb-4">Gallery Under Construction</h3>
-                <p class="text-light-slate">I am currently curating images and visualizations from my research. Please check back soon to see them!</p>
             </div>
         </section>
     </main>
@@ -144,7 +146,7 @@
                         <a href="https://gitlab.com/prathameshnium" target="_blank" rel="noopener noreferrer" class="flex items-center p-2 text-sm text-light-slate hover:bg-slate/20 hover:text-accent-orange rounded-md"><i class="fab fa-gitlab w-6 mr-2"></i> GitLab</a>
                         <a href="https://orcid.org/0009-0008-3278-0837" target="_blank" rel="noopener noreferrer" class="flex items-center p-2 text-sm text-light-slate hover:bg-slate/20 hover:text-accent-orange rounded-md"><i class="fab fa-orcid w-6 mr-2"></i> ORCID</a>
                         <a href="https://www.scopus.com/authid/detail.uri?authorId=59544780300" target="_blank" rel="noopener noreferrer" class="flex items-center p-2 text-sm text-light-slate hover:bg-slate/20 hover:text-accent-orange rounded-md"><i class="fas fa-file-alt w-6 mr-2"></i> Scopus</a>
-                        <a href="https://csr.academia.edu/PrathameshDeshmukh" target="_blank" rel="noopener noreferrer" class="flex items-center p-2 text-sm text-light-slate hover:bg-slate/20 hover:text-accent-orange rounded-md"><i class="fas fa-book-open w-6 mr-2" aria-hidden="true"></i> Academia</a>
+                        <a href="https.://csr.academia.edu/PrathameshDeshmukh" target="_blank" rel="noopener noreferrer" class="flex items-center p-2 text-sm text-light-slate hover:bg-slate/20 hover:text-accent-orange rounded-md"><i class="fas fa-book-open w-6 mr-2" aria-hidden="true"></i> Academia</a>
                         <a href="https://www.webofscience.com/wos/author/record/OFN-9289-2025" target="_blank" rel="noopener noreferrer" class="flex items-center p-2 text-sm text-light-slate hover:bg-slate/20 hover:text-accent-orange rounded-md"><i class="fas fa-flask w-6 mr-2"></i> Web of Science</a>
                         <a href="https://sciprofiles.com/profile/prathamesh-Deshmukh" target="_blank" rel="noopener noreferrer" class="flex items-center p-2 text-sm text-light-slate hover:bg-slate/20 hover:text-accent-orange rounded-md"><i class="fas fa-atom w-6 mr-2"></i> SciProfiles</a>
                     </div>
@@ -158,5 +160,7 @@
     </footer>
 
     <script src="../_assets/js/main.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
 </body>
 </html>
