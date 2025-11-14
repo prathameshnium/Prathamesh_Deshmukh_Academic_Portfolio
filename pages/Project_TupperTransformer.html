@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; font-src 'self' https://cdnjs.cloudflare.com; img-src 'self' data: https://img.shields.io;">
+    <title>Project TupperTransformer | Prathamesh Deshmukh</title>
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="description" content="An exploration of a new image processing technique based on the 2018 preprint, 'Transformation of the pixels in Tupper's self-referential formula.'">
+    <meta name="keywords" content="TupperTransformer, image processing, Tupper's self-referential formula, algorithm, Prathamesh Deshmukh">
+    <link rel="canonical" href="https://prathameshdeshmukh.site/pages/Project_TupperTransformer.html">
+    <meta property="og:title" content="Project TupperTransformer | Prathamesh Deshmukh">
+    <meta property="og:description" content="An exploration of a new image processing technique based on the 2018 preprint, 'Transformation of the pixels in Tupper's self-referential formula.'">
+    <meta property="og:url" content="https://prathameshdeshmukh.site/pages/Project_TupperTransformer.html">
+    <meta property="og:image" content="https://www.prathameshdeshmukh.site/_assets/banner.png">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Project TupperTransformer | Prathamesh Deshmukh">
+    <meta name="twitter:description" content="An exploration of a new image processing technique based on the 2018 preprint, 'Transformation of the pixels in Tupper's self-referential formula.'">
+    <meta name="twitter:image" content="https://www.prathameshdeshmukh.site/_assets/banner.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="manifest" href="../site.webmanifest">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../_assets/fonts.css">
+    <link rel="stylesheet" href="../_assets/style.css">
+</head>
+<body class="antialiased font-sans bg-dark-bg text-gray-200">
+    <div id="preloader" class="fixed top-0 left-0 w-full h-full bg-dark-bg flex justify-center items-center z-[100]">
+        <div class="loader"></div>
+    </div>
+
+    <header class="bg-dark-bg/80 backdrop-blur-sm sticky top-0 z-50 border-b border-gray-700">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="../index.html" class="text-2xl font-bold text-white font-serif">Prathamesh Deshmukh</a>
+            <nav class="hidden md:flex items-center space-x-6">
+                <a href="../index.html#about" class="nav-link">About</a>
+                <a href="../index.html#research" class="nav-link">Research</a>
+                <div class="relative">
+                    <button id="portfolio-button" class="nav-link flex items-center" aria-haspopup="true" aria-expanded="false" aria-controls="portfolio-menu">
+                        Portfolio <i class="fas fa-chevron-down text-xs ml-2"></i>
+                    </button>
+                    <div id="portfolio-menu" class="absolute hidden dropdown-menu border border-gray-700 rounded-md shadow-lg py-2 w-56 top-full right-0 mt-2 z-50">
+                        <div id="core-portfolio-item" class="relative">
+                            <a href="#" class="w-full text-left px-4 py-2 text-sm text-white hover:bg-accent-orange flex justify-between items-center">
+                                Core Portfolio <i class="fas fa-chevron-right text-xs" aria-hidden="true"></i>
+                            </a>
+                            <div id="core-portfolio-submenu" class="absolute hidden dropdown-menu border border-gray-700 rounded-md shadow-lg py-2 w-48 top-0 left-full -mt-2 z-50">
+                                <a href="research.html" class="block px-4 py-2 text-sm text-white hover:bg-accent-orange">Research & Pubs</a>
+                                <div id="comp-works-item" class="relative">
+                                    <a href="computational-works.html" class="w-full text-left px-4 py-2 text-sm text-white hover:bg-accent-orange flex justify-between items-center">
+                                        Computational Works <i class="fas fa-chevron-right text-xs" aria-hidden="true"></i>
+                                    </a>
+                                    <div id="comp-works-submenu" class="absolute hidden dropdown-menu border border-gray-700 rounded-md shadow-lg py-2 w-48 top-0 left-full -mt-9 z-50">
+                                        <a href="computational-works.html" class="block px-4 py-2 text-sm text-white hover:bg-accent-orange">Overview</a>
+                                        <a href="project-pica.html" class="block px-4 py-2 text-sm text-white hover:bg-accent-orange">Project PICA</a>
+                                    </div>
+                                </div>
+                                <a href="presentations.html" class="block px-4 py-2 text-sm text-white hover:bg-accent-orange">Presentations</a>
+                                <a href="cv.html" class="block px-4 py-2 text-sm text-white hover:bg-accent-orange">CV</a>
+                            </div>
+                        </div>
+                        <div class="border-t border-gray-600 my-1"></div>
+                        <div id="additional-content-item" class="relative">
+                            <a href="#" class="w-full text-left px-4 py-2 text-sm text-white hover:bg-accent-orange flex justify-between items-center">
+                                Additional Content <i class="fas fa-chevron-right text-xs" aria-hidden="true"></i>
+                            </a>
+                            <div id="additional-content-submenu" class="absolute hidden dropdown-menu border border-gray-700 rounded-md shadow-lg py-2 w-48 top-0 left-full -mt-2 z-50">
+                                <a href="blog.html" class="block px-4 py-2 text-sm text-white hover:bg-accent-orange">Blog</a>
+                                <a href="gallery.html" class="block px-4 py-2 text-sm text-white hover:bg-accent-orange">Gallery</a>
+                                <a href="resources.html" class="block px-4 py-2 text-sm text-white hover:bg-accent-orange">Resources</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="../index.html#publications" class="nav-link">Publications</a>
+                <a href="../index.html#skills" class="nav-link">Skills</a>
+                <a href="../index.html#journey" class="nav-link">Journey</a>
+                <a href="../index.html#contact" class="nav-link">Contact</a>
+                <form action="search.html" method="GET" class="relative ml-4">
+                    <input type="search" name="q" placeholder="Search..." class="bg-card-bg border border-slate rounded-lg w-32 py-1 px-3 text-sm text-light-slate focus:outline-none focus:border-accent-orange focus:w-64 transition-all duration-300">
+                    <button type="submit" class="absolute right-3 top-1/2 -translate-y-1/2 text-slate hover:text-accent-orange" aria-label="Submit search">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden text-white text-2xl" aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4"></div>
+    </header>
+
+    <main class="container mx-auto px-6 py-12">
+        <section id="tuppertransformer" class="py-10 max-w-6xl mx-auto">
+            <div class="text-center mb-12">
+                <h1 class="text-4xl md:text-5xl font-bold section-title mb-2">TupperTransformer</h1>
+                <h2 class="text-2xl text-accent-orange mb-6">A Novel Image Processing Algorithm</h2>
+                <div class="flex justify-center gap-2">
+                    <img alt="GitHub" src="https://img.shields.io/github/license/Prathameshnium/TupperTransformer">
+                    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/Prathameshnium/TupperTransformer">
+                    <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/Prathameshnium/TupperTransformer">
+                </div>
+            </div>
+
+            <div class="card p-8 rounded-lg mb-8">
+                <p class="text-lg text-light-slate">
+                    <strong>Note:</strong> This project is in a very early, experimental stage.
+                </p>
+                <p class="mt-4 text-light-slate">
+                    Welcome to my repository. This project is my exploration of a new image processing technique based on my 2018 preprint, "Transformation of the pixels in Tupper's self-referential formula."
+                </p>
+                <p class="mt-4 text-light-slate">
+                    This algorithm operates directly on the high-precision integer (k-value) used to generate Tupper's self-referential bitmaps, rather than manipulating the pixels after they are rendered. This repository contains the interactive demo that serves as the proof-of-concept and implementation of that research.
+                </p>
+            </div>
+
+            <div class="card p-8 rounded-lg mb-8">
+                <h2 class="text-3xl font-bold text-white mb-4">Live Demonstration</h2>
+                <p class="text-light-slate mb-4">Check out the live, interactive demo to see this algorithm in action:</p>
+                <a href="https://prathameshnium.github.io/TupperTransformer/" target="_blank" rel="noopener noreferrer" class="cta-button inline-block bg-accent-orange/10 border-2 border-accent-orange/[.70] text-accent-orange font-semibold py-3 px-6 rounded-lg">
+                    Launch Demo
+                </a>
+            </div>
+
+            <div class="card p-8 rounded-lg mb-8">
+                <h2 class="text-3xl font-bold text-white mb-4">About the Paper (Algorithm Summary)</h2>
+                <p class="text-light-slate">
+                    My research paper is based on Tupper's self-referential formula, which is popular due to its property of plotting itself. But that is not the only amazing thing about this formula: it doesn't only plot itself, but it plots every possible combination of the 106 x 17 pixels.
+                </p>
+                <p class="mt-4 text-light-slate">
+                    A copy of the paper is also available in this repository in the <code>paper</code> directory.
+                </p>
+                <p class="mt-4 text-light-slate">
+                    I.e. it plots all possible combinations of these 1802 pixels, and the value of k is used for sliding over the y-axis.
+                </p>
+                <blockquote class="mt-6 border-l-4 border-accent-orange pl-4 italic text-light-slate">
+                    "If there is some graphical formation at a particular value of k, then what can be done to change the graphical formation or to change its position?"
+                </blockquote>
+                <p class="mt-6 text-light-slate">This question leads to my research, which has two main ideas:</p>
+                <ol class="list-decimal list-inside mt-4 space-y-2 text-light-slate">
+                    <li>How to change any graphical formation into another graphical formation by applying some kind of operation to the value of the k.</li>
+                    <li>How this different graphical formation can be used as a frame to create a film or motion picture.</li>
+                </ol>
+
+                <h3 class="text-2xl font-semibold text-white mt-8 mb-4">What can my research do?</h3>
+                <ul class="list-disc list-inside space-y-2 text-light-slate">
+                    <li>Represent all possible graphical formations (within 1802 pixels) and all their possible variations.</li>
+                    <li>Create a formula for any film or motion picture.</li>
+                </ul>
+                <p class="mt-4 text-light-slate">In short, my research represents a mathematical form of the "Library of Babel" but for film and motion pictures.</p>
+            </div>
+
+            <div class="card p-8 rounded-lg mb-8">
+                <h2 class="text-3xl font-bold text-white mb-4">About the Demo (Instructions)</h2>
+                <p class="text-light-slate mb-6">The interactive demo brings these concepts to life with a simple, tabbed interface.</p>
+
+                <div class="space-y-6">
+                    <div>
+                        <h3 class="text-2xl font-semibold text-accent-orange mb-2">1. Transform & Load (Main Panel)</h3>
+                        <p class="text-light-slate">This is the main editor. You can:</p>
+                        <ul class="list-disc list-inside mt-2 space-y-1 text-light-slate">
+                            <li><strong>Load Examples:</strong> Load the classic "Tupper's" formula or the "UFO (Center)" image.</li>
+                            <li><strong>Transform:</strong> Use the "Full Transform" buttons (Up, Down, Left, Right, Diag) to modify the entire image.</li>
+                            <li><strong>Animate:</strong> Click and hold any transform button to create a temporary animation. If you hold for 1 second, the animation will "latch" and continue playing. A "Stop" button will appear.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold text-accent-orange mb-2">2. Draw</h3>
+                        <p class="text-light-slate">This panel demonstrates the reverse of the formula:</p>
+                        <ul class="list-disc list-inside mt-2 space-y-1 text-light-slate">
+                            <li>Click or drag on the canvas grid to toggle pixels on or off.</li>
+                            <li>The K-Value in the text box will update in real-time.</li>
+                            <li>Use "Clear Canvas" to set k to 0.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold text-accent-orange mb-2">3. Demos & Examples</h3>
+                        <p class="text-light-slate">This tab showcases the two major examples from the paper:</p>
+                        <ul class="list-disc list-inside mt-2 space-y-1 text-light-slate">
+                            <li><strong>Animation Demo (Eg3.1):</strong> Click "Play UFO Animation" to see the "Top-Left UFO" animated.</li>
+                            <li><strong>Interactive Tetris (Eg3.2):</strong> Click "Load Tetris Example" to load the scene. The "Piece" buttons will only move the "L-piece".</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card p-8 rounded-lg mb-8">
+                <h2 class="text-3xl font-bold text-white mb-4">Citation</h2>
+                <p class="text-light-slate mb-4">If you use this work, please cite the original preprint.</p>
+                <h3 class="text-xl font-semibold text-accent-orange mb-2">APA Style</h3>
+                <blockquote class="border-l-4 border-gray-700 pl-4 text-light-slate italic">
+                    Deshmukh, P. (2018). <i>Transformation of the pixels in Tupper's self-referential formula</i>. Figshare. https://doi.org/10.6084/m9.figshare.6373046
+                </blockquote>
+                <h3 class="text-xl font-semibold text-accent-orange mt-6 mb-2">BibTeX</h3>
+                <pre class="bg-dark-bg p-4 rounded-lg text-sm text-light-slate overflow-x-auto"><code>@article{Deshmukh2018,
+  author  = "P Deshmukh",
+  title   = "{Transformation of the pixels in tupper's self-referential formula}",
+  year    = "2018",
+  month   = "6",
+  url     = "https://figshare.com/articles/preprint/Transformation_of_pixels_pdf/6373046",
+  doi     = "10.6084/m9.figshare.6373046.v2"
+}</code></pre>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="card p-8 rounded-lg">
+                    <h2 class="text-3xl font-bold text-white mb-4">History & Related Materials</h2>
+                    <h3 class="text-xl font-semibold text-accent-orange mb-2">History</h3>
+                    <ul class="list-disc list-inside space-y-1 text-light-slate">
+                        <li><strong>2018-06-08</strong> - First online date, Posted date</li>
+                    </ul>
+                    <h3 class="text-xl font-semibold text-accent-orange mt-6 mb-2">Related Materials</h3>
+                    <ul class="list-disc list-inside space-y-1 text-light-slate">
+                        <li><a href="https://www.petervis.com/mathematics/tuppers_self-referential_formula/tuppers_self-referential_formula.html" class="hover:text-accent-orange underline">Tupper's Self-Referential Formula Explained</a></li>
+                        <li><a href="http://tuppers-formula.tk" class="hover:text-accent-orange underline">Tupper's Formula Tools (defunct)</a></li>
+                        <li><a href="https://youtu.be/_s5RFgd59ao" class="hover:text-accent-orange underline">Numberphile: The 'Everything' Formula</a></li>
+                        <li><a href="http://campus.lakeforest.edu/trevino/Tupper_Paper.pdf" class="hover:text-accent-orange underline">Tupper's Original Paper</a></li>
+                    </ul>
+                </div>
+
+                <div class="card p-8 rounded-lg">
+                    <h2 class="text-3xl font-bold text-white mb-4">Technologies Used</h2>
+                    <ul class="list-disc list-inside space-y-2 text-light-slate">
+                        <li><strong>HTML5:</strong> For the structure of the web page.</li>
+                        <li><strong>CSS3:</strong> For styling the user interface.</li>
+                        <li><strong>JavaScript (ES6+):</strong> For the core logic of the algorithm.</li>
+                        <li><strong>BigInt:</strong> Natively handled for high-precision arithmetic.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="border-t border-gray-800 bg-dark-bg py-8 mt-12">
+        <div class="container mx-auto px-6 text-center text-slate">
+            <div class="flex justify-center items-center flex-wrap gap-6 mb-6">
+                <a href="../index.html#contact" class="social-icon text-2xl" aria-label="Email"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+                <a href="https://scholar.google.com/citations?user=DJgzI30AAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer" class="social-icon text-2xl" aria-label="Google Scholar"><i class="fas fa-graduation-cap" aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com/in/prathamesh-k-deshmukh" target="_blank" rel="noopener noreferrer" class="social-icon text-2xl" aria-label="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                <a href="https://github.com/prathameshnium" target="_blank" rel="noopener noreferrer" class="social-icon text-2xl" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
+                <a href="https://x.com/prathameshnium" target="_blank" rel="noopener noreferrer" class="social-icon text-2xl" aria-label="X (formerly Twitter)"><i class="fab fa-x-twitter" aria-hidden="true"></i></a>
+            </div>
+            <div class="mb-6">
+                <a href="sitemap.html" class="hover:text-accent-orange transition-colors">Sitemap & Link Directory</a>
+            </div>
+             <p><a href="https://github.com/prathameshnium/prathameshnium.github.io/blob/main/LICENSE" target="_blank" rel="noopener noreferrer" class="hover:text-accent-orange transition-colors">&copy; 2024 Prathamesh Keshao Deshmukh. All Rights Reserved.</a></p>
+        </div>
+    </footer>
+
+    <script src="../_assets/js/main.js" defer></script>
+</body>
+</html>
