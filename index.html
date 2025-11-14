@@ -85,50 +85,9 @@
             <a href="index.html" class="text-2xl font-bold text-white font-serif">Prathamesh Deshmukh</a>
             <nav class="hidden md:flex items-center space-x-6">
                 <a href="#about" class="nav-link">About</a>
-                <a href="#research" class="nav-link">Research</a>
-                <div class="relative">
-                    <button id="portfolio-button" class="nav-link flex items-center" aria-haspopup="true" aria-expanded="false" aria-controls="portfolio-menu">
-                        Portfolio <i class="fas fa-chevron-down text-xs ml-2"></i>
-                    </button>
-                    <div id="portfolio-menu" class="absolute hidden dropdown-menu border border-gray-700 rounded-md shadow-lg py-2 w-56 top-full right-0 mt-2 z-50">
-                        <!-- Submenu Item -->
-                        <div id="core-portfolio-item" class="relative">
-                            <a href="#" class="w-full text-left px-4 py-2 text-sm text-white hover:bg-accent-orange flex justify-between items-center">
-                                Core Portfolio <i class="fas fa-chevron-right text-xs" aria-hidden="true"></i>
-                            </a>
-                            <div id="core-portfolio-submenu" class="absolute hidden dropdown-menu border border-gray-700 rounded-md shadow-lg py-2 w-48 top-0 left-full -mt-2 z-50">
-                                <a href="pages/research.html" class="block px-4 py-2 text-sm text-white hover:bg-accent-orange">Research & Pubs</a>
-                                <div id="comp-works-item" class="relative">
-                                    <a href="pages/computational-works.html" class="w-full text-left px-4 py-2 text-sm text-white hover:bg-accent-orange flex justify-between items-center">
-                                        Computational Works <i class="fas fa-chevron-right text-xs" aria-hidden="true"></i>
-                                    </a>
-                                    <div id="comp-works-submenu" class="absolute hidden dropdown-menu border border-gray-700 rounded-md shadow-lg py-2 w-48 top-0 left-full -mt-9 z-50">
-                                        <a href="pages/computational-works.html" class="block px-4 py-2 text-sm text-white hover:bg-accent-orange">Overview</a>
-                                        <a href="pages/project-pica.html" class="block px-4 py-2 text-sm text-white hover:bg-accent-orange">Project PICA</a>
-                                        <a href="pages/Project_Kusanagi-AI.html" class="block px-4 py-2 text-sm text-white hover:bg-accent-orange">Project Kusanagi-AI</a>
-                                        <a href="pages/Project_TupperTransformer.html" class="block px-4 py-2 text-sm text-white hover:bg-accent-orange">TupperTransformer</a>
-                                    </div>
-                                </div>
-                                <a href="pages/presentations.html" class="block px-4 py-2 text-sm text-white hover:bg-accent-orange">Presentations</a>
-                                <a href="pages/cv.html" class="block px-4 py-2 text-sm text-white hover:bg-accent-orange">CV</a>
-                            </div>
-                        </div>
-                        <div class="border-t border-gray-600 my-1"></div>
-                        <div id="additional-content-item" class="relative">
-                            <a href="#" class="w-full text-left px-4 py-2 text-sm text-white hover:bg-accent-orange flex justify-between items-center">
-                                Additional Content <i class="fas fa-chevron-right text-xs" aria-hidden="true"></i>
-                            </a>
-                            <div id="additional-content-submenu" class="absolute hidden dropdown-menu border border-gray-700 rounded-md shadow-lg py-2 w-48 top-0 left-full -mt-2 z-50">
-                                <a href="pages/blog.html" class="block px-4 py-2 text-sm text-white hover:bg-accent-orange">Blog</a>
-                                <a href="pages/gallery.html" class="block px-4 py-2 text-sm text-white hover:bg-accent-orange">Gallery</a>
-                                <a href="pages/resources.html" class="block px-4 py-2 text-sm text-white hover:bg-accent-orange">Resources</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <a href="#publications" class="nav-link">Publications</a>
-                <a href="#skills" class="nav-link">Skills</a>
-                <a href="#journey" class="nav-link">Journey</a>
+                <a href="pages/research.html" class="nav-link">Research</a>
+                <a href="pages/computational-works.html" class="nav-link">Projects</a>
+                <a href="pages/blog.html" class="nav-link">Blog</a>
                 <a href="#contact" class="nav-link">Contact</a>
                 <!-- Search Form -->
                 <form action="pages/search.html" method="GET" class="relative ml-4">
@@ -144,41 +103,10 @@
         </div>
         <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
             <a href="#about" class="block py-2 nav-link">About</a>
-            <!-- Mobile Portfolio Button (highlighted) -->
-            <div class="my-2">
-                <button id="portfolio-button-mobile" class="w-full text-left py-2 px-4 rounded-lg bg-accent-orange/10 border border-accent-orange text-accent-orange font-semibold flex justify-between items-center" aria-haspopup="true" aria-expanded="false" aria-controls="portfolio-menu-mobile">
-                    <span>Portfolio</span>
-                    <i class="fas fa-chevron-down text-xs"></i>
-                </button>
-                <div id="portfolio-menu-mobile" class="hidden pl-4 mt-2">
-                    <a href="pages/research.html" class="block py-2 nav-link">Research & Pubs</a>
-                    <div>
-                        <button id="mobile-comp-works-button" class="w-full text-left py-2 nav-link flex justify-between items-center" aria-haspopup="true" aria-expanded="false" aria-controls="mobile-comp-works-menu">
-                            <span>Computational Works</span>
-                            <i class="fas fa-chevron-down text-xs"></i>
-                        </button>
-                        <div id="mobile-comp-works-menu" class="hidden pl-4">
-                            <a href="pages/computational-works.html" class="block py-2 nav-link">Overview</a>
-                            <a href="pages/project-pica.html" class="block py-2 nav-link">Project PICA</a>
-                            <a href="pages/Project_Kusanagi-AI.html" class="block py-2 nav-link">Project Kusanagi-AI</a>
-                            <a href="pages/Project_TupperTransformer.html" class="block py-2 nav-link">TupperTransformer</a>
-                        </div>
-                    </div>
-                    <a href="pages/presentations.html" class="block py-2 nav-link">Presentations</a>
-                    <a href="pages/cv.html" class="block py-2 nav-link">CV</a>
-                    <a href="pages/blog.html" class="block py-2 nav-link">Blog</a>
-                    <a href="pages/gallery.html" class="block py-2 nav-link">Gallery</a>
-                    <a href="pages/resources.html" class="block py-2 nav-link">Resources</a>
-                </div>
-            </div>
-            <!-- End Mobile Portfolio Button -->
-            <a href="#research" class="block py-2 nav-link">Research</a>
-            <a href="#publications" class="block py-2 nav-link">Publications</a>
-            <a href="#skills" class="block py-2 nav-link">Skills</a>
-            <a href="#journey" class="block py-2 nav-link">Journey</a>
+            <a href="pages/research.html" class="block py-2 nav-link">Research</a>
+            <a href="pages/computational-works.html" class="block py-2 nav-link">Projects</a>
+            <a href="pages/blog.html" class="block py-2 nav-link">Blog</a>
             <a href="#contact" class="block py-2 nav-link">Contact</a>
-            <div class="border-t border-gray-700 my-2"></div>
-            <!-- Accordion for Portfolio -->
         </div>
     </header>
 
@@ -228,6 +156,75 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <section id="hub" class="py-20">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl md:text-5xl font-bold section-title mb-2">Site Hub</h2>
+                <p class="text-lg text-slate">Explore the different sections of the site.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <a href="pages/research.html" class="hub-card card p-6 rounded-lg flex flex-col items-center text-center">
+                    <i class="fas fa-flask text-3xl text-accent-orange mb-4"></i>
+                    <h3 class="text-xl font-semibold text-white mb-2">Research & Publications</h3>
+                    <p class="text-light-slate">Explore my research on multiferroic composites and view my publications.</p>
+                </a>
+                <a href="pages/computational-works.html" class="hub-card card p-6 rounded-lg flex flex-col items-center text-center">
+                    <i class="fas fa-code text-3xl text-accent-orange mb-4"></i>
+                    <h3 class="text-xl font-semibold text-white mb-2">Computational Works</h3>
+                    <p class="text-light-slate">Discover my projects in scientific programming, instrument control, and data analysis.</p>
+                </a>
+                <a href="pages/project-pica.html" class="hub-card card p-6 rounded-lg flex flex-col items-center text-center">
+                    <i class="fas fa-robot text-3xl text-accent-orange mb-4"></i>
+                    <h3 class="text-xl font-semibold text-white mb-2">Project PICA</h3>
+                    <p class="text-light-slate">A Python-based suite for instrument control and automation in the lab.</p>
+                </a>
+                <a href="pages/Project_Kusanagi-AI.html" class="hub-card card p-6 rounded-lg flex flex-col items-center text-center">
+                    <i class="fas fa-brain text-3xl text-accent-orange mb-4"></i>
+                    <h3 class="text-xl font-semibold text-white mb-2">Project Kusanagi-AI</h3>
+                    <p class="text-light-slate">An open-source toolkit for local AI experimentation and research.</p>
+                </a>
+                <a href="pages/Project_TupperTransformer.html" class="hub-card card p-6 rounded-lg flex flex-col items-center text-center">
+                    <i class="fas fa-image text-3xl text-accent-orange mb-4"></i>
+                    <h3 class="text-xl font-semibold text-white mb-2">TupperTransformer</h3>
+                    <p class="text-light-slate">A novel image processing algorithm based on Tupper's self-referential formula.</p>
+                </a>
+                <a href="pages/presentations.html" class="hub-card card p-6 rounded-lg flex flex-col items-center text-center">
+                    <i class="fas fa-person-chalkboard text-3xl text-accent-orange mb-4"></i>
+                    <h3 class="text-xl font-semibold text-white mb-2">Presentations</h3>
+                    <p class="text-light-slate">A collection of my conference presentations and talks.</p>
+                </a>
+                <a href="pages/cv.html" class="hub-card card p-6 rounded-lg flex flex-col items-center text-center">
+                    <i class="fas fa-file-alt text-3xl text-accent-orange mb-4"></i>
+                    <h3 class="text-xl font-semibold text-white mb-2">CV</h3>
+                    <p class="text-light-slate">View my detailed Curriculum Vitae.</p>
+                </a>
+                <a href="pages/blog.html" class="hub-card card p-6 rounded-lg flex flex-col items-center text-center">
+                    <i class="fas fa-blog text-3xl text-accent-orange mb-4"></i>
+                    <h3 class="text-xl font-semibold text-white mb-2">Blog</h3>
+                    <p class="text-light-slate">Read my thoughts on physics, programming, and research life.</p>
+                </a>
+                <a href="pages/gallery.html" class="hub-card card p-6 rounded-lg flex flex-col items-center text-center">
+                    <i class="fas fa-images text-3xl text-accent-orange mb-4"></i>
+                    <h3 class="text-xl font-semibold text-white mb-2">Gallery</h3>
+                    <p class="text-light-slate">A collection of images from my research and other activities.</p>
+                </a>
+                <a href="pages/resources.html" class="hub-card card p-6 rounded-lg flex flex-col items-center text-center">
+                    <i class="fas fa-book text-3xl text-accent-orange mb-4"></i>
+                    <h3 class="text-xl font-semibold text-white mb-2">Resources</h3>
+                    <p class="text-light-slate">A curated list of useful resources for researchers and programmers.</p>
+                </a>
+                <a href="pages/Sudip_Mukherjee_Materials_Physics_Lab.html" class="hub-card card p-6 rounded-lg flex flex-col items-center text-center">
+                    <i class="fas fa-vial text-3xl text-accent-orange mb-4"></i>
+                    <h3 class="text-xl font-semibold text-white mb-2">Materials Physics Lab</h3>
+                    <p class="text-light-slate">Learn more about the lab where I conduct my research.</p>
+                </a>
+                <a href="pages/sitemap.html" class="hub-card card p-6 rounded-lg flex flex-col items-center text-center">
+                    <i class="fas fa-sitemap text-3xl text-accent-orange mb-4"></i>
+                    <h3 class="text-xl font-semibold text-white mb-2">Sitemap</h3>
+                    <p class="text-light-slate">A complete list of all pages on this site.</p>
+                </a>
             </div>
         </section>
 
