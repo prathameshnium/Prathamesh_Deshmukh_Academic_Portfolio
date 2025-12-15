@@ -302,31 +302,153 @@
             </div>
         </section>
 
+        <section id="getting-started" class="py-20">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-4xl font-bold section-title mb-8">Getting Started</h2>
+                <div class="card p-8 rounded-lg text-left">
+                    <p class="text-light-slate mb-4">PICA is structured as a standard Python package.</p>
+                    <h3 class="text-2xl font-semibold text-accent-orange mb-4">1. Clone the Repository</h3>
+                    <div class="bg-dark-bg p-4 rounded-lg mb-6">
+                        <pre class="text-sm text-light-slate overflow-x-auto"><code>git clone [https://github.com/prathameshnium/PICA-Python-Instrument-Control-and-Automation.git](https://github.com/prathameshnium/PICA-Python-Instrument-Control-and-Automation.git)
+cd PICA-Python-Instrument-Control-and-Automation</code></pre>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-accent-orange mb-4">2. Create Virtual Environment & Install</h3>
+                    <div class="bg-dark-bg p-4 rounded-lg mb-6">
+                        <pre class="text-sm text-light-slate overflow-x-auto"><code>python -m venv venv
+# Activate venv (Windows: venv\Scripts\activate, Linux/Mac: source venv/bin/activate)
+pip install .</code></pre>
+                    </div>
+                    <p class="text-light-slate mb-4"><em>Note: Ensure you have the NI-VISA drivers installed on your host machine to allow <code>PyVISA</code> to communicate with the hardware.</em></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="running-software" class="py-20">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-4xl font-bold section-title mb-8">Running the Software</h2>
+                <div class="card p-8 rounded-lg text-left">
+                    <h3 class="text-2xl font-semibold text-accent-orange mb-4">1. Graphical Launcher (Recommended)</h3>
+                    <p class="text-light-slate mb-4">The central dashboard for accessing all modules, the plotter, and the scanner.</p>
+                    <div class="bg-dark-bg p-4 rounded-lg mb-6">
+                        <pre class="text-sm text-light-slate overflow-x-auto"><code>pica-gui</code></pre>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-accent-orange mb-4">2. Command Line Interface (CLI)</h3>
+                    <p class="text-light-slate mb-4">For headless operation (e.g., Raspberry Pi).</p>
+                    <div class="bg-dark-bg p-4 rounded-lg mb-6">
+                        <pre class="text-sm text-light-slate overflow-x-auto"><code>pica-cli</code></pre>
+                    </div>
+                    <div class="bg-yellow-900/20 border-l-4 border-yellow-500 text-yellow-100 p-4 mb-6" role="alert">
+                        <p class="font-bold">NOTE</p>
+                        <p class="text-sm"><strong>Legacy CLI Notice:</strong> The PICA CLI (<code>pica-cli</code>) is retained to support legacy headless workflows. While fully functional for specific protocols, this interface is <strong>no longer actively maintained</strong> and may not support recent features available in the GUI.</p>
+                        <p class="text-sm">We <strong>strongly recommend</strong> new users utilize the PICA GUI for the most complete and supported experience.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="running-tests" class="py-20">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-4xl font-bold section-title mb-8">Running Tests</h2>
+                <div class="card p-8 rounded-lg text-left">
+                    <p class="text-light-slate mb-4">To run the test suite locally, first install the development dependencies:</p>
+                    <div class="bg-dark-bg p-4 rounded-lg mb-6">
+                        <pre class="text-sm text-light-slate overflow-x-auto"><code>pip install -r requirements-dev.txt</code></pre>
+                    </div>
+                    <p class="text-light-slate mb-4">Then, you can run the tests:</p>
+                    <div class="bg-dark-bg p-4 rounded-lg mb-6">
+                        <pre class="text-sm text-light-slate overflow-x-auto"><code>python -B -m pytest -p no:cacheprovider</code></pre>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-accent-orange mb-4">How to Check Coverage Locally</h3>
+                    <p class="text-light-slate mb-4">To see the coverage percentage on your local machine, run this command instead:</p>
+                    <div class="bg-dark-bg p-4 rounded-lg mb-6">
+                        <pre class="text-sm text-light-slate overflow-x-auto"><code>python -B -m pytest --cov=pica --cov-report=term-missing -p no:cacheprovider</code></pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="project-history" class="py-20">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-4xl font-bold section-title mb-8">Project History</h2>
+                <div class="card p-8 rounded-lg text-left">
+                    <p class="text-light-slate mb-4">PICA evolved from simple offline scripts in 2022 to a full-stack automated suite.</p>
+                    <ul class="list-disc list-inside text-light-slate mb-4">
+                        <li><strong>v1.0.0 (Initial Public Release):</strong> Version numbering has been reset from legacy development builds (v17.0) to v1.0.0 to standardize the package for public distribution and citation.</li>
+                        <li><strong>v17.0:</strong> Professional directory restructuring, Semantic Versioning, and documentation overhaul.</li>
+                        <li><strong>v15.0:</strong> JOSS submission preparation, CI/CD integration.</li>
+                        <li><strong>v13.0:</strong> Transition to Multiprocessing and standardized GUI themes.</li>
+                    </ul>
+                    <h3 class="text-2xl font-semibold text-accent-orange mb-4">2022 - 2023: Inception & Prototyping</h3>
+                    <ul class="list-disc list-inside text-light-slate mb-4">
+                        <li><strong>2023 (Migration):</strong> Moved from offline lab systems to GitHub; organized scripts into instrument modules (Keithley/Lake Shore).</li>
+                        <li><strong>2022 (Origins):</strong> Started in an air-gapped lab with <code>pyvisa</code> scripts replacing manual logging.
+                            <ul class="list-circle list-inside ml-4">
+                                <li><em>Concept:</em> Proposed by Dr. Sudip Mukherjee to automate characterization workflows.</li>
+                                <li><em>Prototypes:</em> Built alongside hardware upgrades and cryogenic probe work at UGC-DAE CSR.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="bg-blue-900/20 border-l-4 border-blue-500 text-blue-100 p-4 mb-6" role="alert">
+                        <p class="font-bold">Background:</p>
+                        <p class="text-sm">For a detailed chronological log, see <a href="CHANGELOG.md" class="text-blue-300 hover:underline"><code>CHANGELOG.md</code></a>.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="resources-docs" class="py-20">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-4xl font-bold section-title mb-8">Resources & Documentation</h2>
+                <div class="card p-8 rounded-lg text-left">
+                    <ul class="list-disc list-inside text-light-slate mb-4">
+                        <li><strong>User Manual:</strong> Detailed physics and usage guides are available in the <a href="docs/User_Manual.md" class="text-accent-orange hover:underline">User Manual</a>.</li>
+                        <li><strong>Instrument Manuals:</strong> A list of instrument manuals is available in <a href="docs/Instruments_Manuals_Lists.md" class="text-accent-orange hover:underline">docs/Instruments_Manuals_Lists.md</a>.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="authors-acknowledgments" class="py-20">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-4xl font-bold section-title mb-8">Authors & Acknowledgments</h2>
+                <div class="card p-8 rounded-lg text-left">
+                    <p class="text-light-slate mb-4">This project is led by <a href="https://prathameshdeshmukh.site/" class="text-accent-orange hover:underline"><strong>Prathamesh K. Deshmukh</strong></a> under the supervision of <a href="https://www.csr.res.in/Sudip-Mukherjee" class="text-accent-orange hover:underline"><strong>Dr. Sudip Mukherjee</strong></a> at the <em>UGC-DAE Consortium for Scientific Research, Mumbai Centre</em>.</p>
+                    <p class="text-light-slate mb-4">We acknowledge the financial support provided under the <strong>SERB-CRG project grant No. CRG/2022/005676</strong> from the Anusandhan National Research Foundation (ANRF), a statutory body of the Department of Science and Technology (DST), Government of India.</p>
+                    <p align="center" class="mb-4">
+                        <img src="pica/assets/LOGO/UGC_DAE_CSR_NBG.jpeg" alt="UGC DAE CSR Logo" width="150">
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="license" class="py-20">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-4xl font-bold section-title mb-8">License</h2>
+                <div class="card p-8 rounded-lg text-left">
+                    <p class="text-light-slate mb-4">This project is licensed under the MIT License - see the <a href="LICENSE" class="text-accent-orange hover:underline">LICENSE file</a> for details.</p>
+                </div>
+            </div>
+        </section>
+
         <!-- How to Cite Section -->
         <section id="citation" class="py-20">
             <div class="max-w-3xl mx-auto text-center">
                 <h2 class="text-4xl font-bold section-title mb-8">How to Cite This Software</h2>
-                <div class="card p-8 rounded-lg text-left">
-                    <p class="text-light-slate mb-6">
-                        If you use this software or its contents in your research, please cite it. This helps to credit the work involved in creating and maintaining this resource.
-                    </p>
-                    <h3 class="text-2xl font-semibold text-accent-orange mb-4">Using BibTeX</h3>
-                    <p class="text-light-slate mb-4">
-                        You can use the following BibTeX entry for your reference manager (e.g., Zotero, Mendeley, JabRef).
-                    </p>
-                    <div class="bg-dark-bg p-4 rounded-lg mb-6">
-                        <pre class="text-sm text-light-slate overflow-x-auto"><code>@software{Deshmukh_PICA_2025,
-  author       = {Deshmukh, Prathamesh Keshao and Mukherjee, Sudip},
-  title        = {{PICA: Advanced Python Suite for High Precision Instrumentation and Transport Measurement Automation}},
-  month        = dec,
-  year         = 2025,
-  publisher    = {GitHub},
-  version      = {1.0.0},
-  url          = {[https://github.com/prathameshnium/PICA-Python-Instrument-Control-and-Automation](https://github.com/prathameshnium/PICA-Python-Instrument-Control-and-Automation)}
-}</code></pre>
-                    </div>
-                    <p class="text-light-slate">Alternatively, you can use the <code>CITATION.cff</code> file in the root of the <a href="https://github.com/prathameshnium/PICA-Python-Instrument-Control-and-Automation" target="_blank" rel="noopener noreferrer" class="text-accent-orange hover:underline">repository</a> for automatic parsing by modern reference managers.</p>
-                </div>
+                                    <div class="card p-8 rounded-lg text-left">
+                                        <p class="text-light-slate mb-4">If you use this software in your research, please cite it:</p>
+                                        <div class="bg-dark-bg p-4 rounded-lg mb-6">
+                                            <pre class="text-sm text-light-slate overflow-x-auto"><code>@software{Deshmukh_PICA_2025,
+                  author       = {Deshmukh, Prathamesh Keshao and Mukherjee, Sudip},
+                  title        = {{PICA: Advanced Python Suite for High Precision Instrumentation and Transport Measurement Automation}},
+                  month        = dec,
+                  year         = 2025,
+                  publisher    = {GitHub},
+                  version      = {1.0.0},
+                  url          = {[https://github.com/prathameshnium/PICA-Python-Instrument-Control-and-Automation](https://github.com/prathameshnium/PICA-Python-Instrument-Control-and-Automation)}
+                }
+                </code></pre>
+                                        </div>
+                                    </div>
             </div>
         </section>
     </main>
