@@ -69,8 +69,10 @@ Disallow: /
 # The following lines explicitly allow all other user agents to crawl the entire site.
 # This is the default behavior, but it's good practice to be explicit.
 # The _assets directory is disallowed to prevent indexing of style, script, and image files.
+# The Setup directory is also disallowed as it contains build-related files.
 User-agent: *
-Disallow: /_assets/ # Disallow crawling of the assets directory
+# Disallow crawling of the assets directory
+Disallow: /assets/
 
-# Provide the location of the sitemap for all crawlers.
-Sitemap: https://prathameshdeshmukh.site/sitemap.xml
+# Disallow crawling of the setup/build directory
+Disallow: /deployment/
