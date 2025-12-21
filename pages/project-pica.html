@@ -329,19 +329,30 @@
             <div class="max-w-3xl mx-auto text-center">
                 <h2 class="text-4xl font-bold section-title mb-8">Getting Started</h2>
                 <div class="card p-8 rounded-lg text-left">
-                    <p class="text-light-slate mb-4">PICA is structured as a standard Python package.</p>
+                    <p class="text-light-slate mb-4">PICA is structured as a standard Python package. The following instructions are for the supported Windows platform.</p>
                     <h3 class="text-2xl font-semibold text-accent-orange mb-4">1. Clone the Repository</h3>
                     <div class="bg-dark-bg p-4 rounded-lg mb-6">
-                        <pre class="text-sm text-light-slate overflow-x-auto"><code>git clone [https://github.com/prathameshnium/PICA-Python-Instrument-Control-and-Automation.git](https://github.com/prathameshnium/PICA-Python-Instrument-Control-and-Automation.git)
+                        <pre class="text-sm text-light-slate overflow-x-auto"><code>git clone https://github.com/prathameshnium/PICA-Python-Instrument-Control-and-Automation.git
 cd PICA-Python-Instrument-Control-and-Automation</code></pre>
                     </div>
                     <h3 class="text-2xl font-semibold text-accent-orange mb-4">2. Create Virtual Environment & Install</h3>
                     <div class="bg-dark-bg p-4 rounded-lg mb-6">
-                        <pre class="text-sm text-light-slate overflow-x-auto"><code>python -m venv venv
-# Activate venv (Windows: venv\Scripts\activate, Linux/Mac: source venv/bin/activate)
+                        <pre class="text-sm text-light-slate overflow-x-auto"><code># Create and activate a virtual environment
+python -m venv venv
+venv\Scripts\activate
+
+# Install the package and its dependencies
 pip install .</code></pre>
                     </div>
-                    <p class="text-light-slate mb-4"><em>Note: Ensure you have the NI-VISA drivers installed on your host machine to allow <code>PyVISA</code> to communicate with the hardware.</em></p>
+                    <p class="text-light-slate mb-4">To update PICA to the latest version, run the following command in the project directory:</p>
+                    <div class="bg-dark-bg p-4 rounded-lg mb-6">
+                        <pre class="text-sm text-light-slate overflow-x-auto"><code>pip install --upgrade .</code></pre>
+                    </div>
+                    <p class="text-light-slate mb-4">If you are already in your virtual environment and want to force Python to reinstall the package (overwriting the old one), run this in your root project folder:</p>
+                    <div class="bg-dark-bg p-4 rounded-lg mb-6">
+                        <pre class="text-sm text-light-slate overflow-x-auto"><code>pip install --force-reinstall .</code></pre>
+                    </div>
+                    <p class="text-light-slate mb-4"><em>Note: Ensure you have the NI-VISA drivers installed on your host machine to allow <a href="https://github.com/pyvisa/pyvisa" class="text-accent-orange hover:underline"><code>PyVISA</code></a> to communicate with the hardware.</em></p>
                 </div>
             </div>
         </section>
@@ -355,15 +366,29 @@ pip install .</code></pre>
                     <div class="bg-dark-bg p-4 rounded-lg mb-6">
                         <pre class="text-sm text-light-slate overflow-x-auto"><code>pica-gui</code></pre>
                     </div>
+                    <div class="text-light-slate mb-4">
+                        <p>You can also run any of the individual GUI measurement modules independently. This is useful for quickly accessing a specific measurement without opening the main launcher. To do this, simply run the Python script for the desired module.</p>
+                        <p>For example:</p>
+                    </div>
+                    <div class="bg-dark-bg p-4 rounded-lg mb-6">
+                        <pre class="text-sm text-light-slate overflow-x-auto"><code>python pica/keithley/k6517b/High_Resistance/IV_K6517B_GUI.py</code></pre>
+                    </div>
+
                     <h3 class="text-2xl font-semibold text-accent-orange mb-4">2. Command Line Interface (CLI)</h3>
                     <p class="text-light-slate mb-4">For headless operation (e.g., Raspberry Pi).</p>
                     <div class="bg-dark-bg p-4 rounded-lg mb-6">
                         <pre class="text-sm text-light-slate overflow-x-auto"><code>pica-cli</code></pre>
                     </div>
+
+                    <div class="bg-blue-900/20 border-l-4 border-blue-500 text-blue-100 p-4 mb-6" role="alert">
+                        <p class="font-bold">Important</p>
+                        <p><strong>Template Scripts:</strong> The instrument control modules (CLI's) provided are designed as <strong>template scripts</strong>. Users are expected to modify these scripts programmatically to adapt them to their specific experimental requirements and custom workflows. They are also excellent for developing <strong>custom measurement protocols, sequences, and for learning instrument automation</strong>. These scripts are typically named with an 'Instrument_Control' suffix to denote their programmatic nature. This approach ensures maximum flexibility and customization for advanced research applications.</p>
+                    </div>
+
                     <div class="bg-yellow-900/20 border-l-4 border-yellow-500 text-yellow-100 p-4 mb-6" role="alert">
-                        <p class="font-bold">NOTE</p>
-                        <p class="text-sm"><strong>Legacy CLI Notice:</strong> The PICA CLI (<code>pica-cli</code>) is retained to support legacy headless workflows. While fully functional for specific protocols, this interface is <strong>no longer actively maintained</strong> and may not support recent features available in the GUI.</p>
-                        <p class="text-sm">We <strong>strongly recommend</strong> new users utilize the PICA GUI for the most complete and supported experience.</p>
+                        <p class="font-bold">Note</p>
+                        <p><strong>Legacy CLI Notice:</strong> The PICA CLI (<code>pica-cli</code>) is retained to support legacy headless workflows. While fully functional for specific protocols, this interface is <strong>less frequently maintained</strong> and may not support recent features available in the GUI. </p>
+                        <p>We <strong>strongly recommend</strong> new users utilize the PICA GUI for the most complete and supported experience.</p>
                     </div>
                 </div>
             </div>
