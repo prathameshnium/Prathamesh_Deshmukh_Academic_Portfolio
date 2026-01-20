@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Instrumentation & Hardware Development | Prathamesh Deshmukh</title>
+    
+    <meta name="description" content="Portfolio of custom-designed cryogenic instrumentation and the Advanced Transport Measurement System (ATMS) developed by Prathamesh Deshmukh.">
+    <meta name="keywords" content="Instrumentation, Physics, Hardware Design, Cryogenics, PPMS, ATMS, Lab Automation, Signal Conditioning, Vacuum Systems">
+    <meta name="author" content="Prathamesh Keshao Deshmukh">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Instrumentation & Hardware Development">
+    <meta property="og:description" content="Development of the Advanced Transport Measurement System (ATMS) and custom cryogenic probes.">
+    <meta property="og:image" content="https://www.prathameshdeshmukh.site/_assets/banner.png">
+    <meta property="og:url" content="https://prathameshdeshmukh.site/pages/hardware-development.html">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../_assets/fonts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'dark-bg': '#0f172a',
+                        'card-bg': '#1e293b',
+                        'accent-orange': '#f59e0b',
+                        'slate': '#94a3b8',
+                        'light-slate': '#cbd5e1',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="../_assets/style.css">
+</head>
+<body class="antialiased font-sans bg-dark-bg text-gray-200">
+    <div id="preloader" class="fixed top-0 left-0 w-full h-full bg-dark-bg flex justify-center items-center z-[100]">
+        <div class="loader"></div>
+    </div>
+
+    <header class="bg-dark-bg/80 backdrop-blur-sm sticky top-0 z-50 border-b border-gray-700">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="../index.html" class="text-2xl font-bold text-white font-serif">Prathamesh Deshmukh</a>
+            <nav class="hidden md:flex items-center space-x-6">
+                <a href="../index.html#about" class="nav-link text-slate hover:text-accent-orange transition-colors">About</a>
+                <a href="../index.html#research" class="nav-link text-slate hover:text-accent-orange transition-colors">Research</a>
+                
+                <div class="relative group">
+                    <button class="nav-link flex items-center text-slate hover:text-accent-orange transition-colors">
+                        Portfolio <i class="fas fa-chevron-down text-xs ml-2"></i>
+                    </button>
+                    <div class="absolute hidden group-hover:block dropdown-menu bg-card-bg border border-gray-700 rounded-md shadow-lg py-2 w-56 top-full right-0 mt-0 z-50">
+                        <a href="research.html" class="block px-4 py-2 text-sm text-white hover:bg-accent-orange">Research & Pubs</a>
+                        <a href="hardware-development.html" class="block px-4 py-2 text-sm text-white bg-accent-orange/10 border-l-2 border-accent-orange">Hardware & Inst.</a>
+                        <a href="computational-works.html" class="block px-4 py-2 text-sm text-white hover:bg-accent-orange">Computational Works</a>
+                        <a href="project-pica.html" class="block px-4 py-2 text-sm text-white hover:bg-accent-orange">Project PICA</a>
+                        <div class="border-t border-gray-600 my-1"></div>
+                        <a href="presentations.html" class="block px-4 py-2 text-sm text-white hover:bg-accent-orange">Presentations</a>
+                        <a href="cv.html" class="block px-4 py-2 text-sm text-white hover:bg-accent-orange">CV</a>
+                    </div>
+                </div>
+                
+                <a href="../index.html#contact" class="nav-link text-slate hover:text-accent-orange transition-colors">Contact</a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden text-white text-2xl">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 bg-dark-bg border-b border-gray-700">
+             <a href="../index.html" class="block py-2 text-slate hover:text-accent-orange">Home</a>
+             <a href="hardware-development.html" class="block py-2 text-accent-orange font-semibold">Hardware Development</a>
+             <a href="project-pica.html" class="block py-2 text-slate hover:text-accent-orange">Project PICA</a>
+             <a href="research.html" class="block py-2 text-slate hover:text-accent-orange">Research</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-12">
+        
+        <section class="py-16">
+            <div class="text-center mb-12">
+                <span class="text-accent-orange font-semibold tracking-wider text-sm uppercase">Advanced Instrumentation</span>
+                <h1 class="text-4xl md:text-5xl font-bold font-serif mt-2 mb-6">Advanced Transport Measurement System (ATMS)</h1>
+                <p class="text-lg text-slate max-w-3xl mx-auto leading-relaxed">
+                    A fully integrated, automated in-situ platform developed to bridge the gap between complex physical phenomena and precision data acquisition. This system unifies custom cryogenic hardware with intelligent software control.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+                <div class="bg-card-bg p-6 rounded-lg border border-gray-700 hover:border-accent-orange transition-colors">
+                    <i class="fas fa-wave-square text-3xl text-accent-orange mb-4"></i>
+                    <h3 class="text-xl font-bold text-white mb-2">Broad Range Resistivity</h3>
+                    <p class="text-sm text-light-slate">Engineered to automate multi-range resistivity measurements spanning <strong>10<sup>-8</sup> to 10<sup>16</sup> &Omega;</strong>, covering everything from superconductors to high-dielectric insulators.</p>
+                </div>
+                <div class="bg-card-bg p-6 rounded-lg border border-gray-700 hover:border-accent-orange transition-colors">
+                    <i class="fas fa-microchip text-3xl text-accent-orange mb-4"></i>
+                    <h3 class="text-xl font-bold text-white mb-2">Fully Automated</h3>
+                    <p class="text-sm text-light-slate">Controlled by the in-house <a href="project-pica.html" class="text-accent-orange hover:underline">PICA software</a>, featuring multithreading for stability and transparent logging to strictly prevent data loss during long-duration experiments.</p>
+                </div>
+                <div class="bg-card-bg p-6 rounded-lg border border-gray-700 hover:border-accent-orange transition-colors">
+                    <i class="fas fa-bolt text-3xl text-accent-orange mb-4"></i>
+                    <h3 class="text-xl font-bold text-white mb-2">Multi-Characterization</h3>
+                    <p class="text-sm text-light-slate">Seamless switching between I-V characterization, Pyroelectric current measurement, and Magnetodielectric spectroscopy.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 border-t border-gray-800">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Custom Probe Development</h2>
+            <p class="text-center text-slate max-w-3xl mx-auto mb-10">
+                Design and fabrication of specialized probes tailored for signal integrity and extreme environmental conditions.
+            </p>
+
+            <div class="space-y-12">
+                <div class="flex flex-col md:flex-row bg-card-bg rounded-xl overflow-hidden border border-gray-700">
+                    <div class="md:w-1/3 bg-gray-800 flex items-center justify-center p-8">
+                        <div class="text-center">
+                            <i class="fas fa-magnet text-6xl text-slate/20 mb-4"></i>
+                            <p class="text-sm text-slate/50">High-Field Environment</p>
+                        </div>
+                    </div>
+                    <div class="p-8 md:w-2/3">
+                        <h3 class="text-2xl font-bold text-white mb-2">Multifunctional PPMS Probe</h3>
+                        <div class="flex gap-2 mb-4">
+                            <span class="text-xs font-semibold bg-accent-orange/20 text-accent-orange px-2 py-1 rounded">14 Tesla</span>
+                            <span class="text-xs font-semibold bg-accent-orange/20 text-accent-orange px-2 py-1 rounded">5 K - 380 K</span>
+                        </div>
+                        <p class="text-light-slate mb-6">
+                            Designed for the Quantum Design PPMS to investigate materials under high magnetic fields. The architecture prioritizes low-noise signal acquisition and thermal stability.
+                        </p>
+                        <ul class="grid md:grid-cols-2 gap-4 text-sm text-slate">
+                            <li class="flex items-start"><i class="fas fa-check text-accent-orange mt-1 mr-2"></i><span><strong>Signal Integrity:</strong> Utilizes RG178 micro-coaxial cabling to minimize cross-talk and environmental noise.</span></li>
+                            <li class="flex items-start"><i class="fas fa-check text-accent-orange mt-1 mr-2"></i><span><strong>Thermal Engineering:</strong> Single-crystal Sapphire base for superior electrical insulation and thermal conductivity.</span></li>
+                            <li class="flex items-start"><i class="fas fa-check text-accent-orange mt-1 mr-2"></i><span><strong>PCB Design:</strong> Custom glass-epoxy PCBs with optimized trace geometry to reduce leakage currents.</span></li>
+                            <li class="flex items-start"><i class="fas fa-check text-accent-orange mt-1 mr-2"></i><span><strong>Opto-Electronics:</strong> Integrated 650nm laser diode for in-situ photo-induced measurements.</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row bg-card-bg rounded-xl overflow-hidden border border-gray-700">
+                    <div class="md:w-1/3 bg-gray-800 flex items-center justify-center p-8 order-last md:order-first">
+                        <div class="text-center">
+                            <i class="fas fa-snowflake text-6xl text-slate/20 mb-4"></i>
+                            <p class="text-sm text-slate/50">Cryogenic Vacuum System</p>
+                        </div>
+                    </div>
+                    <div class="p-8 md:w-2/3">
+                        <h3 class="text-2xl font-bold text-white mb-2">Liquid Nitrogen Cryogenic Probes</h3>
+                        <div class="flex gap-2 mb-4">
+                            <span class="text-xs font-semibold bg-blue-500/20 text-blue-400 px-2 py-1 rounded">Vacuum: 10<sup>-5</sup> torr</span>
+                            <span class="text-xs font-semibold bg-blue-500/20 text-blue-400 px-2 py-1 rounded">PID Controlled</span>
+                        </div>
+                        <p class="text-light-slate mb-6">
+                            Two specialized probes developed for operations in liquid nitrogen dewars, featuring custom vacuum jacketing and active temperature control.
+                        </p>
+                        <div class="space-y-4">
+                            <div>
+                                <h4 class="font-semibold text-white text-sm"><i class="fas fa-chevron-right text-accent-orange text-xs mr-2"></i>Probe 1: High-Voltage & Pyroelectric</h4>
+                                <p class="text-sm text-slate pl-6">Optimized for Polarization-Electric Field (P-E) loops and pyroelectric current. Features high-voltage isolation for poling experiments.</p>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-white text-sm"><i class="fas fa-chevron-right text-accent-orange text-xs mr-2"></i>Probe 2: Variable Range Transport</h4>
+                                <p class="text-sm text-slate pl-6">Dedicated configuration for precision transport measurements (low to high resistance) with minimal thermal gradients.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16">
+            <h2 class="text-3xl font-bold text-center mb-10">Core Technical Competencies</h2>
+            <div class="flex flex-wrap justify-center gap-4 max-w-4xl mx-auto">
+                <span class="px-4 py-2 bg-card-bg border border-gray-600 rounded-full text-sm text-light-slate">Cryogenic Engineering</span>
+                <span class="px-4 py-2 bg-card-bg border border-gray-600 rounded-full text-sm text-light-slate">Vacuum Systems (10<sup>-5</sup> torr)</span>
+                <span class="px-4 py-2 bg-card-bg border border-gray-600 rounded-full text-sm text-light-slate">Precision Soldering</span>
+                <span class="px-4 py-2 bg-card-bg border border-gray-600 rounded-full text-sm text-light-slate">PCB Layout & Fabrication</span>
+                <span class="px-4 py-2 bg-card-bg border border-gray-600 rounded-full text-sm text-light-slate">Lab Automation (SCPI/VISA)</span>
+                <span class="px-4 py-2 bg-card-bg border border-gray-600 rounded-full text-sm text-light-slate">Signal Conditioning</span>
+                <span class="px-4 py-2 bg-card-bg border border-gray-600 rounded-full text-sm text-light-slate">Thermal Management</span>
+                <span class="px-4 py-2 bg-card-bg border border-gray-600 rounded-full text-sm text-light-slate">Keithley/Lakeshore Instrumentation</span>
+            </div>
+        </section>
+
+        <section class="py-12 mt-8 bg-gradient-to-r from-card-bg to-dark-bg border border-gray-700 rounded-2xl text-center">
+            <h2 class="text-2xl font-bold mb-4">Looking for Instrumentation Expertise?</h2>
+            <p class="text-slate max-w-2xl mx-auto mb-8">
+                I am actively seeking postdoctoral opportunities where I can leverage my skills in hardware development and automated measurement systems to advance experimental research.
+            </p>
+            <div class="flex justify-center gap-4">
+                <a href="../index.html#contact" class="cta-button bg-accent-orange text-dark-bg font-bold py-3 px-8 rounded-lg hover:bg-white transition-colors">
+                    Get in Touch
+                </a>
+                <a href="cv.html" class="cta-button border border-gray-600 text-white font-semibold py-3 px-8 rounded-lg hover:border-accent-orange hover:text-accent-orange transition-colors">
+                    View CV
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="border-t border-gray-800 bg-dark-bg py-8 mt-12">
+        <div class="container mx-auto px-6 text-center text-slate">
+            <div class="flex justify-center items-center gap-6 mb-6">
+                <a href="mailto:prathameshnium@duck.com" class="social-icon hover:text-accent-orange"><i class="fas fa-envelope"></i></a>
+                <a href="https://github.com/prathameshnium" target="_blank" class="social-icon hover:text-accent-orange"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/prathamesh-k-deshmukh" target="_blank" class="social-icon hover:text-accent-orange"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <p class="text-sm text-gray-500">&copy; 2025 Prathamesh Keshao Deshmukh. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../_assets/js/main.js"></script>
+</body>
+</html>
