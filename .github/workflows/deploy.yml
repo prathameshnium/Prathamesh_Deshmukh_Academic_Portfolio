@@ -3,15 +3,24 @@ name: Build and Deploy to GitHub Pages
 on:
   push:
     branches: [ "main" ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+env:
+  # Opts into the latest Node 24 runtime for Actions to eliminate deprecation warnings
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      pages: write
-      id-token: write
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -19,18 +28,21 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '22'
           cache: 'npm'
 
       - name: Install dependencies
-        run: npm install
+        # npm ci is faster and stricter for CI environments
+        run: npm ci
 
       - name: Build the site
+        # This generates ./_assets/style.css as seen in your logs
         run: npm run build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
+          # Fixed: Using '.' because your index.html and _assets are in the root
           path: '.'
 
       - name: Deploy to GitHub Pages
