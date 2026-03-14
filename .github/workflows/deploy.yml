@@ -3,15 +3,24 @@ name: Build and Deploy to GitHub Pages
 on:
   push:
     branches: [ "main" ]
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      pages: write
-      id-token: write
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -19,11 +28,12 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '22' # Updated to Node 22 (LTS)
           cache: 'npm'
 
       - name: Install dependencies
-        run: npm install
+        # 'npm ci' is faster and more reliable for CI environments than 'npm install'
+        run: npm ci
 
       - name: Build the site
         run: npm run build
@@ -31,7 +41,9 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: '.'
+          # Efficiency Tip: Only upload the production build folder (e.g., ./dist, ./build, or ./out)
+          # uploading '.' includes node_modules and source code, making it slow and heavy.
+          path: './dist' 
 
       - name: Deploy to GitHub Pages
         id: deployment
