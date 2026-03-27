@@ -13,7 +13,7 @@
     <meta name="citation_title" content="PICA: Advanced High-Precision Transport Measurement Automation with Python">
     <meta name="citation_author" content="Deshmukh, Prathamesh">
     <meta name="citation_author" content="Mukherjee, Sudip">
-    <meta name="citation_date" content="2025/12/22">
+    <meta name="citation_date" content="2026/01/26">
     <meta name="citation_doi" content="10.5281/zenodo.18377217">
     <meta name="citation_technical_report_institution" content="UGC-DAE Consortium for Scientific Research, Mumbai Centre">
     <meta name="citation_pdf_url" content="https://prathameshnium.github.io/PICA-Python-Instrument-Control-and-Automation/publications/pica-paper.pdf">
@@ -190,6 +190,11 @@
   <img src="https://img.shields.io/github/languages/code-size/prathameshnium/PICA-Python-Instrument-Control-and-Automation?style=flat-square&color=blue" alt="Code Size">
   <img src="https://img.shields.io/github/last-commit/prathameshnium/PICA-Python-Instrument-Control-and-Automation?style=flat-square&color=critical" alt="Last Commit">
 </div>
+
+                    <div class="mb-8">
+                        <p class="text-light-slate"><strong>Demonstration:</strong> A screencast of the High Resistance IV module is <a href="https://drive.google.com/file/d/13W-Z4N-08t9m0xxuR30sjTLmUVG1VyQd/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="text-accent-orange hover:underline font-bold">available here <i class="fas fa-external-link-alt text-xs"></i></a>.</p>
+                    </div>
+
                     <div class="flex flex-wrap justify-center gap-4">
                         <a href="https://github.com/prathameshnium/PICA-Python-Instrument-Control-and-Automation" target="_blank" rel="noopener noreferrer" class="cta-button bg-accent-orange border-2 border-accent-orange text-dark-bg font-semibold py-2 px-6 rounded-lg">
                             <i class="fab fa-github mr-2" aria-hidden="true"></i> GitHub
@@ -225,6 +230,35 @@
             </div>
         </section>
 
+        <section id="design-implementation" class="py-10 max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold section-title mb-8 text-center">Design & Implementation</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="card p-6 rounded-lg">
+                    <h3 class="text-lg font-bold text-white mb-3"><i class="fas fa-microchip text-accent-orange mr-2"></i>Hardware Abstraction</h3>
+                    <p class="text-xs text-light-slate leading-relaxed">
+                        Utilizes <strong>PyVISA</strong> to abstract low-level communication (GPIB, USB, Ethernet). Implements strict initialization routines: connection verification via <code>*IDN?</code>, full instrument resets, and graceful shutdowns.
+                    </p>
+                </div>
+                <div class="card p-6 rounded-lg">
+                    <h3 class="text-lg font-bold text-white mb-3"><i class="fas fa-sync text-accent-orange mr-2"></i>Process Isolation</h3>
+                    <p class="text-xs text-light-slate leading-relaxed">
+                        Decouples the UI from instrumentation logic using Python's <code>multiprocessing</code>. This prevents UI freezes during long acquisitions and ensures hardware timeouts don't crash the main dashboard.
+                    </p>
+                </div>
+                <div class="card p-6 rounded-lg">
+                    <h3 class="text-lg font-bold text-white mb-3"><i class="fas fa-database text-accent-orange mr-2"></i>Data Integrity</h3>
+                    <p class="text-xs text-light-slate leading-relaxed">
+                        A <strong>"write on acquisition"</strong> strategy ensures data is saved to CSV via <code>pandas</code> immediately after every point, preventing loss during power failures or system hangs.
+                    </p>
+                </div>
+            </div>
+            <div class="mt-6 text-center">
+                <p class="text-sm text-slate italic">
+                    PICA includes a testing suite using <code>pytest</code> and <code>unittest.mock</code> to simulate VISA resources, allowing logic verification without physical hardware.
+                </p>
+            </div>
+        </section>
+
         <section id="latte-theme" class="py-16 bg-card-bg/30 border-y border-gray-800">
             <div class="max-w-4xl mx-auto text-center">
                 <h2 class="text-3xl font-bold section-title mb-6">🎨 What's New in v1.0.3: Latte Theme</h2>
@@ -245,6 +279,43 @@
                         <p class="text-sm text-slate">Optimized real-time plot backgrounds for scientific reporting.</p>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <section id="hardware-support" class="py-16 max-w-5xl mx-auto">
+            <h2 class="text-3xl font-bold section-title mb-8 text-center">Supported Hardware & Ranges</h2>
+            <div class="overflow-x-auto card rounded-lg">
+                <table class="w-full text-left text-sm">
+                    <thead class="bg-dark-bg text-accent-orange uppercase text-xs">
+                        <tr>
+                            <th class="px-6 py-4">Module</th>
+                            <th class="px-6 py-4">Instruments</th>
+                            <th class="px-6 py-4">Range</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-800 text-light-slate">
+                        <tr>
+                            <td class="px-6 py-4 font-semibold text-white">Ultra Low Resistance</td>
+                            <td class="px-6 py-4">K6221 + K2182 + LS350/340</td>
+                            <td class="px-6 py-4">10 nΩ - 100 MΩ</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 font-semibold text-white">Standard Transport</td>
+                            <td class="px-6 py-4">K2400 + LS350/340</td>
+                            <td class="px-6 py-4">100 µΩ - 200 MΩ</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 font-semibold text-white">High-Resistance</td>
+                            <td class="px-6 py-4">K6517B + LS350/340</td>
+                            <td class="px-6 py-4">1 Ω - 10 PΩ</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 font-semibold text-white">Capacitance / LCR</td>
+                            <td class="px-6 py-4">Keysight E4980A + LS350/340</td>
+                            <td class="px-6 py-4">20 Hz - 2 MHz</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </section>
 
