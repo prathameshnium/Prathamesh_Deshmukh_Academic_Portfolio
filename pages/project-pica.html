@@ -3,11 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="gqXby3bCBpTg3cCRqXcM8gw0MCjKbasMPXbApaRxZME" />
     
     <!-- SEO: Primary Meta Tags -->
-    <title>PICA: Python Instrument Control & Automation for Physics Research</title>
-    <meta name="description" content="Discover PICA, a Python-based software suite for instrument control and automation in materials science and physics research. Automate experiments, streamline data acquisition, and accelerate your work.">
-    <meta name="keywords" content="PICA, Python, Instrument Control, Automation, PyVISA, Materials Science, Physics Research, Laboratory Automation, Keithley, Lakeshore, Prathamesh Deshmukh">
+    <title>PICA: Advanced High-Precision Transport Measurement Automation with Python</title>
+    <meta name="description" content="PICA (Python-based Instrument Control and Automation) is a modular open-source software suite designed to automate advanced transport measurements covering 24 orders of magnitude (10^-8 to 10^16 Ω).">
+    <meta name="keywords" content="PICA, Python, Instrument Control, Automation, PyVISA, Materials Science, Physics Research, Laboratory Automation, Keithley, Lakeshore, Keysight, PPMS, Prathamesh Deshmukh">
+
+    <meta name="citation_title" content="PICA: Advanced High-Precision Transport Measurement Automation with Python">
+    <meta name="citation_author" content="Deshmukh, Prathamesh">
+    <meta name="citation_author" content="Mukherjee, Sudip">
+    <meta name="citation_date" content="2025/12/22">
+    <meta name="citation_doi" content="10.5281/zenodo.18377216">
+    <meta name="citation_technical_report_institution" content="UGC-DAE Consortium for Scientific Research, Mumbai Centre">
+    <meta name="citation_pdf_url" content="https://prathameshnium.github.io/PICA-Python-Instrument-Control-and-Automation/publications/pica-paper.pdf">
+    <meta name="citation_keywords" content="Python, Hardware Control, Automation, PyVISA, Condensed Matter Physics, Cryogenics, SCPI, Instrumentation">
+    <meta name="citation_abstract" content="PICA (Python-based Instrument Control and Automation) is a modular open-source software suite designed to automate advanced transport measurements. It supports resistance measurements covering 24 orders of magnitude (10^-8 to 10^16 Ω) and integrates with Keithley, Keysight, and Lakeshore hardware using a multiprocessing architecture.">
     <meta name="author" content="Prathamesh Deshmukh">
 
     <!-- SEO: Open Graph / Facebook -->
@@ -133,13 +144,22 @@
                 <div class="card p-8 md:p-12 rounded-lg">
                     <img src="https://raw.githubusercontent.com/prathameshnium/static-files/main/projects/pica/logo/pica-logo-nbg.png" 
                          onerror="this.onerror=null;this.src='https://placehold.co/128x128/1f2937/f59e0b?text=PICA'" 
-                         alt="PICA Logo for Python Instrument Control and Automation Project" width="128" height="128"
+                         alt="PICA Logo" width="128" height="128"
                          class="w-32 h-32 mx-auto mb-6">
                     <h1 class="text-4xl md:text-5xl font-bold section-title mb-4">PICA: Python-based Instrument Control and Automation</h1>
                     <p class="text-lg text-slate max-w-2xl mx-auto mb-8">
-                        PICA (Python-based Instrument Control and Automation) is a modular, open-source software suite designed to automate advanced transport measurements for electronic devices and chemical samples. It serves as a robust software platform that enables advanced, state‑of‑the‑art, high‑precision characterisation of materials.
+                        PICA is a modular open-source software suite designed to automate advanced transport measurements. It supports resistance measurements covering <strong>24 orders of magnitude (10<sup>-8</sup> to 10<sup>16</sup> Ω)</strong> and integrates with Keithley, Keysight, Lakeshore, and Quantum Design (PPMS) hardware using a multiprocessing, fault-tolerant architecture.
                     </p>
-                                        <div class="flex flex-wrap justify-center items-center gap-2">
+
+                    <div class="bg-dark-bg/50 border border-gray-700 rounded-lg p-4 mb-8 text-sm text-left inline-block mx-auto">
+                        <p class="text-light-slate mb-2"><strong>Preprint Status:</strong> Published on December 22, 2025.</p>
+                        <div class="flex flex-wrap gap-3">
+                            <a href="https://doi.org/10.5281/zenodo.18377216" target="_blank" rel="noopener noreferrer" class="bg-accent-orange text-dark-bg px-2 py-1 rounded font-bold hover:bg-white transition-colors">DOI (Zenodo): 10.5281/zenodo.18377216</a>
+                            <a href="https://doi.org/10.17605/OSF.IO/7QK2S" target="_blank" rel="noopener noreferrer" class="bg-blue-500 text-white px-2 py-1 rounded font-bold hover:bg-blue-400 transition-colors">DOI (OSF): 10.17605/OSF.IO/7QK2S</a>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-wrap justify-center items-center gap-2 mb-8">
   <a href="https://github.com/prathameshnium/PICA-Python-Instrument-Control-and-Automation/actions/workflows/test.yml"><img src="https://github.com/prathameshnium/PICA-Python-Instrument-Control-and-Automation/actions/workflows/test.yml/badge.svg" alt="Automated Testing"></a>
   <a href="https://github.com/prathameshnium/PICA-Python-Instrument-Control-and-Automation/actions/workflows/lint.yml"><img src="https://github.com/prathameshnium/PICA-Python-Instrument-Control-and-Automation/actions/workflows/lint.yml/badge.svg" alt="Lint and Style Checks"></a>
   <a href="https://github.com/prathameshnium/PICA-Python-Instrument-Control-and-Automation/actions/workflows/codeql.yml"><img src="https://github.com/prathameshnium/PICA-Python-Instrument-Control-and-Automation/actions/workflows/codeql.yml/badge.svg" alt="CodeQL Analysis"></a>
@@ -161,9 +181,15 @@
   <img src="https://img.shields.io/github/languages/code-size/prathameshnium/PICA-Python-Instrument-Control-and-Automation?style=flat-square&color=blue" alt="Code Size">
   <img src="https://img.shields.io/github/last-commit/prathameshnium/PICA-Python-Instrument-Control-and-Automation?style=flat-square&color=critical" alt="Last Commit">
 </div>
-                    <a href="https://github.com/prathameshnium/PICA-Python-Instrument-Control-and-Automation" target="_blank" rel="noopener noreferrer" class="cta-button inline-block bg-accent-orange border-2 border-accent-orange text-dark-bg font-semibold py-3 px-8 rounded-lg text-lg">
-                        <i class="fab fa-github mr-2" aria-hidden="true"></i> View on GitHub
-                    </a>
+                    <div class="flex flex-wrap justify-center gap-4">
+                        <a href="https://github.com/prathameshnium/PICA-Python-Instrument-Control-and-Automation" target="_blank" rel="noopener noreferrer" class="cta-button bg-accent-orange border-2 border-accent-orange text-dark-bg font-semibold py-2 px-6 rounded-lg">
+                            <i class="fab fa-github mr-2" aria-hidden="true"></i> GitHub
+                        </a>
+                        <a href="https://prathameshnium.github.io/PICA-Python-Instrument-Control-and-Automation/publications/pica-paper.pdf" target="_blank" rel="noopener noreferrer" class="cta-button border-2 border-gray-500 text-white hover:border-accent-orange hover:text-accent-orange py-2 px-6 rounded-lg transition-colors">
+                            <i class="fas fa-file-pdf mr-2"></i> PDF Preprint
+                        </a>
+                        <a href="https://www.academia.edu/165176821/PICA_Advanced_High_Precision_Transport_Measurement_Automation_with_Python" target="_blank" rel="noopener noreferrer" class="cta-button border-2 border-gray-500 text-white hover:border-accent-orange hover:text-accent-orange py-2 px-6 rounded-lg transition-colors">Academia.edu</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -487,16 +513,17 @@ pip install .</code></pre>
                                     <div class="card p-8 rounded-lg text-left">
                                         <p class="text-light-slate mb-4">If you use this software in your research, please cite it:</p>
                                         <p class="text-light-slate mb-4"><strong>Scientific Manuscript:</strong> The associated research paper pre-print is available on <a href="https://doi.org/10.17605/OSF.IO/7QK2S" target="_blank" rel="noopener noreferrer" class="text-accent-orange hover:underline">OSF Project</a>, <a href="https://www.academia.edu/165176821/PICA_Advanced_High_Precision_Transport_Measurement_Automation_with_Python" target="_blank" rel="noopener noreferrer" class="text-accent-orange hover:underline">Academia.edu</a>, or via our <a href="https://prathameshnium.github.io/PICA-Python-Instrument-Control-and-Automation/publications/pica-paper.pdf" target="_blank" rel="noopener noreferrer" class="text-accent-orange hover:underline">GitHub repository (PDF)</a>.</p>
-                                        <p class="text-light-slate mb-4">For more information, visit the <a href="https://prathameshnium.github.io/PICA-Python-Instrument-Control-and-Automation/publications/" class="text-accent-orange hover:underline">Publications Directory</a>.</p>
+                                        <p class="text-light-slate mb-4">For more information, visit the <a href="https://doi.org/10.5281/zenodo.18377216" class="text-accent-orange hover:underline">Zenodo Archive</a>.</p>
                                         <div class="bg-dark-bg p-4 rounded-lg mb-6">
-                                            <pre class="text-sm text-light-slate overflow-x-auto"><code>@software{Deshmukh_PICA_2025,
-                  author       = {Deshmukh, Prathamesh Keshao and Mukherjee, Sudip},
-                  title        = {{PICA: Advanced Python Suite for High Precision Instrumentation and Transport Measurement Automation}},
-                  month        = dec,
-                  year         = 2025,
-                  publisher    = {GitHub},
-                  version      = {1.0.0},
-                  url          = {[https://github.com/prathameshnium/PICA-Python-Instrument-Control-and-Automation](https://github.com/prathameshnium/PICA-Python-Instrument-Control-and-Automation)}
+                                            <pre class="text-sm text-light-slate overflow-x-auto"><code>@techreport{deshmukh2025pica,
+                  title={PICA: Advanced High-Precision Transport Measurement Automation with Python},
+                  author={Deshmukh, Prathamesh and Mukherjee, Sudip},
+                  institution={UGC-DAE Consortium for Scientific Research, Mumbai Centre},
+                  year={2025},
+                  month={December},
+                  type={Preprint},
+                  doi={10.5281/zenodo.18377216},
+                  url={https://github.com/prathameshnium/PICA-Python-Instrument-Control-and-Automation}
                 }
                 </code></pre>
                                         </div>
