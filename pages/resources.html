@@ -24,5 +24,42 @@
     <link rel="stylesheet" href="../_assets/fonts.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="../_assets/style.css">
+</head>
+<body class="antialiased font-sans bg-dark-bg text-gray-200">
+    <div id="preloader"><div class="loader"></div></div>
+    <header class="bg-dark-bg/80 backdrop-blur-sm sticky top-0 z-50 border-b border-gray-700">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="../index.html" class="text-2xl font-bold text-white font-serif">Prathamesh Deshmukh</a>
+            <nav class="hidden md:flex items-center space-x-6">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="research.html" class="nav-link">Research</a>
+                <a href="computational-works.html" class="nav-link">Computational</a>
+                <a href="../index.html#contact" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <main class="container mx-auto px-6 py-20">
+        <div class="text-center mb-16">
+            <h1 class="text-5xl font-bold section-title mb-4">Research Resources</h1>
+            <p class="text-lg text-slate">Curated tools for Physics and Programming.</p>
+        </div>
+        <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <div class="card p-8 rounded-lg">
+                <h3 class="text-2xl font-bold text-accent-orange mb-4"><i class="fas fa-microscope mr-2"></i> Physics Databases</h3>
+                <ul class="space-y-3 text-light-slate">
+                    <li><a href="https://materialsproject.org/" class="hover:text-accent-orange">Materials Project</a></li>
+                    <li><a href="https://crystallography.net/cod/" class="hover:text-accent-orange">Crystallography Open Database</a></li>
+                </ul>
+            </div>
+            <div class="card p-8 rounded-lg">
+                <h3 class="text-2xl font-bold text-accent-orange mb-4"><i class="fas fa-code mr-2"></i> Programming Tools</h3>
+                <ul class="space-y-3 text-light-slate">
+                    <li><a href="https://pyvisa.readthedocs.io/" class="hover:text-accent-orange">PyVISA Documentation</a></li>
+                    <li><a href="https://numpy.org/doc/" class="hover:text-accent-orange">NumPy Reference</a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <script src="../_assets/js/main.js" defer></script>
 </body>
 </html>

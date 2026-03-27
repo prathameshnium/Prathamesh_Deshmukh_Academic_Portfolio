@@ -8,14 +8,14 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
-        serif: ['Junicode', 'serif'],
+        serif: ['Source Serif Pro', 'Junicode', 'serif'],
       },
       colors: {
-        'dark-bg': '#111827', // A deeper, more neutral charcoal gray
-        'card-bg': '#1f2937', // Adjusted for better contrast with the new background
-        'accent-orange': '#f59e0b', // A rich gold/orange, less yellow
+        'dark-bg': '#0f172a', 
+        'card-bg': '#1e293b', 
+        'accent-orange': '#f59e0b', 
         'light-slate': '#a8b2d1',
-        'slate': '#8892b0',
+        'slate': '#94a3b8',
         'white': '#e2e8f0',
         'true-white': '#ffffff',
       },

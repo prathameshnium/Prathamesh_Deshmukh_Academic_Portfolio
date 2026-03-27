@@ -110,9 +110,12 @@ window.addEventListener('click', () => {
 document.addEventListener('DOMContentLoaded', () => {
     // Use event delegation for mobile accordions
     document.body.addEventListener('click', (event) => {
-        const button = event.target.closest('#mobile-portfolio-button, #mobile-comp-works-button, #mobile-additional-button, #portfolio-button-mobile');
+        const button = event.target.closest('#mobile-portfolio-button, #mobile-comp-works-button, #mobile-additional-button, #portfolio-button-mobile, #all-pages-button-mobile');
         if (button) {
-            const menu = document.getElementById(button.getAttribute('aria-controls'));
+            const targetId = button.getAttribute('aria-controls');
+            const menu = document.getElementById(targetId);
+            if (!menu) return;
+            
             const icon = button.querySelector('i');
             const isExpanded = menu.classList.toggle('hidden');
             button.setAttribute('aria-expanded', !isExpanded);
