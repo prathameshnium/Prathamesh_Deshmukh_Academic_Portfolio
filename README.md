@@ -74,7 +74,7 @@ A selection of developed tools for laboratory automation and physics simulations
 
 | Project | Status / Description | Stack |
 | :--- | :--- | :--- |
-| [**PICA Automation Suite**](https://github.com/prathameshnium/PICA-Python-Instrument-Control-and-Automation) | **Open Source (v1.0.1)** <br> *Submitted to Journal of Open Source Software (2025).* <br> A modular PyVISA framework for high-precision transport measurements (IV, RT, C-f). | `Python` `PyVISA` `Multiprocessing` |
+| **PICA Automation Suite** | **Open Source (v1.0.3)** <br> *Published in Journal of Open Source Software (2025).* <br> A modular PyVISA framework for high-precision transport measurements (IV, RT, C-f). | `Python` `PyVISA` `Multiprocessing` |
 | [**Physics Simulation Toolkit**](https://github.com/prathameshnium/Physics-Simulation-Toolkit) | **Active** <br> Simulation scripts for condensed matter phenomena, including Ising model magnetic ordering and dielectric relaxation models. | `NumPy` `SciPy` `Jupyter` |
 | [**Solid State Calculators**](https://github.com/prathameshnium/Solid-State-Physics-Calculators) | **Utility** <br> Analysis tools for extracting experimental parameters: Activation Energy (Arrhenius), Mott-VRH hopping transport, and Curie-Weiss fits. | `Pandas` `Matplotlib` |
 | [**Python for OriginPro**](https://github.com/prathameshnium/Python-for-OriginPro) | **Automation** <br> Scripts leveraging the `originpro` library to automate plotting pipelines and report generation within OriginLab. | `Python` `OriginLab` |
