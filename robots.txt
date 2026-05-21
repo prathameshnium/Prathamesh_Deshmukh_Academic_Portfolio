@@ -1,78 +1,258 @@
-# The following lines list known AI, data-scraping, and plagiarism-checking crawlers.
-# They are disallowed to prevent content from being used for AI training and to avoid
-# incorrect plagiarism flags on original academic and written work.
-User-agent: AnthropicAI
+# =====================================================================
+# robots.txt
+# Policy:
+#   1. ALLOW reputable AI assistants, AI-search crawlers, and traditional
+#      search engines, so this site is discoverable in ChatGPT, Claude,
+#      Perplexity, Gemini, Copilot, Google, Bing, etc.
+#   2. DISALLOW plagiarism / similarity-detection crawlers, so original
+#      academic and written work is not ingested into similarity
+#      databases that could later flag the author's own content as
+#      "matched" against itself.
+#   3. DISALLOW build/asset paths from all crawlers.
+#
+# Last reviewed: 2026-05-21
+# =====================================================================
+
+
+# ---------------------------------------------------------------------
+# 1. PLAGIARISM / SIMILARITY-DETECTION CRAWLERS  --> BLOCKED
+# ---------------------------------------------------------------------
+# Rationale: prevent indexing of this site into plagiarism-checker
+# corpora, which can later produce false-positive "self-match" flags
+# on the author's own original academic writing.
+# ---------------------------------------------------------------------
+
+# Turnitin / iThenticate (both UA tokens documented by Turnitin)
 User-agent: TurnitinBot
-User-agent: UnicheckBot
-User-agent: PlagScan
-User-agent: PlagTracker
-User-agent: QueText
-User-agent: Plagiarisma
-User-agent: Copyscape
-User-agent: Scribbr-bot
-User-agent: DrillBitBot
-User-agent: OpenAI
-User-agent: Sogou
-User-agent: AhrefsBot
-User-agent: SemrushBot
-User-agent: ia_archiver
-User-agent: AI2Bot
-User-agent: Ai2Bot-Dolma
-User-agent: Amazonbot
-User-agent: anthropic-ai
-User-agent: Applebot
-User-agent: Applebot-Extended
-User-agent: Bytespider
-User-agent: CCBot
-User-agent: ChatGPT-User
-User-agent: Claude-Web
-User-agent: ClaudeBot
-User-agent: cohere-ai
-User-agent: cohere-training-data-crawler
-User-agent: Crawlspace
-User-agent: Diffbot
-User-agent: DuckAssistBot
-User-agent: FacebookBot
-User-agent: FriendlyCrawler
-User-agent: Google-Extended
-User-agent: GoogleOther
-User-agent: GoogleOther-Image
-User-agent: GoogleOther-Video
-User-agent: GPTBot
-User-agent: iaskspider/2.0
-User-agent: ICC-Crawler
-User-agent: ImagesiftBot
-User-agent: img2dataset
-User-agent: ISSCyberRiskCrawler
-User-agent: Kangaroo Bot
-User-agent: Meta-ExternalAgent
-User-agent: Meta-ExternalFetcher
-User-agent: OAI-SearchBot
-User-agent: omgili
-User-agent: omgilibot
-User-agent: PanguBot
-User-agent: PerplexityBot
-User-agent: Perplexity-User-Agent
-User-agent: PetalBot
-User-agent: Scrapy
-User-agent: SemrushBot-OCOB
-User-agent: SemrushBot-SWA
-User-agent: Sidetrade indexer bot
-User-agent: Timpibot
-User-agent: Seekr
-User-agent: VelenPublicWebCrawler
-User-agent: Webzio-Extended
-User-agent: YouBot
-User-agent: yandex
 Disallow: /
 
-# The following lines explicitly allow all other user agents to crawl the entire site.
-# This is the default behavior, but it's good practice to be explicit.
-# The _assets directory is disallowed to prevent indexing of style, script, and image files.
-# The Setup directory is also disallowed as it contains build-related files.
-User-agent: *
-# Disallow crawling of the assets directory
-Disallow: /assets/
+User-agent: Turnitin
+Disallow: /
 
-# Disallow crawling of the setup/build directory
+User-agent: iThenticate
+Disallow: /
+
+# Unicheck
+User-agent: UnicheckBot
+Disallow: /
+
+User-agent: Unicheck
+Disallow: /
+
+# PlagScan
+User-agent: PlagScan
+Disallow: /
+
+# PlagTracker
+User-agent: PlagTracker
+Disallow: /
+
+# Quetext
+User-agent: QueText
+Disallow: /
+
+User-agent: Quetext
+Disallow: /
+
+# Plagiarisma
+User-agent: Plagiarisma
+Disallow: /
+
+# Copyscape
+User-agent: Copyscape
+Disallow: /
+
+User-agent: Copyscape-Bot
+Disallow: /
+
+# Scribbr
+User-agent: Scribbr-bot
+Disallow: /
+
+# DrillBit
+User-agent: DrillBitBot
+Disallow: /
+
+# Other commonly-listed similarity / paper-checking crawlers
+User-agent: DupliChecker
+Disallow: /
+
+User-agent: PaperRater
+Disallow: /
+
+User-agent: Viper
+Disallow: /
+
+User-agent: SmallSEOTools
+Disallow: /
+
+User-agent: Grammarly
+Disallow: /
+
+
+# ---------------------------------------------------------------------
+# 2. AI ASSISTANTS, AI SEARCH, AND TRAINING CRAWLERS  --> ALLOWED
+# ---------------------------------------------------------------------
+# Rationale: maximise discoverability of the author's work inside
+# AI-mediated search and answer products (ChatGPT, Claude, Perplexity,
+# Gemini, Copilot, Apple Intelligence, Meta AI, etc.).
+#
+# These are listed explicitly (rather than relying on the default
+# User-agent: * Allow: /) so the policy is unambiguous to each bot.
+# ---------------------------------------------------------------------
+
+# OpenAI
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+# Anthropic (current + legacy tokens)
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# Google (Search + Gemini training policy token)
+User-agent: Googlebot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
+
+User-agent: GoogleOther-Image
+Allow: /
+
+User-agent: GoogleOther-Video
+Allow: /
+
+User-agent: Google-Agent
+Allow: /
+
+# Microsoft (Bing + Copilot)
+User-agent: Bingbot
+Allow: /
+
+User-agent: msnbot
+Allow: /
+
+# Apple
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Amazon
+User-agent: Amazonbot
+Allow: /
+
+# Meta
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: Meta-ExternalFetcher
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+User-agent: meta-webindexer
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+# Mistral
+User-agent: MistralAI-User
+Allow: /
+
+# Cohere
+User-agent: cohere-ai
+Allow: /
+
+User-agent: cohere-training-data-crawler
+Allow: /
+
+# DuckDuckGo AI
+User-agent: DuckAssistBot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+# You.com / Phind
+User-agent: YouBot
+Allow: /
+
+User-agent: PhindBot
+Allow: /
+
+# Allen Institute for AI
+User-agent: AI2Bot
+Allow: /
+
+User-agent: Ai2Bot-Dolma
+Allow: /
+
+# Common Crawl (feeds many open AI training datasets)
+User-agent: CCBot
+Allow: /
+
+# Yandex (search visibility)
+User-agent: Yandex
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+# Baidu (search visibility)
+User-agent: Baiduspider
+Allow: /
+
+# Internet Archive (long-term scholarly preservation)
+User-agent: ia_archiver
+Allow: /
+
+User-agent: archive.org_bot
+Allow: /
+
+
+# ---------------------------------------------------------------------
+# 3. DEFAULT RULE (all other crawlers)
+# ---------------------------------------------------------------------
+# Allow general crawling, but keep build/asset directories private.
+# ---------------------------------------------------------------------
+User-agent: *
+Disallow: /assets/
+Disallow: /_assets/
 Disallow: /deployment/
+Disallow: /Setup/
+Allow: /
+
+# Sitemap (replace with your actual sitemap URL)
+Sitemap: https://example.com/sitemap.xml
