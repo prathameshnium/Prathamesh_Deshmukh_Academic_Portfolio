@@ -20,53 +20,65 @@
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
             <a href="${R}index.html" class="text-2xl font-bold text-white font-serif">Prathamesh Deshmukh</a>
             <nav class="hidden md:flex items-center space-x-6">
-                <a href="${H}#about" class="nav-link">About</a>
-                <a href="${H}#research" class="nav-link">Research</a>
-                <div class="relative">
-                    <button id="portfolio-button" class="nav-link flex items-center" aria-haspopup="true" aria-expanded="false" aria-controls="portfolio-menu">
-                        Portfolio <i class="fas fa-chevron-down text-xs ml-2" aria-hidden="true"></i>
+                <div id="home-container" class="relative nav-dropdown">
+                    <button id="home-button" class="nav-link flex items-center" aria-haspopup="true" aria-expanded="false" aria-controls="home-menu">
+                        Home <i class="fas fa-chevron-down text-xs ml-2" aria-hidden="true"></i>
                     </button>
-                    <div id="portfolio-menu" class="absolute hidden dropdown-menu border border-gray-700 rounded-md shadow-lg py-2 w-56 top-full right-0 mt-2 z-50">
-                        <div class="relative">
-                            <a href="#" class="w-full text-left px-4 py-2 text-sm text-white hover:bg-accent-orange flex justify-between items-center">
-                                Core Portfolio <i class="fas fa-chevron-right text-xs" aria-hidden="true"></i>
-                            </a>
-                            <div class="${submenuBox} -mt-2">
-                                <a href="${P}research.html" class="${dropdownLink}">Research &amp; Pubs</a>
-                                <a href="${P}hardware-development.html" class="${dropdownLink}">Hardware &amp; Inst.</a>
-                                <div class="relative">
-                                    <a href="${P}computational-works.html" class="w-full text-left px-4 py-2 text-sm text-white hover:bg-accent-orange flex justify-between items-center">
-                                        Computational Works <i class="fas fa-chevron-right text-xs" aria-hidden="true"></i>
-                                    </a>
-                                    <div class="${submenuBox} -mt-9">
-                                        <a href="${P}computational-works.html" class="${dropdownLink}">Overview</a>
-                                        <a href="${P}project-pica.html" class="${dropdownLink}">Project PICA</a>
-                                        <a href="${P}Project_Kusanagi-AI.html" class="${dropdownLink}">Kusanagi-AI</a>
-                                        <a href="${P}Project_TupperTransformer.html" class="${dropdownLink}">TupperTransformer</a>
-                                    </div>
-                                </div>
-                                <a href="${P}presentations.html" class="${dropdownLink}">Presentations</a>
-                                <a href="${P}cv.html" class="${dropdownLink}">CV</a>
-                            </div>
-                        </div>
-                        <div class="border-t border-gray-600 my-1"></div>
-                        <div class="relative">
-                            <a href="#" class="w-full text-left px-4 py-2 text-sm text-white hover:bg-accent-orange flex justify-between items-center">
-                                Additional Content <i class="fas fa-chevron-right text-xs" aria-hidden="true"></i>
-                            </a>
-                            <div class="${submenuBox} -mt-2">
-                                <a href="${P}blog.html" class="${dropdownLink}">Blog</a>
-                                <a href="${P}gallery.html" class="${dropdownLink}">Gallery</a>
-                                <a href="${P}resources.html" class="${dropdownLink}">Resources</a>
-                                <a href="${P}Sudip_Mukherjee_Materials_Physics_Lab.html" class="${dropdownLink}">Materials Physics Lab</a>
-                                <a href="${P}sitemap.html" class="${dropdownLink}">Sitemap</a>
-                            </div>
-                        </div>
+                    <div id="home-menu" class="absolute hidden dropdown-menu border border-gray-700 rounded-md shadow-lg py-2 w-56 top-full left-0 mt-2 z-50">
+                        <a href="${R}index.html" class="${dropdownLink}">Landing Page</a>
+                        <a href="${H}#about" class="${dropdownLink}">Overview</a>
+                        <a href="${H}#publications" class="${dropdownLink}">Publications</a>
+                        <a href="${H}#education" class="${dropdownLink}">Education</a>
+                        <a href="${H}#conferences" class="${dropdownLink}">Conferences</a>
                     </div>
                 </div>
-                <a href="${H}#skills" class="nav-link">Skills</a>
-                <a href="${P}cv.html" class="nav-link">CV</a>
-                <a href="${H}#contact" class="nav-link">Contact</a>
+                <div id="about-container" class="relative nav-dropdown">
+                    <button id="about-button" class="nav-link flex items-center" aria-haspopup="true" aria-expanded="false" aria-controls="about-menu">
+                        About <i class="fas fa-chevron-down text-xs ml-2" aria-hidden="true"></i>
+                    </button>
+                    <div id="about-menu" class="absolute hidden dropdown-menu border border-gray-700 rounded-md shadow-lg py-2 w-56 top-full left-0 mt-2 z-50">
+                        <a href="${H}#about" class="${dropdownLink}">Biography</a>
+                        <a href="${P}cv.html" class="${dropdownLink}">CV / R&eacute;sum&eacute;</a>
+                        <a href="${P}presentations.html" class="${dropdownLink}">Presentations</a>
+                        <a href="${P}blog.html" class="${dropdownLink}">Blog</a>
+                        <a href="${P}gallery.html" class="${dropdownLink}">Gallery</a>
+                        <a href="${P}Sudip_Mukherjee_Materials_Physics_Lab.html" class="${dropdownLink}">Materials Physics Lab</a>
+                    </div>
+                </div>
+                <div id="skills-container" class="relative nav-dropdown">
+                    <button id="skills-button" class="nav-link flex items-center" aria-haspopup="true" aria-expanded="false" aria-controls="skills-menu">
+                        Skills <i class="fas fa-chevron-down text-xs ml-2" aria-hidden="true"></i>
+                    </button>
+                    <div id="skills-menu" class="absolute hidden dropdown-menu border border-gray-700 rounded-md shadow-lg py-2 w-56 top-full left-0 mt-2 z-50">
+                        <a href="${H}#skills" class="${dropdownLink}">Skills Overview</a>
+                        <a href="${P}research.html" class="${dropdownLink}">Research &amp; Publications</a>
+                        <a href="${P}hardware-development.html" class="${dropdownLink}">Hardware &amp; Instrumentation</a>
+                        <div class="relative">
+                            <a href="${P}computational-works.html" class="w-full text-left px-4 py-2 text-sm text-white hover:bg-accent-orange flex justify-between items-center">
+                                Computational Works <i class="fas fa-chevron-right text-xs" aria-hidden="true"></i>
+                            </a>
+                            <div class="${submenuBox} -mt-9">
+                                <a href="${P}computational-works.html" class="${dropdownLink}">Overview</a>
+                                <a href="${P}project-pica.html" class="${dropdownLink}">Project PICA</a>
+                                <a href="${P}Project_Kusanagi-AI.html" class="${dropdownLink}">Kusanagi-AI</a>
+                                <a href="${P}Project_TupperTransformer.html" class="${dropdownLink}">TupperTransformer</a>
+                            </div>
+                        </div>
+                        <a href="${P}resources.html" class="${dropdownLink}">Resources</a>
+                    </div>
+                </div>
+                <div id="contact-container" class="relative nav-dropdown">
+                    <button id="contact-button" class="nav-link flex items-center" aria-haspopup="true" aria-expanded="false" aria-controls="contact-menu">
+                        Contact <i class="fas fa-chevron-down text-xs ml-2" aria-hidden="true"></i>
+                    </button>
+                    <div id="contact-menu" class="absolute hidden dropdown-menu border border-gray-700 rounded-md shadow-lg py-2 w-56 top-full left-0 mt-2 z-50">
+                        <a href="${H}#contact" class="${profileLink}"><i class="fas fa-envelope w-6 mr-2" aria-hidden="true"></i> Email</a>
+                        <a href="https://www.linkedin.com/in/prathamesh-k-deshmukh" target="_blank" rel="noopener noreferrer" class="${profileLink}"><i class="fab fa-linkedin w-6 mr-2" aria-hidden="true"></i> LinkedIn</a>
+                        <a href="https://github.com/prathameshnium" target="_blank" rel="noopener noreferrer" class="${profileLink}"><i class="fab fa-github w-6 mr-2" aria-hidden="true"></i> GitHub</a>
+                        <a href="https://scholar.google.com/citations?user=DJgzI30AAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer" class="${profileLink}"><i class="fas fa-graduation-cap w-6 mr-2" aria-hidden="true"></i> Google Scholar</a>
+                        <a href="https://x.com/prathameshnium" target="_blank" rel="noopener noreferrer" class="${profileLink}"><i class="fab fa-x-twitter w-6 mr-2" aria-hidden="true"></i> X (Twitter)</a>
+                    </div>
+                </div>
                 <form action="${P}search.html" method="GET" class="relative ml-4 group">
                     <input type="search" name="q" placeholder="Search..." class="bg-card-bg border border-gray-700 rounded-lg w-32 py-1 px-3 text-sm text-light-slate focus:outline-none focus:border-accent-orange focus:w-64 transition-all duration-300">
                     <button type="submit" class="absolute right-3 top-1/2 -translate-y-1/2 text-slate group-focus-within:text-accent-orange transition-colors" aria-label="Submit search">
@@ -79,31 +91,62 @@
             </button>
         </div>
         <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
-            <a href="${R}index.html" class="block py-2 nav-link">Home</a>
-            <a href="${H}#about" class="block py-2 nav-link">About</a>
             <div class="my-2">
-                <button id="mobile-portfolio-button" class="w-full text-left py-2 px-4 rounded-lg bg-accent-orange/10 border border-accent-orange text-accent-orange font-semibold flex justify-between items-center" aria-haspopup="true" aria-expanded="false" aria-controls="mobile-portfolio-menu">
-                    <span>Portfolio</span>
+                <button class="mobile-accordion-button w-full text-left py-2 px-4 rounded-lg bg-accent-orange/10 border border-accent-orange text-accent-orange font-semibold flex justify-between items-center" aria-haspopup="true" aria-expanded="false" aria-controls="mobile-home-menu">
+                    <span>Home</span>
                     <i class="fas fa-chevron-down text-xs" aria-hidden="true"></i>
                 </button>
-                <div id="mobile-portfolio-menu" class="hidden pl-4 mt-2">
-                    <a href="${P}research.html" class="block py-2 nav-link">Research &amp; Pubs</a>
-                    <a href="${P}hardware-development.html" class="block py-2 nav-link">Hardware &amp; Inst.</a>
-                    <a href="${P}computational-works.html" class="block py-2 nav-link">Computational Works</a>
-                    <a href="${P}project-pica.html" class="block py-2 nav-link">Project PICA</a>
-                    <a href="${P}Project_Kusanagi-AI.html" class="block py-2 nav-link">Project Kusanagi-AI</a>
-                    <a href="${P}Project_TupperTransformer.html" class="block py-2 nav-link">TupperTransformer</a>
-                    <a href="${P}presentations.html" class="block py-2 nav-link">Presentations</a>
-                    <a href="${P}cv.html" class="block py-2 nav-link">CV</a>
-                    <a href="${P}blog.html" class="block py-2 nav-link">Blog</a>
-                    <a href="${P}gallery.html" class="block py-2 nav-link">Gallery</a>
-                    <a href="${P}resources.html" class="block py-2 nav-link">Resources</a>
-                    <a href="${P}Sudip_Mukherjee_Materials_Physics_Lab.html" class="block py-2 nav-link">Materials Physics Lab</a>
-                    <a href="${P}sitemap.html" class="block py-2 nav-link">Sitemap</a>
+                <div id="mobile-home-menu" class="hidden pl-4 mt-2">
+                    <a href="${R}index.html" class="block py-2 nav-link">Landing Page</a>
+                    <a href="${H}#about" class="block py-2 nav-link">Overview</a>
+                    <a href="${H}#publications" class="block py-2 nav-link">Publications</a>
+                    <a href="${H}#education" class="block py-2 nav-link">Education</a>
+                    <a href="${H}#conferences" class="block py-2 nav-link">Conferences</a>
                 </div>
             </div>
-            <a href="${H}#skills" class="block py-2 nav-link">Skills</a>
-            <a href="${H}#contact" class="block py-2 nav-link">Contact</a>
+            <div class="my-2">
+                <button class="mobile-accordion-button w-full text-left py-2 px-4 rounded-lg bg-accent-orange/10 border border-accent-orange text-accent-orange font-semibold flex justify-between items-center" aria-haspopup="true" aria-expanded="false" aria-controls="mobile-about-menu">
+                    <span>About</span>
+                    <i class="fas fa-chevron-down text-xs" aria-hidden="true"></i>
+                </button>
+                <div id="mobile-about-menu" class="hidden pl-4 mt-2">
+                    <a href="${H}#about" class="block py-2 nav-link">Biography</a>
+                    <a href="${P}cv.html" class="block py-2 nav-link">CV / R&eacute;sum&eacute;</a>
+                    <a href="${P}presentations.html" class="block py-2 nav-link">Presentations</a>
+                    <a href="${P}blog.html" class="block py-2 nav-link">Blog</a>
+                    <a href="${P}gallery.html" class="block py-2 nav-link">Gallery</a>
+                    <a href="${P}Sudip_Mukherjee_Materials_Physics_Lab.html" class="block py-2 nav-link">Materials Physics Lab</a>
+                </div>
+            </div>
+            <div class="my-2">
+                <button class="mobile-accordion-button w-full text-left py-2 px-4 rounded-lg bg-accent-orange/10 border border-accent-orange text-accent-orange font-semibold flex justify-between items-center" aria-haspopup="true" aria-expanded="false" aria-controls="mobile-skills-menu">
+                    <span>Skills</span>
+                    <i class="fas fa-chevron-down text-xs" aria-hidden="true"></i>
+                </button>
+                <div id="mobile-skills-menu" class="hidden pl-4 mt-2">
+                    <a href="${H}#skills" class="block py-2 nav-link">Skills Overview</a>
+                    <a href="${P}research.html" class="block py-2 nav-link">Research &amp; Publications</a>
+                    <a href="${P}hardware-development.html" class="block py-2 nav-link">Hardware &amp; Instrumentation</a>
+                    <a href="${P}computational-works.html" class="block py-2 nav-link">Computational Works</a>
+                    <a href="${P}project-pica.html" class="block py-2 nav-link pl-4">&mdash; Project PICA</a>
+                    <a href="${P}Project_Kusanagi-AI.html" class="block py-2 nav-link pl-4">&mdash; Kusanagi-AI</a>
+                    <a href="${P}Project_TupperTransformer.html" class="block py-2 nav-link pl-4">&mdash; TupperTransformer</a>
+                    <a href="${P}resources.html" class="block py-2 nav-link">Resources</a>
+                </div>
+            </div>
+            <div class="my-2">
+                <button class="mobile-accordion-button w-full text-left py-2 px-4 rounded-lg bg-accent-orange/10 border border-accent-orange text-accent-orange font-semibold flex justify-between items-center" aria-haspopup="true" aria-expanded="false" aria-controls="mobile-contact-menu">
+                    <span>Contact</span>
+                    <i class="fas fa-chevron-down text-xs" aria-hidden="true"></i>
+                </button>
+                <div id="mobile-contact-menu" class="hidden pl-4 mt-2">
+                    <a href="${H}#contact" class="block py-2 nav-link">Email</a>
+                    <a href="https://www.linkedin.com/in/prathamesh-k-deshmukh" target="_blank" rel="noopener noreferrer" class="block py-2 nav-link">LinkedIn</a>
+                    <a href="https://github.com/prathameshnium" target="_blank" rel="noopener noreferrer" class="block py-2 nav-link">GitHub</a>
+                    <a href="https://scholar.google.com/citations?user=DJgzI30AAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer" class="block py-2 nav-link">Google Scholar</a>
+                    <a href="https://x.com/prathameshnium" target="_blank" rel="noopener noreferrer" class="block py-2 nav-link">X (Twitter)</a>
+                </div>
+            </div>
             <a href="${P}search.html" class="block py-2 nav-link"><i class="fas fa-search mr-2" aria-hidden="true"></i>Search</a>
         </div>`;
 
@@ -202,9 +245,11 @@
         });
     }
 
-    // Hover behavior for nested submenus inside the desktop portfolio dropdown
+    // Hover behavior for nested fly-out submenus inside the desktop dropdowns.
+    // Scoped to `.relative` wrappers that live *inside* a `.dropdown-menu` so it
+    // only wires the nested fly-outs; the top-level hubs are owned by setupDropdown.
     function setupDesktopSubmenus() {
-        document.querySelectorAll('header nav .relative').forEach(item => {
+        document.querySelectorAll('header nav .dropdown-menu .relative').forEach(item => {
             const menu = item.querySelector('.dropdown-menu');
             if (!menu) return;
 
@@ -224,42 +269,6 @@
                     menu.classList.add('hidden');
                 }, 200); // delay allows moving the mouse into the submenu
             });
-        });
-    }
-
-    // Click/keyboard behavior for the desktop portfolio dropdown
-    function setupPortfolioDropdown() {
-        const button = document.getElementById('portfolio-button');
-        const menu = document.getElementById('portfolio-menu');
-        if (!button || !menu) return;
-
-        const toggle = (visible) => {
-            menu.classList.toggle('hidden', !visible);
-            button.setAttribute('aria-expanded', String(visible));
-            if (visible) {
-                menu.querySelector('a, button')?.focus();
-            }
-        };
-
-        button.addEventListener('click', (event) => {
-            event.stopPropagation();
-            toggle(menu.classList.contains('hidden'));
-        });
-
-        menu.addEventListener('click', (event) => {
-            event.stopPropagation();
-        });
-
-        button.addEventListener('keydown', (event) => {
-            if (event.key === 'Escape') {
-                toggle(false);
-            }
-        });
-
-        window.addEventListener('click', () => {
-            if (!menu.classList.contains('hidden')) {
-                toggle(false);
-            }
         });
     }
 
@@ -346,7 +355,7 @@
 
         // Mobile accordions (event delegation so injected buttons work too)
         document.body.addEventListener('click', (event) => {
-            const button = event.target.closest('#mobile-portfolio-button');
+            const button = event.target.closest('.mobile-accordion-button');
             if (!button) return;
 
             const menu = document.getElementById(button.getAttribute('aria-controls'));
@@ -361,7 +370,9 @@
             }
         });
 
-        setupPortfolioDropdown();
+        // Top-level desktop hubs: hover + click + Escape via the generic handler
+        ['home', 'about', 'skills', 'contact'].forEach(k =>
+            setupDropdown(`${k}-container`, `${k}-button`, `${k}-menu`));
         setupDesktopSubmenus();
         setupMobileMenu();
         setupActiveNavHighlight();
