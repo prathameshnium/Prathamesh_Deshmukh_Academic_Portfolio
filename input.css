@@ -4,12 +4,12 @@
 
 @layer base {
     ::selection {
-        background-color: rgba(245, 158, 11, 0.30); /* accent-orange @ 30% */
-        color: theme('colors.white');
+        background-color: rgba(194, 65, 12, 0.90); /* deep burnt-orange @ 90% */
+        color: theme('colors.true-white');
     }
     ::-moz-selection {
-        background-color: rgba(245, 158, 11, 0.30); /* accent-orange @ 30% */
-        color: theme('colors.white');
+        background-color: rgba(194, 65, 12, 0.90); /* deep burnt-orange @ 90% */
+        color: theme('colors.true-white');
     }
     body {
         background-color: theme('colors.dark-bg'); 
