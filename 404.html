@@ -4,7 +4,7 @@
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; font-src 'self' https://cdnjs.cloudflare.com; img-src 'self' data:;">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; font-src 'self' https://cdnjs.cloudflare.com; img-src 'self' data: https://raw.githubusercontent.com https://github.com https://upload.wikimedia.org https://www.vectorlogo.zone https://static.wikia.nocookie.net https://seeklogo.com https://codecov.io https://zenodo.org https://joss.theoj.org https://img.shields.io https://placehold.co; connect-src 'self';">
     <title>404 Not Found | Prathamesh Deshmukh</title>
     <meta name="referrer" content="strict-origin-when-cross-origin">
     <meta name="description" content="Page not found on the portfolio of Prathamesh Deshmukh.">
@@ -16,22 +16,15 @@
     <link rel="manifest" href="site.webmanifest">
     
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="_assets/fonts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="_assets/fonts.css">
     <link rel="stylesheet" href="_assets/style.css">
-    <script>
-        window.addEventListener('load', function() {
-            const preloader = document.getElementById('preloader');
-            if (preloader) {
-                preloader.style.display = 'none';
-            }
-        });
-    </script>
 </head>
-<body class="antialiased font-sans">
+<body class="antialiased font-sans bg-dark-bg text-gray-200">
     <div id="preloader">
         <div class="loader"></div>
     </div>
+    <header id="site-header" class="bg-dark-bg/80 backdrop-blur-sm sticky top-0 z-50 border-b border-gray-700"></header>
     <main class="container mx-auto px-6">
         <div class="min-h-screen flex flex-col justify-center items-center text-center">
             <div class="card p-8 md:p-12 rounded-lg max-w-2xl w-full">
@@ -70,5 +63,8 @@
         </div>
     </main>
 
+    <footer id="site-footer" class="border-t border-gray-800 bg-dark-bg py-8"></footer>
+
+    <script src="_assets/js/main.js" defer></script>
 </body>
 </html>

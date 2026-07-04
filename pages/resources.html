@@ -7,7 +7,7 @@
     <meta name="description" content="A curated list of essential tools, databases, and resources for students and researchers in Physics and Scientific Programming.">
     <meta name="keywords" content="Physics resources, Programming resources, Scientific computing, Research tools, Academic databases, Learning materials, Prathamesh Deshmukh">
     <meta name="robots" content="index, follow"> 
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; font-src 'self' https://cdnjs.cloudflare.com; img-src 'self' data:;">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; font-src 'self' https://cdnjs.cloudflare.com; img-src 'self' data: https://raw.githubusercontent.com https://github.com https://upload.wikimedia.org https://www.vectorlogo.zone https://static.wikia.nocookie.net https://seeklogo.com https://codecov.io https://zenodo.org https://joss.theoj.org https://img.shields.io https://placehold.co; connect-src 'self';">
     <meta name="referrer" content="strict-origin-when-cross-origin">
     
     <link rel="canonical" href="https://prathameshdeshmukh.site/pages/resources.html">
@@ -22,22 +22,13 @@
     <meta property="og:url" content="https://prathameshdeshmukh.site/pages/resources.html">
     <meta property="og:image" content="https://www.prathameshdeshmukh.site/_assets/banner.png">
     <link rel="stylesheet" href="../_assets/fonts.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="../_assets/style.css">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="../_assets/style.css">
 </head>
 <body class="antialiased font-sans bg-dark-bg text-gray-200">
     <div id="preloader"><div class="loader"></div></div>
-    <header class="bg-dark-bg/80 backdrop-blur-sm sticky top-0 z-50 border-b border-gray-700">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="../index.html" class="text-2xl font-bold text-white font-serif">Prathamesh Deshmukh</a>
-            <nav class="hidden md:flex items-center space-x-6">
-                <a href="../index.html" class="nav-link">Home</a>
-                <a href="research.html" class="nav-link">Research</a>
-                <a href="computational-works.html" class="nav-link">Computational</a>
-                <a href="../index.html#contact" class="nav-link">Contact</a>
-            </nav>
-        </div>
-    </header>
+    <header id="site-header" class="bg-dark-bg/80 backdrop-blur-sm sticky top-0 z-50 border-b border-gray-700"></header>
     <main class="container mx-auto px-6 py-20">
         <div class="text-center mb-16">
             <h1 class="text-5xl font-bold section-title mb-4">Research Resources</h1>
@@ -60,6 +51,7 @@
             </div>
         </div>
     </main>
+    <footer id="site-footer" class="border-t border-gray-800 bg-dark-bg py-8"></footer>
     <script src="../_assets/js/main.js" defer></script>
 </body>
 </html>

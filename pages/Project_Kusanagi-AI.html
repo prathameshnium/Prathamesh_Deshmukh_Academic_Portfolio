@@ -23,7 +23,7 @@
     <meta property="twitter:description" content="A privacy-focused toolkit for running local LLMs on standard laptops, designed for researchers.">
     <meta property="twitter:image" content="https://www.prathameshdeshmukh.site/_assets/banner.png">
 
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; font-src 'self' https://cdnjs.cloudflare.com; img-src 'self' data: https://raw.githubusercontent.com https://static.wikia.nocookie.net https://encrypted-tbn0.gstatic.com https://seeklogo.com https://mixedbread.ai https://img.shields.io;">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; font-src 'self' https://cdnjs.cloudflare.com; img-src 'self' data: https://raw.githubusercontent.com https://github.com https://upload.wikimedia.org https://www.vectorlogo.zone https://static.wikia.nocookie.net https://seeklogo.com https://codecov.io https://zenodo.org https://joss.theoj.org https://img.shields.io https://placehold.co; connect-src 'self';">
     <meta name="robots" content="index, follow">
     <meta name="referrer" content="strict-origin-when-cross-origin">
     <!-- Styles and Fonts -->
@@ -33,9 +33,9 @@
     <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
     <link rel="manifest" href="../site.webmanifest">
     <link rel="stylesheet" href="../_assets/fonts.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- SEO: JSON-LD Structured Data -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- SEO: JSON-LD Structured Data -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -54,87 +54,10 @@
     </script>
     <link rel="stylesheet" href="../_assets/style.css">
 </head>
-<body class="antialiased font-sans">
+<body class="antialiased font-sans bg-dark-bg text-gray-200">
     <div id="preloader"><div class="loader"></div></div>
     <!-- Header & Navigation -->
-    <header class="bg-dark-bg/80 backdrop-blur-sm sticky top-0 z-50 border-b border-gray-700">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="../index.html" class="text-2xl font-bold text-white font-serif">Prathamesh Deshmukh</a>
-            <nav class="hidden md:flex items-center space-x-6">
-                <a href="../index.html#about" class="nav-link">About</a>
-                <a href="#features" class="nav-link">Features</a>
-                <a href="#getting-started" class="nav-link">Get Started</a>
-                <div class="relative">
-                    <button id="portfolio-button" class="nav-link flex items-center" aria-haspopup="true" aria-expanded="false" aria-controls="portfolio-menu">
-                        Portfolio <i class="fas fa-chevron-down text-xs ml-2"></i>
-                    </button>
-                    <div id="portfolio-menu" class="absolute hidden dropdown-menu border border-gray-700 rounded-md shadow-lg py-2 w-56 top-full right-0 mt-2 z-50">
-                        <!-- Submenu Item -->
-                        <div id="core-portfolio-item" class="relative">
-                            <a href="#" class="w-full text-left px-4 py-2 text-sm text-white hover:bg-accent-orange flex justify-between items-center">
-                                Core Portfolio <i class="fas fa-chevron-right text-xs" aria-hidden="true"></i>
-                            </a>
-                            <div id="core-portfolio-submenu" class="absolute hidden dropdown-menu border border-gray-700 rounded-md shadow-lg py-2 w-48 top-0 left-full -mt-2 z-50">
-                                <a href="research.html" class="block px-4 py-2 text-sm text-white hover:bg-accent-orange">Research & Pubs</a>
-                                <a href="hardware-development.html" class="block px-4 py-2 text-sm text-white hover:bg-accent-orange">Hardware & Inst.</a>
-                                <div id="comp-works-item" class="relative">
-                                    <a href="computational-works.html" class="w-full text-left px-4 py-2 text-sm text-white hover:bg-accent-orange flex justify-between items-center">
-                                        Computational Works <i class="fas fa-chevron-right text-xs" aria-hidden="true"></i>
-                                    </a>
-                                    <div id="comp-works-submenu" class="absolute hidden dropdown-menu border border-gray-700 rounded-md shadow-lg py-2 w-48 top-0 left-full -mt-9 z-50">
-                                        <a href="computational-works.html" class="block px-4 py-2 text-sm text-white hover:bg-accent-orange">Overview</a>
-                                        <a href="project-pica.html" class="block px-4 py-2 text-sm text-white hover:bg-accent-orange">Project PICA</a>
-                                        <a href="Project_Kusanagi-AI.html" class="block px-4 py-2 text-sm text-white hover:bg-accent-orange">Project Kusanagi-AI</a>
-                                        <a href="Project_TupperTransformer.html" class="block px-4 py-2 text-sm text-white hover:bg-accent-orange">Project TupperTransformer</a>
-                                    </div>
-                                </div>
-                                <a href="presentations.html" class="block px-4 py-2 text-sm text-white hover:bg-accent-orange">Presentations</a>
-                                <a href="cv.html" class="block px-4 py-2 text-sm text-white hover:bg-accent-orange">CV</a>
-                            </div>
-                        </div>
-                        <div class="border-t border-gray-600 my-1"></div>
-                        <div id="additional-content-item" class="relative">
-                            <a href="#" class="w-full text-left px-4 py-2 text-sm text-white hover:bg-accent-orange flex justify-between items-center">
-                                Additional Content <i class="fas fa-chevron-right text-xs" aria-hidden="true"></i>
-                            </a>
-                            <div id="additional-content-submenu" class="absolute hidden dropdown-menu border border-gray-700 rounded-md shadow-lg py-2 w-48 top-0 left-full -mt-2 z-50">
-                                <a href="blog.html" class="block px-4 py-2 text-sm text-white hover:bg-accent-orange">Blog</a>
-                                <a href="gallery.html" class="block px-4 py-2 text-sm text-white hover:bg-accent-orange">Gallery</a>
-                                <a href="resources.html" class="block px-4 py-2 text-sm text-white hover:bg-accent-orange">Resources</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <a href="../index.html#contact" class="nav-link">Contact</a>
-            </nav>
-            <button id="mobile-menu-button" class="md-hidden text-white text-2xl" aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false">
-                <i class="fas fa-bars" aria-hidden="true"></i>
-            </button>
-        </div>
-        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 space-y-2">
-            <a href="../index.html#about" class="block py-2 nav-link">About</a>
-            <a href="#features" class="block py-2 nav-link">Features</a>
-            <a href="#getting-started" class="block py-2 nav-link">Get Started</a>
-            <a href="../index.html#contact" class="block py-2 nav-link">Contact</a>
-            <div class="border-t border-gray-700 my-2"></div>
-            <button id="portfolio-button-mobile" class="w-full text-left py-2 nav-link flex justify-between items-center" aria-haspopup="true" aria-expanded="false" aria-controls="portfolio-menu-mobile">
-                <span>Portfolio</span>
-                <i class="fas fa-chevron-down text-xs"></i>
-            </button>
-            <div id="portfolio-menu-mobile" class="hidden pl-4 space-y-2">
-                <a href="research.html" class="block py-2 nav-link">Research & Pubs</a>
-                <a href="computational-works.html" class="block py-2 nav-link">Computational Works</a>
-                <a href="project-pica.html" class="block py-2 nav-link pl-4">&ndash; Project PICA</a>
-                <a href="Project_Kusanagi-AI.html" class="block py-2 nav-link pl-4">&ndash; Project Kusanagi-AI</a>
-                <a href="Project_TupperTransformer.html" class="block py-2 nav-link pl-4">&ndash; Project TupperTransformer</a>
-                <a href="presentations.html" class="block py-2 nav-link">Presentations</a>
-                <a href="cv.html" class="block py-2 nav-link">CV</a>
-                <a href="blog.html" class="block py-2 nav-link">Blog</a>
-                <a href="gallery.html" class="block py-2 nav-link">Gallery</a>
-                <a href="resources.html" class="block py-2 nav-link">Resources</a>
-            </div>
-        </div>
-    </header>
+    <header id="site-header" class="bg-dark-bg/80 backdrop-blur-sm sticky top-0 z-50 border-b border-gray-700"></header>
 
     <main class="container mx-auto px-6 py-12">
         <section id="kusanagi-summary" class="py-20 text-center">
@@ -238,21 +161,7 @@ ollama pull llama3</code></pre>
     </main>
 
     <!-- Footer -->
-    <footer class="border-t border-gray-800 bg-dark-bg py-8 mt-12">
-        <div class="container mx-auto px-6 text-center text-slate">
-            <div class="flex justify-center items-center flex-wrap gap-6 mb-6">
-                <a href="../index.html#contact" class="social-icon text-2xl" aria-label="Email"><i class="fas fa-envelope" aria-hidden="true"></i></a>
-                <a href="https://scholar.google.com/citations?user=DJgzI30AAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer" class="social-icon text-2xl" aria-label="Google Scholar"><i class="fas fa-graduation-cap" aria-hidden="true"></i></a>
-                <a href="https://www.linkedin.com/in/prathamesh-k-deshmukh" target="_blank" rel="noopener noreferrer" class="social-icon text-2xl" aria-label="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
-                <a href="https://github.com/prathameshnium" target="_blank" rel="noopener noreferrer" class="social-icon text-2xl" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
-                <a href="https://x.com/prathameshnium" target="_blank" rel="noopener noreferrer" class="social-icon text-2xl" aria-label="X (formerly Twitter)"><i class="fab fa-x-twitter" aria-hidden="true"></i></a>
-            </div>
-            <div class="mb-6">
-                <a href="sitemap.html" class="hover:text-accent-orange transition-colors">Sitemap & Link Directory</a>
-            </div>
-             <p><a href="https://github.com/prathameshnium/prathameshnium.github.io/blob/main/LICENSE" target="_blank" rel="noopener noreferrer" class="hover:text-accent-orange transition-colors">&copy; 2026 Prathamesh Keshao Deshmukh. All Rights Reserved.</a></p>
-        </div>
-    </footer>
+    <footer id="site-footer" class="border-t border-gray-800 bg-dark-bg py-8"></footer>
 
     <script src="../_assets/js/main.js" defer></script> 
 </body>
