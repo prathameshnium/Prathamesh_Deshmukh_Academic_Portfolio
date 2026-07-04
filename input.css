@@ -3,7 +3,15 @@
 @tailwind utilities;
 
 @layer base {
-    body { 
+    ::selection {
+        background-color: rgba(245, 158, 11, 0.30); /* accent-orange @ 30% */
+        color: theme('colors.white');
+    }
+    ::-moz-selection {
+        background-color: rgba(245, 158, 11, 0.30); /* accent-orange @ 30% */
+        color: theme('colors.white');
+    }
+    body {
         background-color: theme('colors.dark-bg'); 
         color: theme('colors.white'); 
     }
