@@ -20,18 +20,7 @@
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
             <a href="${R}index.html" class="text-2xl font-bold text-white font-serif">Prathamesh Deshmukh</a>
             <nav class="hidden md:flex items-center space-x-6">
-                <div id="home-container" class="relative nav-dropdown">
-                    <button id="home-button" class="nav-link flex items-center" aria-haspopup="true" aria-expanded="false" aria-controls="home-menu">
-                        Home <i class="fas fa-chevron-down text-xs ml-2" aria-hidden="true"></i>
-                    </button>
-                    <div id="home-menu" class="absolute hidden dropdown-menu border border-gray-700 rounded-md shadow-lg py-2 w-56 top-full left-0 mt-2 z-50">
-                        <a href="${R}index.html" class="${dropdownLink}">Landing Page</a>
-                        <a href="${H}#about" class="${dropdownLink}">Overview</a>
-                        <a href="${H}#publications" class="${dropdownLink}">Publications</a>
-                        <a href="${H}#education" class="${dropdownLink}">Education</a>
-                        <a href="${H}#conferences" class="${dropdownLink}">Conferences</a>
-                    </div>
-                </div>
+                <a href="${R}index.html" class="nav-link">Home</a>
                 <div id="about-container" class="relative nav-dropdown">
                     <button id="about-button" class="nav-link flex items-center" aria-haspopup="true" aria-expanded="false" aria-controls="about-menu">
                         About <i class="fas fa-chevron-down text-xs ml-2" aria-hidden="true"></i>
@@ -92,17 +81,7 @@
         </div>
         <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
             <div class="my-2">
-                <button class="mobile-accordion-button w-full text-left py-2 px-4 rounded-lg bg-accent-orange/10 border border-accent-orange text-accent-orange font-semibold flex justify-between items-center" aria-haspopup="true" aria-expanded="false" aria-controls="mobile-home-menu">
-                    <span>Home</span>
-                    <i class="fas fa-chevron-down text-xs" aria-hidden="true"></i>
-                </button>
-                <div id="mobile-home-menu" class="hidden pl-4 mt-2">
-                    <a href="${R}index.html" class="block py-2 nav-link">Landing Page</a>
-                    <a href="${H}#about" class="block py-2 nav-link">Overview</a>
-                    <a href="${H}#publications" class="block py-2 nav-link">Publications</a>
-                    <a href="${H}#education" class="block py-2 nav-link">Education</a>
-                    <a href="${H}#conferences" class="block py-2 nav-link">Conferences</a>
-                </div>
+                <a href="${R}index.html" class="block w-full text-left py-2 px-4 rounded-lg bg-accent-orange/10 border border-accent-orange text-accent-orange font-semibold">Home</a>
             </div>
             <div class="my-2">
                 <button class="mobile-accordion-button w-full text-left py-2 px-4 rounded-lg bg-accent-orange/10 border border-accent-orange text-accent-orange font-semibold flex justify-between items-center" aria-haspopup="true" aria-expanded="false" aria-controls="mobile-about-menu">
@@ -371,7 +350,7 @@
         });
 
         // Top-level desktop hubs: hover + click + Escape via the generic handler
-        ['home', 'about', 'skills', 'contact'].forEach(k =>
+        ['about', 'skills', 'contact'].forEach(k =>
             setupDropdown(`${k}-container`, `${k}-button`, `${k}-menu`));
         setupDesktopSubmenus();
         setupMobileMenu();
