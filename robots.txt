@@ -254,5 +254,10 @@ Disallow: /deployment/
 Disallow: /Setup/
 Allow: /
 
-# Sitemap (replace with your actual sitemap URL)
-Sitemap: https://example.com/sitemap.xml
+# Sitemap
+# NOTE: while the site is served from a GitHub Pages *project* URL, crawlers
+# only read robots.txt from the origin root (prathameshnium.github.io/robots.txt),
+# so this file is inert. It takes effect again once a custom domain is restored.
+Sitemap: https://prathameshnium.github.io/Prathamesh_Deshmukh_Academic_Portfolio/sitemap.xml
+# Custom domain (restore when DNS points at GitHub Pages):
+# Sitemap: https://prathameshdeshmukh.site/sitemap.xml

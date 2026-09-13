@@ -8,13 +8,13 @@
   </p>
   
   <p>
-    <a href="https://prathameshdeshmukh.site/" target="_blank">
+    <a href="https://prathameshnium.github.io/Prathamesh_Deshmukh_Academic_Portfolio/" target="_blank">
       <img src="https://img.shields.io/badge/Academic_Portfolio-6C93C4?style=for-the-badge&logo=website&logoColor=white" alt="Personal Website"/>
     </a>
     <a href="https://in.linkedin.com/in/prathamesh-k-deshmukh" target="_blank">
       <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Profile"/>
     </a>
-    <a href="https://prathameshdeshmukh.site/_assets/Deshmukh_Prathamesh_CV_2026.pdf" target="_blank">
+    <a href="https://prathameshnium.github.io/Prathamesh_Deshmukh_Academic_Portfolio/_assets/Deshmukh_Prathamesh_CV_2026.pdf" target="_blank">
       <img src="https://img.shields.io/badge/CV_%2F_Resume-F6AD55?style=for-the-badge&logo=read-the-docs&logoColor=white" alt="Download CV"/>
     </a>
   </p>
@@ -32,8 +32,8 @@
   </p>
 
   <p align="center">
-    <a href="https://prathameshdeshmukh.site/" target="_blank">
-      <img src="https://img.shields.io/website?label=prathameshdeshmukh.site&style=flat-square&up_message=online&down_message=offline&url=https%3A%2F%2Fprathameshdeshmukh.site%2F" alt="Website Status"/>
+    <a href="https://prathameshnium.github.io/Prathamesh_Deshmukh_Academic_Portfolio/" target="_blank">
+      <img src="https://img.shields.io/website?label=prathameshnium.github.io/Prathamesh_Deshmukh_Academic_Portfolio&style=flat-square&up_message=online&down_message=offline&url=https%3A%2F%2Fprathameshnium.github.io%2FPrathamesh_Deshmukh_Academic_Portfolio%2F" alt="Website Status"/>
     </a>
     <a href="https://github.com/prathameshnium/Prathamesh_Deshmukh/actions/workflows/deploy.yml" target="_blank">
       <img src="https://img.shields.io/github/actions/workflow/status/prathameshnium/Prathamesh_Deshmukh/deploy.yml?branch=main&style=flat-square&logo=githubactions&logoColor=white" alt="Build Status"/>

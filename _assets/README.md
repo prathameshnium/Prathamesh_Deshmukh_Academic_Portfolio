@@ -1,6 +1,6 @@
 
 <div align="center">
-  <a href="https://prathameshdeshmukh.site/">
+  <a href="https://prathameshnium.github.io/Prathamesh_Deshmukh_Academic_Portfolio/">
     <img src="https://raw.githubusercontent.com/prathameshnium/PICA-Python-Instrument-Control-and-Automation/main/_assets/LOGO/PICA_LOGO_NBG.png" alt="PICA Logo" width="80">
   </a>
 </div>
@@ -18,8 +18,8 @@ The main repository can be found here:
 
 <p align="left">
   <!-- Website Uptime -->
-  <a href="https://prathameshdeshmukh.site/" target="_blank">
-    <img src="https://img.shields.io/website?label=prathameshdeshmukh.site&style=for-the-badge&up_message=online&down_message=offline&url=https%3A%2F%2Fprathameshdeshmukh.site%2F" alt="Website Status"/>
+  <a href="https://prathameshnium.github.io/Prathamesh_Deshmukh_Academic_Portfolio/" target="_blank">
+    <img src="https://img.shields.io/website?label=prathameshnium.github.io/Prathamesh_Deshmukh_Academic_Portfolio&style=for-the-badge&up_message=online&down_message=offline&url=https%3A%2F%2Fprathameshnium.github.io%2FPrathamesh_Deshmukh_Academic_Portfolio%2F" alt="Website Status"/>
   </a>
   <!-- GitHub Actions Build Status -->
   <a href="https://github.com/prathameshnium/Prathamesh_Deshmukh/actions/workflows/deploy.yml" target="_blank">

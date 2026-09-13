@@ -19,7 +19,7 @@ You can use the following BibTeX entry for your reference manager (e.g., Zotero,
       year         = 2025,
       publisher    = {GitHub},
       version      = {1.0.0},
-      url          = {https://prathameshdeshmukh.site/}
+      url          = {https://prathameshnium.github.io/Prathamesh_Deshmukh_Academic_Portfolio/}
     }
 
 Alternatively, you can use the ``CITATION.cff`` file in the root of the `repository <https://github.com/prathameshnium/Prathamesh_Deshmukh>`_ for automatic parsing by modern reference managers.
