@@ -268,27 +268,44 @@
         });
     }
 
-    // Highlight the nav link of the section currently in view (home page)
-    function setupActiveNavHighlight() {
+    // Everything that reacts to scrolling runs from a single rAF-throttled
+    // listener, so a fast scroll can't queue up layout reads per event.
+    function setupScrollEffects() {
+        const pageHeader = document.querySelector('header');
         const sections = document.querySelectorAll('main section[id]');
         const navLinks = document.querySelectorAll('header nav a[href^="#"], header nav a[href*="index.html#"]');
-        if (sections.length === 0 || navLinks.length === 0) return;
+        const highlightNav = sections.length > 0 && navLinks.length > 0;
+        if (!pageHeader && !highlightNav) return;
 
-        window.addEventListener('scroll', () => {
+        const update = () => {
+            if (pageHeader) {
+                pageHeader.classList.toggle('scrolled', window.scrollY > 50);
+            }
+            if (!highlightNav) return;
+
             let current = '';
             sections.forEach(section => {
-                if (window.pageYOffset >= section.offsetTop - 70) {
+                if (window.scrollY >= section.offsetTop - 70) {
                     current = section.getAttribute('id');
                 }
             });
 
             navLinks.forEach(link => {
-                link.classList.remove('active');
-                if (current && link.getAttribute('href').endsWith('#' + current)) {
-                    link.classList.add('active');
-                }
+                link.classList.toggle('active', Boolean(current) && link.getAttribute('href').endsWith('#' + current));
             });
-        });
+        };
+
+        let ticking = false;
+        window.addEventListener('scroll', () => {
+            if (ticking) return;
+            ticking = true;
+            window.requestAnimationFrame(() => {
+                update();
+                ticking = false;
+            });
+        }, { passive: true });
+
+        update();
     }
 
     // Add a copy-to-clipboard button to every code block
@@ -340,8 +357,9 @@
             const menu = document.getElementById(button.getAttribute('aria-controls'));
             if (!menu) return;
 
-            const isExpanded = menu.classList.toggle('hidden');
-            button.setAttribute('aria-expanded', String(!isExpanded));
+            // classList.toggle returns true when the class was *added*
+            const isHidden = menu.classList.toggle('hidden');
+            button.setAttribute('aria-expanded', String(!isHidden));
             const icon = button.querySelector('i');
             if (icon) {
                 icon.classList.toggle('fa-chevron-down');
@@ -352,19 +370,11 @@
         // Top-level desktop hubs: hover + click + Escape via the generic handler
         ['about', 'skills', 'contact'].forEach(k =>
             setupDropdown(`${k}-container`, `${k}-button`, `${k}-menu`));
-        setupDesktopSubmenus();
-        setupMobileMenu();
-        setupActiveNavHighlight();
-        setupCopyButtons();
         setupDropdown('more-links-container', 'more-links-button', 'more-links-menu');
         setupDropdown('footer-more-links-container', 'footer-more-links-button', 'footer-more-links-menu');
-
-        // Solid header background once the page is scrolled
-        const pageHeader = document.querySelector('header');
-        if (pageHeader) {
-            window.addEventListener('scroll', () => {
-                pageHeader.classList.toggle('scrolled', window.scrollY > 50);
-            });
-        }
+        setupDesktopSubmenus();
+        setupMobileMenu();
+        setupCopyButtons();
+        setupScrollEffects();
     });
 })();
