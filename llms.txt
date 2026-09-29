@@ -10,6 +10,7 @@ This website is built with HTML and Tailwind CSS and is hosted on GitHub Pages. 
 - [Home Page](https://prathameshnium.github.io/Prathamesh_Deshmukh_Academic_Portfolio/index.html): The main landing page with an overview of research themes, skills, academic journey, and selected publications.
 - [Research & Publications](https://prathameshnium.github.io/Prathamesh_Deshmukh_Academic_Portfolio/pages/research.html): A detailed list of peer-reviewed journal articles with abstracts, highlights, and links to the full text.
 - [Computational Works](https://prathameshnium.github.io/Prathamesh_Deshmukh_Academic_Portfolio/pages/computational-works.html): A portfolio of scientific programming projects, showcasing expertise in instrument control, data analysis, and simulation.
+- [Hardware & Instrumentation](https://prathameshnium.github.io/Prathamesh_Deshmukh_Academic_Portfolio/pages/hardware-development.html): The Integrated Transport Measurement System (ITMS) and custom cryogenic probes (Liquid Nitrogen and PPMS 14 T) for transport, pyroelectric, and magnetodielectric measurements.
 - [Curriculum Vitae (CV)](https://prathameshnium.github.io/Prathamesh_Deshmukh_Academic_Portfolio/pages/cv.html): A formal summary of academic qualifications, research experience, publications, skills, and awards.
 - [Presentations](https://prathameshnium.github.io/Prathamesh_Deshmukh_Academic_Portfolio/pages/presentations.html): A comprehensive list of academic seminars, conference presentations, and attended workshops.
 - [Resources](https://prathameshnium.github.io/Prathamesh_Deshmukh_Academic_Portfolio/pages/resources.html): A curated list of tools, databases, and resources for physics and scientific programming.
@@ -24,6 +25,7 @@ This website is built with HTML and Tailwind CSS and is hosted on GitHub Pages. 
 ## Scientific Programming Projects
 
 - PICA: Python Instrument Control & Automation: A modular `PyVISA`-based automation suite for controlling lab instruments (Keithley, Lakeshore) for thermal and electrical characterization. Features a central GUI and isolated processes for stability. (Note: The repository is private; access can be requested).
+- ITMS Hardware (Integrated Transport Measurement System): Open-source hardware design (CC BY-SA 4.0) for a modular cryogenic measurement platform, including the Bill of Materials, wiring schematics, and assembly descriptors for Liquid Nitrogen (77-320 K) and Quantum Design PPMS (5-380 K, 14 T) probes. Repository: https://github.com/prathameshnium/ITMS-Hardware; Documentation: https://prathameshnium.github.io/ITMS-Hardware/
 - Physics Simulation Toolkit: Python scripts for simulating and visualizing phenomena in condensed matter physics, such as magnetic ordering (Ising model) and common dielectric models.
 - Solid-State Physics Calculators: Analysis scripts for calculating key experimental solid-state parameters like activation energy (Arrhenius) and charge transport (Mott-VRH models).
 - Python-for-OriginPro: Automation scripts leveraging the `originpro` library to streamline plotting, data fitting, and report generation directly within OriginLab.
