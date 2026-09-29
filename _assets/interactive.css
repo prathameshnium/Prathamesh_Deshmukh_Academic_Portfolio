@@ -1,0 +1,224 @@
+/* Interactive layer: scroll reveal, progress bar, back-to-top, list filters, lightbox.
+   Loaded on every page by main.js. Standalone on purpose: style.css is a pre-built
+   Tailwind subset, so anything not already in it has to live here. */
+
+:root {
+    --ix-accent: #f59e0b;
+    --ix-bg: #0f172a;
+    --ix-card: #1e293b;
+    --ix-border: rgba(148, 163, 184, 0.5);
+    --ix-text: #e2e8f0;
+    --ix-muted: #a8b2d1;
+}
+
+/* ---------- Scroll reveal ---------- */
+.js-reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.js-reveal.is-visible {
+    opacity: 1;
+    transform: none;
+}
+
+/* ---------- Scroll progress + back to top ---------- */
+#scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background: var(--ix-accent);
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    z-index: 60;
+    pointer-events: none;
+}
+
+#back-to-top {
+    position: fixed;
+    right: 1.25rem;
+    bottom: 1.25rem;
+    width: 2.75rem;
+    height: 2.75rem;
+    border-radius: 9999px;
+    border: 2px solid var(--ix-accent);
+    background: var(--ix-bg);
+    color: var(--ix-accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(12px);
+    transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s, background-color 0.2s, color 0.2s;
+    z-index: 55;
+}
+#back-to-top.is-shown {
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+}
+#back-to-top:hover,
+#back-to-top:focus-visible {
+    background: var(--ix-accent);
+    color: var(--ix-bg);
+}
+
+/* ---------- Filter toolbar ---------- */
+.filter-bar {
+    max-width: 56rem;
+    margin: 0 auto 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+.filter-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.75rem;
+}
+.filter-search {
+    position: relative;
+    flex: 1 1 14rem;
+}
+.filter-search i {
+    position: absolute;
+    left: 0.9rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--ix-muted);
+    pointer-events: none;
+}
+.filter-input,
+.filter-sort select {
+    width: 100%;
+    background: var(--ix-card);
+    color: var(--ix-text);
+    border: 1px solid var(--ix-border);
+    border-radius: 0.5rem;
+    padding: 0.6rem 0.9rem;
+    font-size: 0.95rem;
+}
+.filter-input {
+    padding-left: 2.4rem;
+}
+.filter-input:focus,
+.filter-sort select:focus {
+    outline: none;
+    border-color: var(--ix-accent);
+}
+.filter-sort {
+    flex: 0 0 auto;
+}
+.filter-sort select {
+    width: auto;
+    cursor: pointer;
+}
+.filter-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+.filter-chip {
+    background: transparent;
+    color: var(--ix-muted);
+    border: 1px solid var(--ix-border);
+    border-radius: 9999px;
+    padding: 0.25rem 0.85rem;
+    font-size: 0.85rem;
+    transition: color 0.2s, border-color 0.2s, background-color 0.2s;
+}
+.filter-chip:hover,
+.filter-chip:focus-visible {
+    color: var(--ix-accent);
+    border-color: var(--ix-accent);
+}
+.filter-chip[aria-pressed="true"] {
+    background: var(--ix-accent);
+    border-color: var(--ix-accent);
+    color: var(--ix-bg);
+    font-weight: 600;
+}
+.filter-status {
+    font-size: 0.85rem;
+    color: var(--ix-muted);
+    min-height: 1.25rem;
+}
+.is-filtered-out {
+    display: none !important;
+}
+
+/* ---------- Lightbox ---------- */
+.lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 200;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 3.5rem 1rem 1.5rem;
+    background: rgba(2, 6, 23, 0.92);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+.lightbox.is-open {
+    opacity: 1;
+}
+.lightbox img {
+    max-width: min(96vw, 1200px);
+    max-height: 78vh;
+    object-fit: contain;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+}
+.lightbox-caption {
+    color: var(--ix-text);
+    text-align: center;
+    max-width: 40rem;
+    font-size: 0.95rem;
+}
+.lightbox button {
+    position: absolute;
+    background: rgba(30, 41, 59, 0.9);
+    color: var(--ix-text);
+    border: 1px solid var(--ix-border);
+    border-radius: 9999px;
+    width: 2.75rem;
+    height: 2.75rem;
+    font-size: 1.1rem;
+    transition: color 0.2s, border-color 0.2s;
+}
+.lightbox button:hover,
+.lightbox button:focus-visible {
+    color: var(--ix-accent);
+    border-color: var(--ix-accent);
+}
+.lightbox-close { top: 0.9rem; right: 0.9rem; }
+.lightbox-prev { left: 0.9rem; top: 50%; transform: translateY(-50%); }
+.lightbox-next { right: 0.9rem; top: 50%; transform: translateY(-50%); }
+[data-lightbox] { cursor: zoom-in; }
+
+/* ---------- Motion preferences + print ---------- */
+@media (prefers-reduced-motion: reduce) {
+    .js-reveal {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+    #back-to-top,
+    .lightbox {
+        transition: none;
+    }
+}
+@media print {
+    .js-reveal { opacity: 1 !important; transform: none !important; }
+    #scroll-progress,
+    #back-to-top,
+    .filter-bar,
+    .lightbox { display: none !important; }
+}

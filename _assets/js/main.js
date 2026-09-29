@@ -6,6 +6,9 @@
 (function () {
     'use strict';
 
+    // Captured now: document.currentScript is null once we're inside a callback.
+    const thisScript = document.currentScript;
+
     // Pages live either at the site root (index.html, 404.html) or in /pages/.
     const inPagesDir = window.location.pathname.includes('/pages/');
     const P = inPagesDir ? '' : 'pages/';            // prefix for links to subpages
@@ -338,6 +341,24 @@
         });
     }
 
+    // Load the interactive layer (scroll reveal, filters, lightbox) next to this
+    // file. The script waits for its stylesheet so nothing animates unstyled.
+    function loadInteractive() {
+        if (!thisScript || !thisScript.src) return;
+        const jsBase = thisScript.src.replace(/[^/]*$/, '');
+        const link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.href = jsBase + '../interactive.css';
+        const loadScript = () => {
+            const script = document.createElement('script');
+            script.src = jsBase + 'interactive.js';
+            document.body.appendChild(script);
+        };
+        link.addEventListener('load', loadScript);
+        link.addEventListener('error', loadScript);
+        document.head.appendChild(link);
+    }
+
     document.addEventListener('DOMContentLoaded', () => {
         // Inject the shared header and footer
         const header = document.getElementById('site-header');
@@ -376,5 +397,6 @@
         setupMobileMenu();
         setupCopyButtons();
         setupScrollEffects();
+        loadInteractive();
     });
 })();
