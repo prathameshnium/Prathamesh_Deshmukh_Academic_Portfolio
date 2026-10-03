@@ -212,7 +212,9 @@
             const ordered = mode === 'default'
                 ? original
                 : original.slice().sort((a, b) => {
-                    const diff = (Number(a.dataset.year) || 0) - (Number(b.dataset.year) || 0);
+                    // Same year: fall back to document order, which is chronological.
+                    const diff = (Number(a.dataset.year) || 0) - (Number(b.dataset.year) || 0) ||
+                        original.indexOf(a) - original.indexOf(b);
                     return mode === 'newest' ? -diff : diff;
                 });
             ordered.forEach(item => parent.insertBefore(item, tail));
