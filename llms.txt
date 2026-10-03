@@ -56,6 +56,7 @@ This website is built with HTML and Tailwind CSS and is hosted on GitHub Pages. 
 - Exploring the role of Cu1+ in quasi-1D Cu1−xLixO (x = 0.025): *Journal of Alloys and Compounds (2025)*. Studies the influence of hole-doping on structural, magnetic, and transport properties of CuO.
 - Negative capacitance and magnetodielectric effect in Cu2O-CuO ceramics: *Ceramics International (2025)*. Reveals negative capacitance and a charge-hopping-mediated magnetodielectric effect.
 - Rigid lattice, short-range spin correlations and hopping-dominated charge dynamics in stoichiometric Na2Cu2TeO6: *Journal of Physics and Chemistry of Solids (2026)*. Establishes Na₂Cu₂TeO₆ as a structurally robust, quasi-one-dimensional cuprate with coexisting short-range antiferromagnetism and localized ionic/electronic dynamics.
+- Magneto-Photoactivated Gold Plasmonic Nano-Islands and Quantum Dot Assemblies for ppt-Level NO2 Detection: *Small (2026)*. Reports an ultra-sensitive chemiresistive NO₂ sensor whose response down to 50 ppt is amplified by combined magnetic field and light irradiation.
 
 ## Skills & Expertise
 
