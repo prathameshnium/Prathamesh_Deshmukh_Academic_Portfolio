@@ -1,7 +1,4 @@
-# Security Policy for prathameshnium.github.io/Prathamesh_Deshmukh_Academic_Portfolio
-
-Contact: mailto:prathameshnium.github.io/Prathamesh_Deshmukh_Academic_Portfolio@gmail.com
-Expires: 2025-12-31T23:59:59Z
-Encryption: https://prathameshnium.github.io/Prathamesh_Deshmukh_Academic_Portfolio/pgp-key.txt
-Acknowledgements: https://prathameshnium.github.io/Prathamesh_Deshmukh_Academic_Portfolio/security-acknowledgements.html
-Policy: https://prathameshnium.github.io/Prathamesh_Deshmukh_Academic_Portfolio/security-policy.html
+Contact: https://prathameshnium.github.io/Prathamesh_Deshmukh_Academic_Portfolio/index.html#contact
+Expires: 2027-10-24T23:59:59Z
+Preferred-Languages: en
+Canonical: https://prathameshnium.github.io/Prathamesh_Deshmukh_Academic_Portfolio/.well-known/security.txt

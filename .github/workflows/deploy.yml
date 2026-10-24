@@ -23,10 +23,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
 
       - name: Set up Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
         with:
           node-version: '22'
           cache: 'npm'
@@ -39,12 +39,22 @@ jobs:
         # This generates ./_assets/style.css as seen in your logs
         run: npm run build
 
+      - name: Stage site files
+        # Publish only what the site serves, so node_modules, build config and
+        # repo docs never reach the live site.
+        run: |
+          mkdir -p _site/.well-known
+          cp -r *.html pages _assets _site/
+          cp favicon.ico favicon-*.png apple-touch-icon.png android-chrome-*.png site.webmanifest _site/
+          cp robots.txt sitemap.xml humans.txt llms.txt security.txt LICENSE CITATION.cff _site/
+          cp security.txt _site/.well-known/security.txt
+          rm -f _site/_assets/README.md
+
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa # v3
         with:
-          # Fixed: Using '.' because your index.html and _assets are in the root
-          path: '.'
+          path: '_site'
 
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4
