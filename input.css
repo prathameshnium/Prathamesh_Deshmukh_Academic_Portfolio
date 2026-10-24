@@ -79,6 +79,9 @@
     .social-icon { transition: transform 0.2s ease-in-out, color 0.2s ease-in-out; color: theme('colors.light-slate'); }
     .social-icon:hover { transform: translateY(-3px) scale(1.1); color: theme('colors.accent-orange'); }
     .card-link { display: block; text-decoration: none; color: inherit; height: 100%; }
+    .stat-link { display: block; transition: transform 0.2s ease-in-out; }
+    .stat-link:hover { transform: scale(1.05); }
+    .badge-archived { display: inline-block; vertical-align: middle; font-size: 0.75rem; font-weight: 500; color: theme('colors.slate'); border: 1px solid theme('colors.gray.600'); border-radius: 0.25rem; padding: 0.125rem 0.5rem; margin-left: 0.25rem; }
     .dropdown-menu {
         background-color: theme('colors.card-bg');
     }
