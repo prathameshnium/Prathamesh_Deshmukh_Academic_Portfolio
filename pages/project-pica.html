@@ -13,26 +13,26 @@
     <meta name="citation_title" content="PICA: Advanced High-Precision Transport Measurement Automation with Python">
     <meta name="citation_author" content="Deshmukh, Prathamesh">
     <meta name="citation_author" content="Mukherjee, Sudip">
-    <meta name="citation_date" content="2026/01/26">
-    <meta name="citation_doi" content="10.5281/zenodo.18377217">
+    <meta name="citation_date" content="2026/10/17">
+    <meta name="citation_doi" content="10.5281/zenodo.18377216">
     <meta name="citation_technical_report_institution" content="UGC-DAE Consortium for Scientific Research, Mumbai Centre">
     <meta name="citation_pdf_url" content="https://prathameshnium.github.io/PICA-Python-Instrument-Control-and-Automation/publications/pica-paper.pdf">
     <meta name="citation_keywords" content="Python, Hardware Control, Automation, PyVISA, Condensed Matter Physics, Cryogenics, SCPI, Instrumentation">
-    <meta name="citation_abstract" content="PICA (Python-based Instrument Control and Automation) is a modular open-source software suite designed to automate advanced transport measurements. It supports resistance measurements covering 24 orders of magnitude (10^-8 to 10^16 Ω) and integrates with Keithley, Keysight, and Lakeshore hardware using a multiprocessing architecture.">
+    <meta name="citation_abstract" content="PICA (Python-based Instrument Control and Automation) is a modular open-source software suite designed to automate advanced transport measurements. It supports resistance measurements covering 24 orders of magnitude (10^-8 to 10^16 Ω) and integrates with Keithley, Keysight, Lakeshore, Cryo-con and Novocontrol hardware using a multiprocessing architecture.">
     <meta name="author" content="Prathamesh Deshmukh">
 
     <!-- SEO: Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="PICA: Python Instrument Control & Automation">
     <meta property="og:description" content="A modular software suite for automating laboratory measurements in physics research.">
-    <meta property="og:image" content="https://prathameshnium.github.io/Prathamesh_Deshmukh_Academic_Portfolio/_assets/img/pica-launcher.png">
+    <meta property="og:image" content="https://raw.githubusercontent.com/prathameshnium/PICA-Python-Instrument-Control-and-Automation/main/pica/assets/Images/screenshots/00_PICA_Launcher.png">
     <meta property="og:url" content="https://prathameshnium.github.io/Prathamesh_Deshmukh_Academic_Portfolio/pages/project-pica.html">
 
     <!-- SEO: Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:title" content="PICA: Python Instrument Control & Automation">
     <meta property="twitter:description" content="A modular software suite for automating laboratory measurements in physics research.">
-    <meta property="twitter:image" content="https://prathameshnium.github.io/Prathamesh_Deshmukh_Academic_Portfolio/_assets/img/pica-launcher.png">
+    <meta property="twitter:image" content="https://raw.githubusercontent.com/prathameshnium/PICA-Python-Instrument-Control-and-Automation/main/pica/assets/Images/screenshots/00_PICA_Launcher.png">
 
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; font-src 'self' https://cdnjs.cloudflare.com; img-src 'self' data: https://raw.githubusercontent.com https://github.com https://upload.wikimedia.org https://www.vectorlogo.zone https://static.wikia.nocookie.net https://seeklogo.com https://codecov.io https://zenodo.org https://joss.theoj.org https://img.shields.io https://placehold.co; connect-src 'self';">
     <meta name="robots" content="index, follow">
@@ -56,7 +56,8 @@
       "name": "PICA: Python-based Instrument Control and Automation",
       "description": "A modular software suite for automating laboratory measurements in physics research, featuring a central GUI launcher and isolated process execution for stability.",
       "applicationCategory": "ScientificApplication",
-      "operatingSystem": "Windows, macOS, Linux",
+      "operatingSystem": "Windows, Linux",
+      "softwareVersion": "1.0.7",
       "author": {
         "@type": "Person",
         "name": "Prathamesh Deshmukh"
@@ -70,7 +71,8 @@
         "name": "UGC-DAE Consortium for Scientific Research, Mumbai Centre"
       },
       "license": "https://opensource.org/licenses/MIT",
-      "codeRepository": "https://github.com/prathameshnium/PICA-Python-Instrument-Control-and-Automation"
+      "codeRepository": "https://github.com/prathameshnium/PICA-Python-Instrument-Control-and-Automation",
+      "downloadUrl": "https://pypi.org/project/pica-suite/"
     }
     </script>
     <link rel="stylesheet" href="../_assets/style.css">
@@ -92,20 +94,20 @@
                          class="w-32 h-32 mx-auto mb-6">
                     <h1 class="text-4xl md:text-5xl font-bold section-title mb-4">PICA: Python-based Instrument Control and Automation</h1>
                     <p class="text-lg text-slate max-w-2xl mx-auto mb-8">
-                        PICA is a modular open-source software suite designed to automate advanced transport measurements. It supports resistance measurements covering <strong>24 orders of magnitude (10<sup>-8</sup> to 10<sup>16</sup> Ω)</strong> and integrates with Keithley, Keysight, Lakeshore, and Quantum Design (PPMS) hardware using a multiprocessing, fault-tolerant architecture.
+                        PICA is a modular open-source software suite designed to automate advanced transport measurements. It supports resistance measurements covering <strong>24 orders of magnitude (10<sup>-8</sup> to 10<sup>16</sup> Ω)</strong> and orchestrates Keithley, Keysight, Lakeshore, Cryo-con and Novocontrol instruments over GPIB/VISA and SCPI for cryogenic transport, resistivity, I-V, dielectric, pyroelectric and memristor measurements, using a multiprocessing, fault-tolerant architecture. Validated in the lab with a Quantum Design PPMS (5-380 K, up to 14 T).
                     </p>
 
                     <div class="bg-dark-bg/50 border border-gray-700 rounded-lg p-4 mb-8 text-sm text-left inline-block mx-auto">
                         <p class="text-light-slate mb-2"><strong>Preprint Status:</strong> Published on December 22, 2025.</p>
                         <div class="flex flex-wrap gap-3">
-                            <a href="https://doi.org/10.5281/zenodo.18377217" target="_blank" rel="noopener noreferrer" class="bg-accent-orange text-dark-bg px-2 py-1 rounded font-bold hover:bg-white transition-colors">DOI (Zenodo): 10.5281/zenodo.18377217</a>
+                            <a href="https://doi.org/10.5281/zenodo.18377216" target="_blank" rel="noopener noreferrer" class="bg-accent-orange text-dark-bg px-2 py-1 rounded font-bold hover:bg-white transition-colors">DOI (Zenodo): 10.5281/zenodo.18377216</a>
                             <a href="https://doi.org/10.17605/OSF.IO/7QK2S" target="_blank" rel="noopener noreferrer" class="bg-blue-500 text-white px-2 py-1 rounded font-bold hover:bg-blue-400 transition-colors">DOI (OSF): 10.17605/OSF.IO/7QK2S</a>
                         </div>
                     </div>
 
                     <div class="bg-accent-orange/10 border-2 border-accent-orange rounded-lg p-6 mb-10 text-center">
-                        <h2 class="text-2xl font-bold text-accent-orange mb-2">🎉 v1.0.3 is now live!</h2>
-                        <p class="text-light-slate">The GUI has been refreshed with a new <strong>Latte</strong> theme — lighter, warmer, and easier on the eyes during long measurement sessions.</p>
+                        <h2 class="text-2xl font-bold text-accent-orange mb-2">🎉 v1.0.7 is now live!</h2>
+                        <p class="text-light-slate">Linux install guide, Keithley 2400 memristor modules, C-V module v2, and module search with hover cards in the launcher.</p>
                         <code class="block bg-dark-bg p-2 mt-4 rounded text-accent-orange">pip install --upgrade pica-suite</code>
                     </div>
 
@@ -114,19 +116,19 @@
   <a href="https://github.com/prathameshnium/PICA-Python-Instrument-Control-and-Automation/actions/workflows/lint.yml"><img loading="lazy" decoding="async" src="https://github.com/prathameshnium/PICA-Python-Instrument-Control-and-Automation/actions/workflows/lint.yml/badge.svg" alt="Lint and Style Checks"></a>
   <a href="https://github.com/prathameshnium/PICA-Python-Instrument-Control-and-Automation/actions/workflows/codeql.yml"><img loading="lazy" decoding="async" src="https://github.com/prathameshnium/PICA-Python-Instrument-Control-and-Automation/actions/workflows/codeql.yml/badge.svg" alt="CodeQL Analysis"></a>
   <a href="https://codecov.io/gh/prathameshnium/PICA-Python-Instrument-Control-and-Automation"><img loading="lazy" decoding="async" src="https://codecov.io/gh/prathameshnium/PICA-Python-Instrument-Control-and-Automation/branch/main/graph/badge.svg" alt="Code Coverage"></a>
-  <a href="https://doi.org/10.5281/zenodo.18377217"><img loading="lazy" decoding="async" src="https://zenodo.org/badge/DOI/10.5281/zenodo.18377217.svg" alt="DOI"></a>
-  <a href="https://joss.theoj.org/papers/444957f999023680f8abbbf0e75687fa"><img loading="lazy" decoding="async" src="https://joss.theoj.org/papers/444957f999023680f8abbbf0e75687fa/status.svg" alt="JOSS Status"></a>
+  <a href="https://doi.org/10.5281/zenodo.18377216"><img loading="lazy" decoding="async" src="https://zenodo.org/badge/DOI/10.5281/zenodo.18377216.svg" alt="DOI"></a>
   <a href="https://pypi.org/project/pica-suite/"><img loading="lazy" decoding="async" src="https://img.shields.io/pypi/v/pica-suite.svg?style=flat-square&label=PyPI&color=blue" alt="PyPI Version"></a>
   <a href="https://pypi.org/project/pica-suite/"><img loading="lazy" decoding="async" src="https://img.shields.io/pypi/dm/pica-suite?style=flat-square&label=PyPI%20Downloads" alt="PyPI Downloads"></a>
   <a href="https://pica-python-instrument-control-and-automation.readthedocs.io/en/latest/"><img loading="lazy" decoding="async" src="https://img.shields.io/badge/Docs-Read_the_Docs-blue?style=flat-square&logo=read-the-docs&logoColor=white" alt="Read the Docs"></a>
   <a href="https://github.com/prathameshnium/PICA-Python-Instrument-Control-and-Automation/actions/workflows/draft-pdf.yml"><img loading="lazy" decoding="async" src="https://github.com/prathameshnium/PICA-Python-Instrument-Control-and-Automation/actions/workflows/draft-pdf.yml/badge.svg" alt="Draft PDF"></a>
-  <img loading="lazy" decoding="async" src="https://img.shields.io/badge/Python-3.10+-brightgreen.svg?logo=python&logoColor=white&style=flat-square" alt="Python Version">
+  <a href="https://pypi.org/project/pica-suite/"><img loading="lazy" decoding="async" src="https://img.shields.io/pypi/pyversions/pica-suite?style=flat-square&logo=python&logoColor=white" alt="Supported Python versions"></a>
+  <img loading="lazy" decoding="async" src="https://img.shields.io/badge/CI%20tested-3.10%20%7C%203.11%20%7C%203.12%20%7C%203.13-brightgreen?style=flat-square&logo=python&logoColor=white" alt="Tested on Python 3.10, 3.11, 3.12, 3.13">
   <a href="https://github.com/prathameshnium/PICA-Python-Instrument-Control-and-Automation/blob/main/LICENSE" target="_blank" rel="noopener noreferrer"><img loading="lazy" decoding="async" src="https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square" alt="License: MIT"></a>
   <a href="https://github.com/prathameshnium/PICA-Python-Instrument-Control-and-Automation/blob/main/docs/User_Manual.md" target="_blank" rel="noopener noreferrer"><img loading="lazy" decoding="async" src="https://img.shields.io/badge/Docs-User_Manual-blue.svg?logo=markdown&style=flat-square" alt="Documentation"></a>
   <a href="https://github.com/prathameshnium/PICA-Python-Instrument-Control-and-Automation/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener noreferrer"><img loading="lazy" decoding="async" src="https://img.shields.io/badge/Contributing-Guidelines-orange.svg?style=flat-square" alt="Contributing Guidelines"></a>
   <a href="https://github.com/prathameshnium/PICA-Python-Instrument-Control-and-Automation/blob/main/CODE_OF_CONDUCT.md" target="_blank" rel="noopener noreferrer"><img loading="lazy" decoding="async" src="https://img.shields.io/badge/Code%20of%20Conduct-Contributor%20Covenant-ff69b4.svg?style=flat-square" alt="Code of Conduct"></a>
   <img loading="lazy" decoding="async" src="https://img.shields.io/badge/Project_Inception-June%202022-orange?style=flat-square&logo=calendar" alt="Project_Inception Date">
-  <img loading="lazy" decoding="async" src="https://img.shields.io/badge/Project%20Age-3%2B%20Years-blueviolet?style=flat-square" alt="Project Age">
+  <img loading="lazy" decoding="async" src="https://img.shields.io/badge/Project%20Age-4%2B%20Years-blueviolet?style=flat-square" alt="Project Age">
   <img loading="lazy" decoding="async" src="https://img.shields.io/github/created-at/prathameshnium/PICA-Python-Instrument-Control-and-Automation?style=flat-square" alt="GitHub created-at">
   <img loading="lazy" decoding="async" src="https://img.shields.io/github/downloads/prathameshnium/PICA-Python-Instrument-Control-and-Automation/total?style=flat-square&color=blue" alt="Total Downloads">
   <a href="https://github.com/prathameshnium/PICA-Python-Instrument-Control-and-Automation/stargazers"><img loading="lazy" decoding="async" src="https://img.shields.io/github/stars/prathameshnium/PICA-Python-Instrument-Control-and-Automation?style=flat-square&logo=github" alt="Stars"></a>
@@ -142,6 +144,12 @@
                     <div class="flex flex-wrap justify-center gap-4">
                         <a href="https://github.com/prathameshnium/PICA-Python-Instrument-Control-and-Automation" target="_blank" rel="noopener noreferrer" class="cta-button bg-accent-orange border-2 border-accent-orange text-dark-bg font-semibold py-2 px-6 rounded-lg">
                             <i class="fab fa-github mr-2" aria-hidden="true"></i> GitHub
+                        </a>
+                        <a href="https://prathameshnium.github.io/PICA-Python-Instrument-Control-and-Automation/" target="_blank" rel="noopener noreferrer" class="cta-button border-2 border-accent-orange/70 text-white hover:bg-accent-orange hover:text-dark-bg py-2 px-6 rounded-lg transition-colors">
+                            <i class="fas fa-book mr-2"></i> Documentation
+                        </a>
+                        <a href="https://pypi.org/project/pica-suite/" target="_blank" rel="noopener noreferrer" class="cta-button border-2 border-accent-orange/70 text-white hover:bg-accent-orange hover:text-dark-bg py-2 px-6 rounded-lg transition-colors">
+                            <i class="fab fa-python mr-2"></i> PyPI
                         </a>
                         <a href="https://prathameshnium.github.io/PICA-Python-Instrument-Control-and-Automation/publications/pica-paper.pdf" target="_blank" rel="noopener noreferrer" class="cta-button border-2 border-accent-orange/70 text-white hover:bg-accent-orange hover:text-dark-bg py-2 px-6 rounded-lg transition-colors">
                             <i class="fas fa-file-pdf mr-2"></i> PDF Preprint
@@ -165,10 +173,12 @@
                 <div class="card p-6 rounded-lg">
                     <h3 class="text-xl font-semibold text-accent-orange mb-4">Key Features</h3>
                     <ul class="space-y-3 text-sm text-light-slate">
-                        <li><i class="fas fa-check text-accent-orange mr-2"></i><strong>Accessibility:</strong> A professional GUI dashboard (now with the <strong>Latte theme</strong>) for researchers without coding experience.</li>
-                        <li><i class="fas fa-shield-alt text-accent-orange mr-2"></i><strong>Fault Tolerance:</strong> Control logic is isolated from the UI using multiprocessing to prevent crashes.</li>
-                        <li><i class="fas fa-eye text-accent-orange mr-2"></i><strong>Operational Transparency:</strong> Rejects the "black box" paradigm by exposing real-time, time-stamped command logs.</li>
-                        <li><i class="fas fa-code-branch text-accent-orange mr-2"></i><strong>Extensibility:</strong> Open-source framework for integrating new instrument drivers.</li>
+                        <li><i class="fas fa-check text-accent-orange mr-2"></i><strong>Accessibility:</strong> A GUI launcher lets researchers without coding experience configure and run measurement protocols from pre-packaged modules.</li>
+                        <li><i class="fas fa-flask text-accent-orange mr-2"></i><strong>Operational Validation:</strong> Validated via cryogenic transport measurements with a custom probe in a PPMS (5-380 K, up to 14 T) at UGC-DAE CSR, Mumbai.</li>
+                        <li><i class="fas fa-shield-alt text-accent-orange mr-2"></i><strong>Fault Tolerance:</strong> Each measurement program runs in its own process, so a hardware timeout or driver crash never freezes the launcher.</li>
+                        <li><i class="fas fa-terminal text-accent-orange mr-2"></i><strong>CLI Templates:</strong> About fifteen measurements also ship an <code>Instrument_Control</code> script for headless automation.</li>
+                        <li><i class="fas fa-eye text-accent-orange mr-2"></i><strong>Operational Transparency:</strong> Real-time, time-stamped logs of every operation aid debugging and reproducibility.</li>
+                        <li><i class="fas fa-code-branch text-accent-orange mr-2"></i><strong>Extensibility:</strong> Every module is one self-contained file; add an instrument by copying the closest module and changing its SCPI commands.</li>
                     </ul>
                 </div>
             </div>
@@ -180,7 +190,7 @@
                 <div class="card p-6 rounded-lg">
                     <h3 class="text-lg font-bold text-white mb-3"><i class="fas fa-microchip text-accent-orange mr-2"></i>Hardware Abstraction</h3>
                     <p class="text-xs text-light-slate leading-relaxed">
-                        Utilizes <strong>PyVISA</strong> to abstract low-level communication (GPIB, USB, Ethernet). Implements strict initialization routines: connection verification via <code>*IDN?</code>, full instrument resets, and graceful shutdowns.
+                        Utilizes <strong>PyVISA</strong> to abstract low-level communication (GPIB, USB, Ethernet). Implements strict initialization routines: connection verification via <code>*IDN?</code>, instrument resets (<code>*RST</code>/<code>*CLS</code>), and safe shutdown that switches off sources and heaters on finish, stop, error or window close.
                     </p>
                 </div>
                 <div class="card p-6 rounded-lg">
@@ -198,29 +208,39 @@
             </div>
             <div class="mt-6 text-center">
                 <p class="text-sm text-slate italic">
-                    PICA includes a testing suite using <code>pytest</code> and <code>unittest.mock</code> to simulate VISA resources, allowing logic verification without physical hardware.
+                    PICA includes a testing suite using <code>pytest</code> and <code>unittest.mock</code> to simulate VISA resources, allowing logic verification without physical hardware. The suite has 3,500+ tests, all run against mocked instruments.
                 </p>
             </div>
         </section>
 
-        <section id="latte-theme" class="py-16 bg-card-bg/30 border-y border-gray-800">
+        <section id="whats-new" class="py-16 bg-card-bg/30 border-y border-gray-800">
             <div class="max-w-4xl mx-auto text-center">
-                <h2 class="text-3xl font-bold section-title mb-6">🎨 What's New in v1.0.3: Latte Theme</h2>
-                <p class="text-lg text-slate mb-10">
-                    The GUI has been redesigned with a lighter, warmer color palette to improve readability under typical laboratory lighting conditions and reduce eye strain during long measurement sessions.
-                </p>
-                <div class="grid md:grid-cols-3 gap-6">
+                <h2 class="text-3xl font-bold section-title mb-6">What's New in v1.0.7</h2>
+                <p class="text-lg text-slate mb-10">Released October 2026 on PyPI and GitHub Releases. Upgrade with <code>pip install --upgrade pica-suite</code>.</p>
+                <div class="grid md:grid-cols-3 gap-6 text-left">
                     <div class="p-4 bg-white/5 rounded-lg border border-gray-700">
-                        <p class="font-bold text-accent-orange">Warm Palette</p>
-                        <p class="text-sm text-slate">Lighter background and widget colors throughout.</p>
+                        <p class="font-bold text-accent-orange">Linux Documentation</p>
+                        <p class="text-sm text-slate">Linux install guide (venv, tkinter, <code>pyvisa-py</code>, USB-TMC / serial / GPIB) and a Linux issue template.</p>
                     </div>
                     <div class="p-4 bg-white/5 rounded-lg border border-gray-700">
-                        <p class="font-bold text-accent-orange">High Contrast</p>
-                        <p class="text-sm text-slate">Improved contrast for console log text and warnings.</p>
+                        <p class="font-bold text-accent-orange">Memristor Modules</p>
+                        <p class="text-sm text-slate">Keithley 2400 switching I-V, retention and endurance programs, plus a read-only Memristor Analysis utility.</p>
                     </div>
                     <div class="p-4 bg-white/5 rounded-lg border border-gray-700">
-                        <p class="font-bold text-accent-orange">Softer Plots</p>
-                        <p class="text-sm text-slate">Optimized real-time plot backgrounds for scientific reporting.</p>
+                        <p class="font-bold text-accent-orange">C-V Module v2</p>
+                        <p class="text-sm text-slate">Rewritten Keysight E4980A sweep builder (bipolar, unipolar, ladder), bus-error retry and a separate event log.</p>
+                    </div>
+                    <div class="p-4 bg-white/5 rounded-lg border border-gray-700">
+                        <p class="font-bold text-accent-orange">K6221 / 2182 I-V</p>
+                        <p class="text-sm text-slate">Custom list sweeps (paste from the List Maker), µA units and zero-crossing fixes.</p>
+                    </div>
+                    <div class="p-4 bg-white/5 rounded-lg border border-gray-700">
+                        <p class="font-bold text-accent-orange">Launcher v2</p>
+                        <p class="text-sm text-slate">Module search (<code>Ctrl+F</code>), hover cards in Advanced Options, and an in-app viewer for the manual and change log.</p>
+                    </div>
+                    <div class="p-4 bg-white/5 rounded-lg border border-gray-700">
+                        <p class="font-bold text-accent-orange">Packaging &amp; CI</p>
+                        <p class="text-sm text-slate">Cleaner wheel and a wider CI matrix (Python 3.10-3.13, Linux GUI smoke test).</p>
                     </div>
                 </div>
             </div>
@@ -244,9 +264,14 @@
                             <td class="px-6 py-4">10 nΩ - 100 MΩ</td>
                         </tr>
                         <tr>
-                            <td class="px-6 py-4 font-semibold text-white">Standard Transport</td>
+                            <td class="px-6 py-4 font-semibold text-white">Mid-Resistance (Standard)</td>
                             <td class="px-6 py-4">K2400 + LS350/340</td>
                             <td class="px-6 py-4">100 µΩ - 200 MΩ</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 font-semibold text-white">Mid-Resistance (High-Precision)</td>
+                            <td class="px-6 py-4">K2400 + K2182 + LS350/340</td>
+                            <td class="px-6 py-4">1 µΩ - 100 MΩ</td>
                         </tr>
                         <tr>
                             <td class="px-6 py-4 font-semibold text-white">High-Resistance</td>
@@ -258,8 +283,43 @@
                             <td class="px-6 py-4">Keysight E4980A + LS350/340</td>
                             <td class="px-6 py-4">20 Hz - 2 MHz</td>
                         </tr>
+                        <tr>
+                            <td class="px-6 py-4 font-semibold text-white">Pyroelectric</td>
+                            <td class="px-6 py-4">K6517B + LS350/340</td>
+                            <td class="px-6 py-4">10<sup>-15</sup> A resolution</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 font-semibold text-white">Broadband Dielectric <em>(experimental)</em></td>
+                            <td class="px-6 py-4">Novocontrol Alpha-AN + ZG4</td>
+                            <td class="px-6 py-4">20 Hz - 10 MHz</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 font-semibold text-white">AC Transport <em>(experimental)</em></td>
+                            <td class="px-6 py-4">K6221 + SR830 lock-in or K197A</td>
+                            <td class="px-6 py-4">Four-probe AC I-V, frequency scan, R-T</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 font-semibold text-white">Memristor Switching <em>(v1.0.7)</em></td>
+                            <td class="px-6 py-4">K2400</td>
+                            <td class="px-6 py-4">±200 V source, compliance set per run</td>
+                        </tr>
                     </tbody>
                 </table>
+            </div>
+            <p class="text-sm text-slate italic text-center mt-4">Temperature control also supports the Cryo-con 34. Each module drives specific instruments; adapting one to a similar model usually means editing its SCPI commands.</p>
+        </section>
+
+        <section id="utilities" class="py-10 max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold section-title mb-8 text-center">Utilities &amp; Tools</h2>
+            <div class="card p-6 rounded-lg">
+                <ul class="space-y-3 text-sm text-light-slate">
+                    <li><i class="fas fa-search text-accent-orange mr-2"></i><strong>VISA Instrument Scanner:</strong> queries the GPIB/USB/Ethernet bus (<code>*IDN?</code>) to map connected instrument addresses.</li>
+                    <li><i class="fas fa-chart-line text-accent-orange mr-2"></i><strong>PICA Plotter Utility:</strong> multi-file plotting for comparison during or after measurements.</li>
+                    <li><i class="fas fa-terminal text-accent-orange mr-2"></i><strong>SCPI Console:</strong> interactive terminal for sending raw SCPI commands to any VISA instrument.</li>
+                    <li><i class="fas fa-stethoscope text-accent-orange mr-2"></i><strong>Diagnostic Tools:</strong> read-only checks of the Python environment, drivers, interfaces, the Cryo-con 34 and the Alpha-AN.</li>
+                    <li><i class="fas fa-snowflake text-accent-orange mr-2"></i><strong>PPMS Helpers:</strong> plotter, sequence visualizer and time estimator for Quantum Design PPMS workflows.</li>
+                    <li><i class="fas fa-calculator text-accent-orange mr-2"></i><strong>Calculators &amp; Helpers:</strong> List Maker, Quick Calc, unit converter, MD-ratio calculator, PID simulator, Time Utility and Memristor Analysis.</li>
+                </ul>
             </div>
         </section>
 
@@ -480,11 +540,17 @@ pip install .</code></pre>
                         <p>For example:</p>
                     </div>
                     <div class="bg-dark-bg p-4 rounded-lg mb-6">
-                        <pre class="text-sm text-light-slate overflow-x-auto"><code>python pica/keithley/k6517b/High_Resistance/IV_K6517B_GUI.py</code></pre>
+                        <pre class="text-sm text-light-slate overflow-x-auto"><code>python -m pica.keithley.k6517b.High_Resistance.IV_K6517B_GUI</code></pre>
                     </div>
 
-                    <h3 class="text-2xl font-semibold text-accent-orange mb-4">2. Command Line Interface (CLI)</h3>
-                    <p class="text-light-slate mb-4">For headless operation (e.g., Raspberry Pi).</p>
+                    <h3 class="text-2xl font-semibold text-accent-orange mb-4">2. Launcher v2 (in testing)</h3>
+                    <p class="text-light-slate mb-4">Opens on a <strong>Quick Select</strong> screen (category, module and protocol, each explained in plain language) and keeps every module in an <strong>Advanced Options</strong> window (<code>Ctrl+Shift+A</code>). <code>Ctrl+F</code> searches every program by name, instrument or input field. The classic <code>pica-gui</code> launcher remains the canonical one.</p>
+                    <div class="bg-dark-bg p-4 rounded-lg mb-6">
+                        <pre class="text-sm text-light-slate overflow-x-auto"><code>python -m pica.main_v2</code></pre>
+                    </div>
+
+                    <h3 class="text-2xl font-semibold text-accent-orange mb-4">3. Command Line Interface (CLI)</h3>
+                    <p class="text-light-slate mb-4">For headless operation, without the GUI.</p>
                     <div class="bg-dark-bg p-4 rounded-lg mb-6">
                         <pre class="text-sm text-light-slate overflow-x-auto"><code>pica-cli</code></pre>
                     </div>
@@ -507,10 +573,14 @@ pip install .</code></pre>
             <div class="max-w-3xl mx-auto text-center">
                 <h2 class="text-4xl font-bold section-title mb-8">System Requirements & Compatibility</h2>
                 <div class="card p-8 rounded-lg text-left">
-                    <p class="text-light-slate mb-4"><strong>Supported Platform:</strong> Windows 10 / 11 (x86_64)</p>
+                    <ul class="list-disc list-inside text-light-slate mb-6 space-y-2">
+                        <li><strong>Windows 10 / 11 (x86_64):</strong> fully supported, and used daily in the lab with real instruments.</li>
+                        <li><strong>Linux:</strong> installation, tests and GUIs verified; measurements against real instruments not yet verified.</li>
+                        <li><strong>macOS:</strong> not tested.</li>
+                    </ul>
                     <div class="bg-yellow-900/20 border-l-4 border-yellow-500 text-yellow-100 p-4 mb-6">
-                        <p class="font-bold">Windows Only</p>
-                        <p class="text-sm">PICA is validated exclusively for Windows environments. Linux and macOS are not currently supported due to dependencies on Windows-specific GUI libraries and font rendering.</p>
+                        <p class="font-bold">Note</p>
+                        <p class="text-sm">The 32-bit Novocontrol Alpha-AN frequency scan and the 32-bit GPIB scanner call the Windows <code>gpib-32.dll</code> directly, so they run on Windows only.</p>
                     </div>
                     <h3 class="text-xl font-semibold text-accent-orange mb-4">A VISA Backend is Required</h3>
                     <p class="text-sm text-light-slate mb-4">PyVISA is a wrapper, not a driver. You <strong>must</strong> install a backend:</p>
@@ -524,18 +594,19 @@ pip install .</code></pre>
 
         <section id="experimental-linux" class="py-20">
             <div class="max-w-3xl mx-auto text-center">
-                <h2 class="text-3xl font-bold section-title mb-8 text-center">Experimental Linux Instructions</h2>
+                <h2 class="text-3xl font-bold section-title mb-8 text-center">Installing on Linux</h2>
                 <div class="card p-8 rounded-lg text-left">
                     <div class="bg-red-900/20 border-l-4 border-red-500 text-red-100 p-4 mb-6">
                         <p class="font-bold">Warning</p>
-                        <p class="text-sm">Linux support is currently experimental. You will likely encounter UI-related issues.</p>
+                        <p class="text-sm">Talking to real instruments from Linux has not been verified yet. Installation, the full test suite and the GUI windows are checked on Ubuntu in CI; lab use so far has been on Windows.</p>
                     </div>
-                    <p class="text-light-slate mb-4">If you wish to experiment on Linux:</p>
-                    <ol class="list-decimal list-inside text-sm text-light-slate space-y-3">
-                        <li><strong>Install Tkinter:</strong> <code>sudo apt-get install python3-tk</code> (for Debian/Ubuntu).</li>
-                        <li><strong>Virtual Environment:</strong> Use <code>source venv/bin/activate</code> to activate.</li>
-                        <li><strong>Installation:</strong> Follow the standard <a href="#getting-started" class="text-accent-orange">source installation</a> steps.</li>
+                    <ol class="list-decimal list-inside text-sm text-light-slate space-y-3 mb-6">
+                        <li><strong>System packages:</strong> <code>sudo apt install python3-venv python3-tk fonts-noto-color-emoji</code> (Debian/Ubuntu).</li>
+                        <li><strong>Install PICA:</strong> create a venv, activate it with <code>source ~/pica-venv/bin/activate</code>, then <code>pip install pica-suite</code>.</li>
+                        <li><strong>VISA backend:</strong> the pure-Python <code>pyvisa-py</code> is installed for you. USB-TMC needs <code>pyusb</code> and a udev rule; GPIB cards need the linux-gpib driver and <code>pip install "pica-suite[gpib]"</code>.</li>
+                        <li><strong>Run:</strong> <code>pica-gui</code>. For overnight runs, block sleep with <code>systemd-inhibit</code>.</li>
                     </ol>
+                    <p class="text-sm text-light-slate">Full details are in the <a href="https://github.com/prathameshnium/PICA-Python-Instrument-Control-and-Automation#option-3-installing-on-linux" target="_blank" rel="noopener noreferrer" class="text-accent-orange hover:underline">Linux install guide</a>.</p>
                 </div>
             </div>
         </section>
@@ -544,7 +615,7 @@ pip install .</code></pre>
             <div class="max-w-3xl mx-auto text-center">
                 <h2 class="text-4xl font-bold section-title mb-8">Running Tests</h2>
                 <div class="card p-8 rounded-lg text-left">
-                    <p class="text-light-slate mb-4">To run the test suite locally, first install the development dependencies:</p>
+                    <p class="text-light-slate mb-4">The suite has <strong>3,500+ tests</strong>, all run against mocked VISA instruments, so no hardware is needed. To run it locally, first install the development dependencies:</p>
                     <div class="bg-dark-bg p-4 rounded-lg mb-6">
                         <pre class="text-sm text-light-slate overflow-x-auto"><code>pip install -r requirements-dev.txt</code></pre>
                     </div>
@@ -565,9 +636,13 @@ pip install .</code></pre>
             <div class="max-w-3xl mx-auto text-center">
                 <h2 class="text-4xl font-bold section-title mb-8">Project History</h2>
                 <div class="card p-8 rounded-lg text-left">
-                    <p class="text-light-slate mb-4">PICA evolved from simple offline scripts in 2022 to a full-stack automated suite.</p>
+                    <p class="text-light-slate mb-4">PICA evolved from simple offline scripts in 2022 to a full-stack automated suite. Release builds are on the <a href="https://github.com/prathameshnium/PICA-Python-Instrument-Control-and-Automation/releases" target="_blank" rel="noopener noreferrer" class="text-accent-orange hover:underline">releases page</a>.</p>
                     <ul class="list-disc list-inside text-light-slate mb-4">
-                        <li><strong>v1.0.3 (Latest):</strong> GUI refreshed with the <strong>Latte</strong> theme. Available on PyPI.</li>
+                        <li><strong>v1.0.7 (Latest):</strong> Linux install guide, Keithley 2400 memristor modules, C-V module v2, K6221/2182 custom-list I-V, launcher module search and hover cards. Available on <a href="https://pypi.org/project/pica-suite/" class="text-accent-orange hover:underline">PyPI</a>.</li>
+                        <li><strong>v1.0.6:</strong> Advanced Lakeshore step control, Cryo-con 34 and Lakeshore 340 support, AC resistivity (SR830 / 197A), PPMS dielectric protocol, Novocontrol Alpha-AN (experimental), launcher v2 and diagnostic tools.</li>
+                        <li><strong>v1.0.5:</strong> E4980A frequency and temperature scans, Lakeshore 350 direct and step control, K6517B poling and new utilities.</li>
+                        <li><strong>v1.0.4:</strong> Documentation release: Read the Docs integration and automated preprint PDF build.</li>
+                        <li><strong>v1.0.3:</strong> GUI refreshed with the <strong>Latte</strong> theme. First release published to PyPI.</li>
                         <li><strong>v1.0.0 (Initial Public Release):</strong> Version numbering has been reset from legacy development builds (v17.0) to v1.0.0 to standardize the package for public distribution and citation.</li>
                         <li><strong>v17.0:</strong> Professional directory restructuring, Semantic Versioning, and documentation overhaul.</li>
                         <li><strong>v15.0:</strong> JOSS submission preparation, CI/CD integration.</li>
@@ -596,10 +671,13 @@ pip install .</code></pre>
                 <h2 class="text-4xl font-bold section-title mb-8">Resources & Documentation</h2>
                 <div class="card p-8 rounded-lg text-left">
                     <ul class="list-disc list-inside text-light-slate mb-4">
-                        <li><strong>Full Documentation:</strong> Comprehensive API reference and user guides are available on <a href="https://pica-python-instrument-control-and-automation.readthedocs.io/en/latest/" class="text-accent-orange hover:underline">Read the Docs</a>.</li>
+                        <li><strong>Online Documentation:</strong> Full documentation site at <a href="https://prathameshnium.github.io/PICA-Python-Instrument-Control-and-Automation/" class="text-accent-orange hover:underline">prathameshnium.github.io/PICA-Python-Instrument-Control-and-Automation</a>, also on <a href="https://pica-python-instrument-control-and-automation.readthedocs.io/en/latest/" class="text-accent-orange hover:underline">Read the Docs</a>.</li>
+                        <li><strong>PyPI Package:</strong> Install directly via <a href="https://pypi.org/project/pica-suite/" class="text-accent-orange hover:underline">pypi.org/project/pica-suite</a>.</li>
                         <li><strong>User Manual:</strong> Detailed physics and usage guides are available in the <a href="https://pica-python-instrument-control-and-automation.readthedocs.io/en/latest/User_Manual.html" class="text-accent-orange hover:underline">Official User Manual</a>.</li>
                         <li><strong>Source Files:</strong> Access the documentation source via the <a href="https://github.com/prathameshnium/PICA-Python-Instrument-Control-and-Automation/blob/main/docs/User_Manual.md" class="text-accent-orange hover:underline">GitHub Markdown file</a>.</li>
                         <li><strong>Instrument Manuals:</strong> A list of instrument manuals is available in <a href="https://github.com/prathameshnium/PICA-Python-Instrument-Control-and-Automation/blob/main/docs/Instruments_Manuals_Lists.md" target="_blank" rel="noopener noreferrer" class="text-accent-orange hover:underline">docs/Instruments_Manuals_Lists.md</a>.</li>
+                        <li><strong>Research Impact:</strong> Publications that used PICA are listed in <a href="https://github.com/prathameshnium/PICA-Python-Instrument-Control-and-Automation/blob/main/docs/Research_Impact.md" target="_blank" rel="noopener noreferrer" class="text-accent-orange hover:underline">docs/Research_Impact.md</a>.</li>
+                        <li><strong>GitLab Backup:</strong> Mirrored weekly to <a href="https://gitlab.com/prathameshnium/pica-python-instrument-control-and-automation" target="_blank" rel="noopener noreferrer" class="text-accent-orange hover:underline">GitLab</a>.</li>
                     </ul>
                 </div>
             </div>
@@ -634,18 +712,18 @@ pip install .</code></pre>
                                     <div class="card p-8 rounded-lg text-left">
                                         <p class="text-light-slate mb-4">If you use this software in your research, please cite it:</p>
                                         <p class="text-light-slate mb-4"><strong>Scientific Manuscript:</strong> The associated research paper pre-print is available on <a href="https://doi.org/10.17605/OSF.IO/7QK2S" target="_blank" rel="noopener noreferrer" class="text-accent-orange hover:underline">OSF Project</a>, <a href="https://www.academia.edu/165176821/PICA_Advanced_High_Precision_Transport_Measurement_Automation_with_Python" target="_blank" rel="noopener noreferrer" class="text-accent-orange hover:underline">Academia.edu</a>, or via our <a href="https://prathameshnium.github.io/PICA-Python-Instrument-Control-and-Automation/publications/pica-paper.pdf" target="_blank" rel="noopener noreferrer" class="text-accent-orange hover:underline">GitHub repository (PDF)</a>.</p>
-                                        <p class="text-light-slate mb-4">For more information, visit the <a href="https://doi.org/10.5281/zenodo.18377217" class="text-accent-orange hover:underline">Zenodo Archive</a>.</p>
+                                        <p class="text-light-slate mb-4">For more information, visit the <a href="https://doi.org/10.5281/zenodo.18377216" class="text-accent-orange hover:underline">Zenodo Archive</a>.</p>
                                         <div class="bg-dark-bg p-4 rounded-lg mb-6">
                                             <pre class="text-sm text-light-slate overflow-x-auto"><code>@software{Deshmukh_PICA_2026,
   author       = {Deshmukh, Prathamesh Keshao and Mukherjee, Sudip},
   title        = {{PICA: Advanced High-Precision Transport Measurement Automation with Python}},
-  month        = jan,
-  day          = 26,
+  month        = oct,
+  day          = 17,
   year         = 2026,
   publisher    = {Zenodo},
-  version      = {1.0.3},
-  doi          = {10.5281/zenodo.18377217},
-  url          = {https://doi.org/10.5281/zenodo.18377217}
+  version      = {1.0.7},
+  doi          = {10.5281/zenodo.18377216},
+  url          = {https://doi.org/10.5281/zenodo.18377216}
 }
                 </code></pre>
                                         </div>

@@ -73,7 +73,7 @@
                 <h1 class="text-4xl md:text-5xl font-bold section-title mb-2">TupperTransformer</h1>
                 <p class="text-2xl text-accent-orange mb-6">A Novel Image Processing Algorithm</p>
                 <div class="flex justify-center gap-2">
-                    <a href="https://github.com/Prathameshnium/TupperTransformer/blob/main/License" target="_blank" rel="noopener noreferrer"><img alt="GitHub License" src="https://img.shields.io/github/license/Prathameshnium/TupperTransformer"></a>
+                    <a href="https://github.com/Prathameshnium/TupperTransformer/blob/main/LICENSE" target="_blank" rel="noopener noreferrer"><img alt="GitHub License" src="https://img.shields.io/github/license/Prathameshnium/TupperTransformer"></a>
                     <img loading="lazy" decoding="async" alt="GitHub last commit" src="https://img.shields.io/github/last-commit/Prathameshnium/TupperTransformer">
                     <img loading="lazy" decoding="async" alt="GitHub repo size" src="https://img.shields.io/github/repo-size/Prathameshnium/TupperTransformer">
                 </div>
@@ -94,10 +94,18 @@
 
             <section class="card p-8 rounded-lg mb-8 text-center">
                 <h2 class="text-3xl font-bold text-white mb-4">Live Demonstration</h2>
-                <p class="text-light-slate mb-6">Check out the live, interactive demo to see this algorithm in action.</p>
-                <a href="https://prathameshnium.github.io/TupperTransformer/" target="_blank" rel="noopener noreferrer" class="cta-button inline-block bg-accent-orange/10 border-2 border-accent-orange/70 text-accent-orange font-semibold py-3 px-6 rounded-lg text-lg">
-                    <i class="fas fa-rocket mr-2"></i> Launch Interactive Demo
-                </a>
+                <p class="text-light-slate mb-6">Experience the algorithm in the redesigned interactive demo, built to be intuitive on both desktop and mobile.</p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="https://prathameshnium.github.io/TupperTransformer/" target="_blank" rel="noopener noreferrer" class="cta-button inline-block bg-accent-orange/10 border-2 border-accent-orange/70 text-accent-orange font-semibold py-3 px-6 rounded-lg text-lg">
+                        <i class="fas fa-rocket mr-2"></i> Launch Interactive Demo
+                    </a>
+                    <a href="https://github.com/prathameshnium/TupperTransformer" target="_blank" rel="noopener noreferrer" class="cta-button inline-block border-2 border-accent-orange/70 text-accent-orange font-semibold py-3 px-6 rounded-lg text-lg">
+                        <i class="fab fa-github mr-2"></i> View on GitHub
+                    </a>
+                    <a href="https://doi.org/10.6084/m9.figshare.6373046" target="_blank" rel="noopener noreferrer" class="cta-button inline-block border-2 border-accent-orange/70 text-accent-orange font-semibold py-3 px-6 rounded-lg text-lg">
+                        <i class="fas fa-file-alt mr-2"></i> Read the Preprint
+                    </a>
+                </div>
             </section>
 
             <section class="card p-8 rounded-lg mb-8">
@@ -127,32 +135,34 @@
 
             <section class="card p-8 rounded-lg mb-8">
                 <h2 class="text-3xl font-bold text-white mb-4">Demo Instructions</h2>
-                <p class="text-light-slate mb-6">The interactive demo is organized into a simple, tabbed interface.</p>
+                <p class="text-light-slate mb-6">The demo has a single, unified interface laid out in two columns on larger screens.</p>
 
                 <div class="space-y-6">
                     <div>
-                        <h3 class="text-2xl font-semibold text-accent-orange mb-2">1. Transform & Load (Main Panel)</h3>
-                        <p class="text-light-slate">This is the main editor. You can:</p>
+                        <h3 class="text-2xl font-semibold text-accent-orange mb-2">1. Canvas & Workspace (Left Column)</h3>
                         <ul class="list-disc list-inside mt-2 space-y-1 text-light-slate">
-                            <li><strong>Load Examples:</strong> Load the classic "Tupper's" formula or a "UFO" image.</li>
-                            <li><strong>Transform:</strong> Use the directional buttons to modify the entire image.</li>
-                            <li><strong>Animate:</strong> Click and hold a transform button to create a temporary animation. Holding for 1 second latches the animation.</li>
+                            <li><strong>The Plot:</strong> The 106 × 17 grid, rendered exactly as Tupper's inequality plots it. Click and drag to draw: each pixel p<sub>i</sub> you add or remove changes k by ±17 × 2<sup>i−1</sup>. Hovering shows the pixel's index.</li>
+                            <li><strong>Last Operation:</strong> The line under the plot shows the paper's equation behind the last change, e.g. <code>Move right: k′ = k × 2^17</code>.</li>
+                            <li><strong>Transform Controls:</strong> Move the pattern up (k × 2), down (k ÷ 2), left (k ÷ 2<sup>17</sup>), right (k × 2<sup>17</sup>) or diagonally. Click for one step or hold to repeat; holding for more than half a second keeps it moving until you press Stop.</li>
+                            <li><strong>K-Value:</strong> The high-precision integer k updates in real time, and you can paste any k to render it.</li>
                         </ul>
                     </div>
                     <div>
-                        <h3 class="text-2xl font-semibold text-accent-orange mb-2">2. Draw</h3>
-                        <p class="text-light-slate">This panel demonstrates the reverse of the formula:</p>
+                        <h3 class="text-2xl font-semibold text-accent-orange mb-2">2. Actions & Examples (Right Column)</h3>
                         <ul class="list-disc list-inside mt-2 space-y-1 text-light-slate">
-                            <li>Click or drag on the canvas to toggle pixels.</li>
-                            <li>The K-Value updates in real-time to reflect your drawing.</li>
+                            <li><strong>Clear Canvas:</strong> Start over with k = 0.</li>
+                            <li><strong>Examples:</strong> Load Tupper's self-referential plot or the UFO from the paper.</li>
+                            <li><strong>Films from the Paper:</strong> Built with the framing formula k° = f<sub>1</sub>k + f<sub>2</sub>k′ + f<sub>3</sub>k″ + …, with play, pause and frame-by-frame stepping. In <em>Eg 3.1 (UFO)</em> each frame is k × 2<sup>17</sup> of the last, so the UFO flies right; in <em>Eg 3.2 (Tetris)</em> only the falling L piece is transformed while the stack stays put, reproducing the paper's 15 frames.</li>
+                            <li><strong>Library of Babel:</strong> A random k = 17 × (random 1802-bit number), so every one of the 2<sup>1802</sup> possible images is equally likely.</li>
+                            <li><strong>Clickable Formula:</strong> Click Tupper's formula at the top of the page to load the self-referential plot.</li>
                         </ul>
                     </div>
                     <div>
-                        <h3 class="text-2xl font-semibold text-accent-orange mb-2">3. Demos & Examples</h3>
-                        <p class="text-light-slate">This tab showcases examples from the paper:</p>
+                        <h3 class="text-2xl font-semibold text-accent-orange mb-2">3. Notes on the Implementation</h3>
                         <ul class="list-disc list-inside mt-2 space-y-1 text-light-slate">
-                            <li><strong>Animation Demo:</strong> See a UFO animated using the transformation formula.</li>
-                            <li><strong>Interactive Tetris:</strong> Move a single Tetris piece while others remain static.</li>
+                            <li>Pixels follow the paper's equation (A): p<sub>1</sub> is the bottom-left pixel, p<sub>2</sub> the one above it, and p<sub>18</sub> the bottom of the next column.</li>
+                            <li>Pixels are stored column by column, so 17 moves up equal one move right, as the paper derives. Pixels pushed out of the window are dropped, and every edit keeps k a multiple of 17.</li>
+                            <li>The k printed in the paper's introduction (and on Wikipedia) assumes reversed axes, so "Load Tupper's" uses the same image encoded for this layout.</li>
                         </ul>
                     </div>
                 </div>

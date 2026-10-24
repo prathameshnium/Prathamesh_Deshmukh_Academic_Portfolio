@@ -14,14 +14,14 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Kusanagi-AI: Free & Open-Source Local AI Toolkit">
     <meta property="og:description" content="A privacy-focused toolkit for running local LLMs on standard laptops, designed for researchers in Physics and Material Science.">
-    <meta property="og:image" content="https://prathameshnium.github.io/Prathamesh_Deshmukh_Academic_Portfolio/_assets/banner.png">
+    <meta property="og:image" content="https://raw.githubusercontent.com/prathameshnium/static-files/main/projects/kusanagi-ai/logo/Kusanagi-AI.png">
     <meta property="og:url" content="https://prathameshnium.github.io/Prathamesh_Deshmukh_Academic_Portfolio/pages/Project_Kusanagi-AI.html">
 
     <!-- SEO: Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:title" content="Kusanagi-AI: Free & Open-Source Local AI Toolkit">
     <meta property="twitter:description" content="A privacy-focused toolkit for running local LLMs on standard laptops, designed for researchers.">
-    <meta property="twitter:image" content="https://prathameshnium.github.io/Prathamesh_Deshmukh_Academic_Portfolio/_assets/banner.png">
+    <meta property="twitter:image" content="https://raw.githubusercontent.com/prathameshnium/static-files/main/projects/kusanagi-ai/logo/Kusanagi-AI.png">
 
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; font-src 'self' https://cdnjs.cloudflare.com; img-src 'self' data: https://raw.githubusercontent.com https://github.com https://upload.wikimedia.org https://www.vectorlogo.zone https://static.wikia.nocookie.net https://seeklogo.com https://codecov.io https://zenodo.org https://joss.theoj.org https://img.shields.io https://placehold.co; connect-src 'self';">
     <meta name="robots" content="index, follow">
@@ -65,16 +65,21 @@
         <section id="kusanagi-summary" class="py-20 text-center">
             <div class="max-w-3xl mx-auto">
                 <div class="card p-8 md:p-12 rounded-lg">
-                    <img src="https://static.wikia.nocookie.net/sword/images/5/54/Orochimaru%27s_Sword_of_Kusanagi.png/revision/latest?cb=20240901080411" 
+                    <img src="https://raw.githubusercontent.com/prathameshnium/static-files/main/projects/kusanagi-ai/logo/Kusanagi-AI.png"
                          alt="Kusanagi-AI Project Logo" width="128" height="128"
                          class="w-32 h-32 mx-auto mb-6">
                     <h1 class="text-4xl md:text-5xl font-bold section-title mb-4">Kusanagi-AI: Free & Open-Source Local AI Toolkit</h1>
                     <p class="text-lg text-slate max-w-2xl mx-auto mb-8">
-                        Empowering researchers with accessible, privacy-focused AI tools designed to run efficiently on standard home laptops. Kusanagi-AI provides a robust, open-source platform for local AI experimentation, ensuring complete data ownership and control.
+                        Empowering researchers, particularly in Physics and Materials Science, with accessible, privacy-focused AI tools designed to run efficiently on standard home laptops. Built on <a href="https://ollama.com/" target="_blank" rel="noopener noreferrer" class="text-accent-orange hover:underline">Ollama</a> for local LLM inference, Kusanagi-AI can run several models at once on a decent laptop while keeping your data on your machine.
                     </p>
-                    <a href="https://github.com/prathameshnium/Kusanagi-AI" target="_blank" rel="noopener noreferrer" class="cta-button inline-block bg-accent-orange border-2 border-accent-orange text-dark-bg font-semibold py-3 px-8 rounded-lg text-lg">
-                        <i class="fab fa-github mr-2" aria-hidden="true"></i> View on GitHub
-                    </a>
+                    <div class="flex flex-wrap justify-center gap-4">
+                        <a href="https://github.com/prathameshnium/Kusanagi-AI" target="_blank" rel="noopener noreferrer" class="cta-button inline-block bg-accent-orange border-2 border-accent-orange text-dark-bg font-semibold py-3 px-8 rounded-lg text-lg">
+                            <i class="fab fa-github mr-2" aria-hidden="true"></i> View on GitHub
+                        </a>
+                        <a href="https://prathameshnium.github.io/Kusanagi-AI/index.html" target="_blank" rel="noopener noreferrer" class="cta-button inline-block border-2 border-accent-orange/70 text-accent-orange font-semibold py-3 px-8 rounded-lg text-lg">
+                            <i class="fas fa-globe mr-2" aria-hidden="true"></i> Open Web Dashboard
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -82,27 +87,58 @@
         <section id="about-project" class="py-10 max-w-4xl mx-auto">
             <h2 class="text-3xl font-bold section-title mb-6 text-center">About This Project</h2>
             <p class="text-lg text-light-slate text-center">
-                Kusanagi-AI was developed to address the growing need for accessible and privacy-conscious AI solutions within the research community. Our mission is to provide a free, open-source toolkit that enables researchers, especially those in Physics and Material Science, to leverage advanced AI capabilities directly on their personal computers. By focusing on local execution, Kusanagi-AI ensures complete data privacy and eliminates reliance on cloud services, making sophisticated AI analysis available without specialized hardware or extensive technical expertise. This project is a testament to the power of local AI, offering a controlled environment for deep learning and practical application.
+                Kusanagi-AI was developed to address the growing need for accessible and privacy-conscious AI solutions within the research community. Our mission is to provide a free, open-source toolkit that enables researchers, especially those in Physics and Materials Science, to leverage advanced AI capabilities directly on their personal computers. By focusing on local execution, Kusanagi-AI ensures complete data privacy and eliminates reliance on cloud services, making sophisticated AI analysis available without specialised hardware or extensive technical expertise.
             </p>
+        </section>
+
+        <section id="two-ways" class="py-10 max-w-5xl mx-auto">
+            <h2 class="text-3xl font-bold section-title mb-8 text-center">Two Ways to Run It</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="card p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold text-accent-orange mb-3"><i class="fas fa-desktop mr-2" aria-hidden="true"></i>Desktop (fully offline)</h3>
+                    <p class="text-light-slate mb-4">Tkinter apps that talk to a local Ollama. No API key, and nothing leaves the machine.</p>
+                    <ul class="list-disc list-inside space-y-1 text-sm text-light-slate">
+                        <li><strong>Orochimaru:</strong> the full RAG research assistant.</li>
+                        <li><strong>OneTail:</strong> lightweight multi-model chat.</li>
+                        <li><strong>Visualize AI:</strong> next-token predictions in real time.</li>
+                        <li><strong>Kusanagi Local:</strong> console and model manager.</li>
+                        <li><strong>Hopfield demo:</strong> associative-memory demonstration.</li>
+                    </ul>
+                </div>
+                <div class="card p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold text-accent-orange mb-3"><i class="fas fa-globe mr-2" aria-hidden="true"></i>Browser (your own API key)</h3>
+                    <p class="text-light-slate mb-4">Web apps that run against Google Gemini, Anthropic (Claude), Hugging Face, OpenRouter or a local Ollama, with nothing to install.</p>
+                    <ul class="list-disc list-inside space-y-1 text-sm text-light-slate">
+                        <li><strong>Orochimaru (web):</strong> multi-turn research chat over PDF, Word, PowerPoint, HTML and text documents.</li>
+                        <li><strong>Kakashi:</strong> grounded search over Wikipedia, OpenAlex, Crossref, DuckDuckGo and Hacker News, with inline citations to real sources, plus an Academic mode for papers only.</li>
+                        <li>There is no Kusanagi server: requests go from your browser straight to the provider you chose.</li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
         <section id="tech-stack" class="py-20 max-w-5xl mx-auto">
             <h2 class="text-3xl font-bold section-title mb-8 text-center">Technology Stack</h2>
-            <div class="grid md:grid-cols-1 lg:grid-cols-3 gap-8">
+            <div class="grid md:grid-cols-2 gap-8">
                 <div class="card p-6 rounded-lg text-center flex flex-col items-center">
-                    <img loading="lazy" decoding="async" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkdgUkYVq9-UPHtkrQyNzA1t-hCdSG65-XYw&s" alt="Python Logo" class="w-16 h-16 mb-4">
+                    <img loading="lazy" decoding="async" src="https://raw.githubusercontent.com/prathameshnium/static-files/main/icons/python.svg" alt="Python Logo" class="w-16 h-16 mb-4">
                     <h3 class="text-xl font-semibold text-accent-orange mb-2">Python</h3>
-                    <p class="text-light-slate">The entire frontend and application logic are developed in Python, ensuring readability and a vast ecosystem of libraries.</p>
+                    <p class="text-light-slate">The desktop apps and their shared core (paths, configuration and the Ollama process manager) are written in Python.</p>
                 </div>
                 <div class="card p-6 rounded-lg text-center flex flex-col items-center">
-                    <img loading="lazy" decoding="async" src="https://seeklogo.com/images/O/ollama-logo-F62D6B7A7F-seeklogo.com.png" alt="Ollama Logo" class="w-16 h-16 mb-4">
+                    <img loading="lazy" decoding="async" src="https://raw.githubusercontent.com/prathameshnium/static-files/main/icons/ollama.png" alt="Ollama Logo" class="w-16 h-16 mb-4">
                     <h3 class="text-xl font-semibold text-accent-orange mb-2">Ollama</h3>
-                    <p class="text-light-slate">Powers local LLM inference, allowing Kusanagi-AI to run models like Llama3 and Gemma efficiently without cloud dependencies.</p>
+                    <p class="text-light-slate">Powers local LLM inference, running models such as Gemma, Qwen, TinyLlama and Llama 3 without cloud dependencies.</p>
                 </div>
                 <div class="card p-6 rounded-lg text-center flex flex-col items-center">
-                    <img loading="lazy" decoding="async" src="https://mixedbread.ai/favicon.ico" alt="Mixedbread AI Logo" class="w-16 h-16 mb-4">
-                    <h3 class="text-xl font-semibold text-accent-orange mb-2">MXBAI Embeddings</h3>
-                    <p class="text-light-slate">Utilizes the `mxbai-embed-large` model for high-quality document embeddings, crucial for RAG and semantic search.</p>
+                    <i class="fas fa-window-maximize text-5xl text-accent-orange mb-4" aria-hidden="true"></i>
+                    <h3 class="text-xl font-semibold text-accent-orange mb-2">Tkinter</h3>
+                    <p class="text-light-slate">Native, lightweight graphical interfaces for the desktop apps.</p>
+                </div>
+                <div class="card p-6 rounded-lg text-center flex flex-col items-center">
+                    <i class="fas fa-project-diagram text-5xl text-accent-orange mb-4" aria-hidden="true"></i>
+                    <h3 class="text-xl font-semibold text-accent-orange mb-2">Embeddings</h3>
+                    <p class="text-light-slate">Ships configured for <code>all-minilm</code> (small and fast); <code>mxbai-embed-large</code> is also supported if you prefer quality over footprint.</p>
                 </div>
             </div>
         </section>
@@ -110,14 +146,29 @@
         <section id="features" class="py-10 max-w-4xl mx-auto">
             <h2 class="text-3xl font-bold section-title mb-8 text-center">Features</h2>
             <ul class="space-y-4">
-                <li class="card p-4 rounded-lg"><i class="fas fa-lock text-accent-orange mr-3"></i><strong>Local & Private:</strong> All operations are 100% offline, guaranteeing your research data remains secure.</li>
+                <li class="card p-4 rounded-lg"><i class="fas fa-lock text-accent-orange mr-3"></i><strong>Local & Private:</strong> The desktop apps run 100% offline, so your research data stays on your machine.</li>
                 <li class="card p-4 rounded-lg"><i class="fas fa-cogs text-accent-orange mr-3"></i><strong>Efficient Local LLM Inference:</strong> Run up to three LLMs concurrently on a decent laptop.</li>
-                <li class="card p-4 rounded-lg"><i class="fas fa-user-robot text-accent-orange mr-3"></i><strong>Research Assistant (Orochimaru):</strong> A flagship application for academic use with a Python-based frontend.</li>
-                <li class="card p-4 rounded-lg ml-6"><i class="fas fa-file-pdf text-accent-orange/80 mr-3"></i>Engage in RAG with your PDF documents for in-depth analysis.</li>
-                <li class="card p-4 rounded-lg ml-6"><i class="fas fa-book-open text-accent-orange/80 mr-3"></i>Generate summaries and peer reviews of research papers.</li>
+                <li class="card p-4 rounded-lg"><i class="fas fa-robot text-accent-orange mr-3"></i><strong>Research Assistant (Orochimaru):</strong> The flagship RAG application for academic use.</li>
+                <li class="card p-4 rounded-lg ml-6"><i class="fas fa-file-pdf text-accent-orange/80 mr-3"></i>Ask questions against PDF, Word, OpenDocument, PowerPoint, HTML, RTF and text documents.</li>
+                <li class="card p-4 rounded-lg ml-6"><i class="fas fa-book-open text-accent-orange/80 mr-3"></i>Summaries and critical reviews from a physicist, chemist or editor persona.</li>
+                <li class="card p-4 rounded-lg"><i class="fas fa-check-double text-accent-orange mr-3"></i><strong>Answer Quality:</strong> No invented citations, claims marked as established, contested or inferred, numbers with units and conditions, and refusing is a valid answer.</li>
                 <li class="card p-4 rounded-lg"><i class="fas fa-comments text-accent-orange mr-3"></i><strong>Experimental Chatbots:</strong> A collection of scripts for exploring different AI models.</li>
-                <li class="card p-4 rounded-lg"><i class="fas fa-chart-bar text-accent-orange mr-3"></i><strong>AI Visualizer:</strong> Tools for visualizing AI-related data and model outputs.</li>
+                <li class="card p-4 rounded-lg"><i class="fas fa-chart-bar text-accent-orange mr-3"></i><strong>AI Visualizer:</strong> Watch next-token probabilities as you type.</li>
             </ul>
+        </section>
+
+        <section id="screenshots" class="py-10 max-w-5xl mx-auto">
+            <h2 class="text-3xl font-bold section-title mb-8 text-center">Screenshots</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <figure class="card rounded-lg overflow-hidden">
+                    <img loading="lazy" decoding="async" src="https://raw.githubusercontent.com/prathameshnium/static-files/main/projects/kusanagi-ai/Orochimaru_Screenshot.jpg" alt="Orochimaru research assistant screenshot" class="w-full">
+                    <figcaption class="p-4 text-sm text-light-slate text-center"><strong class="text-white">Orochimaru</strong>: RAG over your own documents.</figcaption>
+                </figure>
+                <figure class="card rounded-lg overflow-hidden">
+                    <img loading="lazy" decoding="async" src="https://raw.githubusercontent.com/prathameshnium/static-files/main/projects/kusanagi-ai/One_Tail_Screenshot.jpg" alt="OneTail local chat screenshot" class="w-full">
+                    <figcaption class="p-4 text-sm text-light-slate text-center"><strong class="text-white">OneTail</strong>: local multi-model chat.</figcaption>
+                </figure>
+            </div>
         </section>
 
         <section id="getting-started" class="py-20 max-w-4xl mx-auto">
@@ -131,20 +182,36 @@
 
                 <h3 class="text-2xl font-semibold text-accent-orange mb-4">Installation & Usage</h3>
                 <p class="text-light-slate mb-4">1. Clone the repository:</p>
-                <pre class="code-block rounded-lg mb-4"><code>git clone https://github.com/prathameshnium/Kusanagi-AI.git
+                <pre class="bg-dark-bg p-4 rounded-lg text-sm text-light-slate overflow-x-auto mb-4"><code>git clone https://github.com/prathameshnium/Kusanagi-AI.git
 cd Kusanagi-AI</code></pre>
 
                 <p class="text-light-slate mb-4">2. Install dependencies (preferably in a virtual environment):</p>
-                <pre class="code-block rounded-lg mb-4"><code>pip install -r requirements.txt</code></pre>
+                <pre class="bg-dark-bg p-4 rounded-lg text-sm text-light-slate overflow-x-auto mb-4"><code>pip install -r requirements.txt</code></pre>
 
-                <p class="text-light-slate mb-4">3. Configure `System_Config.json` with the correct paths for your Ollama executable and model folder.</p>
+                <p class="text-light-slate mb-4">3. Point <code>ollama_path</code> and <code>model_folder</code> in <code>System_Config.json</code> at your Ollama executable and model folder.</p>
 
-                <p class="text-light-slate mb-4">4. Pull the required models via the Ollama CLI:</p>
-                <pre class="code-block rounded-lg mb-4"><code>ollama pull mxbai-embed-large
+                <p class="text-light-slate mb-4">4. Pull the embedding model and at least one chat model:</p>
+                <pre class="bg-dark-bg p-4 rounded-lg text-sm text-light-slate overflow-x-auto mb-4"><code>ollama pull all-minilm
 ollama pull llama3</code></pre>
 
-                <p class="text-light-slate mb-4">5. Launch the Research Assistant:</p>
-                <pre class="code-block rounded-lg"><code>python Orochimaru_Local_Research_Assistent.py</code></pre>
+                <p class="text-light-slate mb-4">5. Start the desktop menu, or open any app directly:</p>
+                <pre class="bg-dark-bg p-4 rounded-lg text-sm text-light-slate overflow-x-auto mb-4"><code>python local_apps/launcher.py
+python local_apps/Orochimaru_Local_Research_Assistent.py</code></pre>
+
+                <p class="text-light-slate mb-4">6. For the browser versions, serve them locally (no network needed) or use the <a href="https://prathameshnium.github.io/Kusanagi-AI/index.html" target="_blank" rel="noopener noreferrer" class="text-accent-orange hover:underline">online dashboard</a>:</p>
+                <pre class="bg-dark-bg p-4 rounded-lg text-sm text-light-slate overflow-x-auto"><code>python scripts/serve.py</code></pre>
+            </div>
+        </section>
+
+        <section id="security-privacy" class="py-10 max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold section-title mb-8 text-center">Security & Privacy</h2>
+            <div class="card p-6 rounded-lg">
+                <ul class="space-y-3 text-sm text-light-slate">
+                    <li><i class="fas fa-key text-accent-orange mr-2"></i><strong>Your keys:</strong> held for the tab session only, or stored encrypted (AES-256-GCM, with a key derived from a password you choose) if you tick <em>Remember on this device</em>. A key is only ever sent to the provider that issued it.</li>
+                    <li><i class="fas fa-file-shield text-accent-orange mr-2"></i><strong>Your documents:</strong> parsed in the browser and never uploaded. Only the excerpts retrieved for a question go to your chosen provider; for fully offline work, use the desktop app with a local Ollama.</li>
+                    <li><i class="fas fa-shield-alt text-accent-orange mr-2"></i><strong>Strict CSP:</strong> every page ships <code>default-src 'none'</code>, no inline scripts, no third-party origins, and a <code>connect-src</code> naming exactly the APIs it uses. The test suite fails the build if any of this regresses.</li>
+                    <li><i class="fas fa-box text-accent-orange mr-2"></i><strong>No CDNs:</strong> every library and font is committed to the repository, so no page load reaches a third party.</li>
+                </ul>
             </div>
         </section>
 
