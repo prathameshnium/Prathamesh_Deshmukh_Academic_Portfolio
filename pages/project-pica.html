@@ -13,7 +13,7 @@
     <meta name="citation_title" content="PICA: Advanced High-Precision Transport Measurement Automation with Python">
     <meta name="citation_author" content="Deshmukh, Prathamesh">
     <meta name="citation_author" content="Mukherjee, Sudip">
-    <meta name="citation_date" content="2026/10/17">
+    <meta name="citation_date" content="2026/10/27">
     <meta name="citation_doi" content="10.5281/zenodo.18377216">
     <meta name="citation_technical_report_institution" content="UGC-DAE Consortium for Scientific Research, Mumbai Centre">
     <meta name="citation_pdf_url" content="https://prathameshnium.github.io/PICA-Python-Instrument-Control-and-Automation/publications/pica-paper.pdf">
@@ -57,7 +57,7 @@
       "description": "A modular software suite for automating laboratory measurements in physics research, featuring a central GUI launcher and isolated process execution for stability.",
       "applicationCategory": "ScientificApplication",
       "operatingSystem": "Windows, Linux",
-      "softwareVersion": "1.0.7",
+      "softwareVersion": "1.0.8",
       "author": {
         "@type": "Person",
         "name": "Prathamesh Deshmukh"
@@ -106,8 +106,8 @@
                     </div>
 
                     <div class="bg-accent-orange/10 border-2 border-accent-orange rounded-lg p-6 mb-10 text-center">
-                        <h2 class="text-2xl font-bold text-accent-orange mb-2">🎉 v1.0.7 is now live!</h2>
-                        <p class="text-light-slate">Linux install guide, Keithley 2400 memristor modules, C-V module v2, and module search with hover cards in the launcher.</p>
+                        <h2 class="text-2xl font-bold text-accent-orange mb-2">🎉 v1.0.8 is now live!</h2>
+                        <p class="text-light-slate">Experimental Novocontrol Alpha-AN modules, a 3.3 MB package, a faster launcher and a new device and driver diagnostic.</p>
                         <code class="block bg-dark-bg p-2 mt-4 rounded text-accent-orange">pip install --upgrade pica-suite</code>
                     </div>
 
@@ -215,32 +215,32 @@
 
         <section id="whats-new" class="py-16 bg-card-bg/30 border-y border-gray-800">
             <div class="max-w-4xl mx-auto text-center">
-                <h2 class="text-3xl font-bold section-title mb-6">What's New in v1.0.7</h2>
-                <p class="text-lg text-slate mb-10">Released October 2026 on PyPI and GitHub Releases. Upgrade with <code>pip install --upgrade pica-suite</code>.</p>
+                <h2 class="text-3xl font-bold section-title mb-6">What's New in v1.0.8</h2>
+                <p class="text-lg text-slate mb-10">Released 27 October 2026 on PyPI and GitHub Releases. Upgrade with <code>pip install --upgrade pica-suite</code>.</p>
                 <div class="grid md:grid-cols-3 gap-6 text-left">
                     <div class="p-4 bg-white/5 rounded-lg border border-gray-700">
-                        <p class="font-bold text-accent-orange">Linux Documentation</p>
-                        <p class="text-sm text-slate">Linux install guide (venv, tkinter, <code>pyvisa-py</code>, USB-TMC / serial / GPIB) and a Linux issue template.</p>
+                        <p class="font-bold text-accent-orange">Novocontrol Alpha-AN (experimental)</p>
+                        <p class="text-sm text-slate">C-V, calibration (REF, load-short, open), temperature-step frequency scan and temperature scan modules (Lakeshore 350 / 340, Cryo-con 34) writing WinDETA-compatible files. Not yet run on hardware.</p>
                     </div>
                     <div class="p-4 bg-white/5 rounded-lg border border-gray-700">
-                        <p class="font-bold text-accent-orange">Memristor Modules</p>
-                        <p class="text-sm text-slate">Keithley 2400 switching I-V, retention and endurance programs, plus a read-only Memristor Analysis utility.</p>
+                        <p class="font-bold text-accent-orange">Frequency Scan</p>
+                        <p class="text-sm text-slate">64-bit VISA edition, custom and E4980A frequency lists, and a reliable reconnect after <code>*RST</code>.</p>
                     </div>
                     <div class="p-4 bg-white/5 rounded-lg border border-gray-700">
-                        <p class="font-bold text-accent-orange">C-V Module v2</p>
-                        <p class="text-sm text-slate">Rewritten Keysight E4980A sweep builder (bipolar, unipolar, ladder), bus-error retry and a separate event log.</p>
+                        <p class="font-bold text-accent-orange">Smaller Package</p>
+                        <p class="text-sm text-slate">Wheel down to 3.3 MB from 9.9 MB; screenshots and unused logos no longer ship, and scipy is no longer a dependency.</p>
                     </div>
                     <div class="p-4 bg-white/5 rounded-lg border border-gray-700">
-                        <p class="font-bold text-accent-orange">K6221 / 2182 I-V</p>
-                        <p class="text-sm text-slate">Custom list sweeps (paste from the List Maker), µA units and zero-crossing fixes.</p>
+                        <p class="font-bold text-accent-orange">Faster Launcher</p>
+                        <p class="text-sm text-slate">Heavy libraries load only when needed, <code>pica-gui</code> opens straight into Advanced Options, and the Instrument Status table fills in as each address answers.</p>
                     </div>
                     <div class="p-4 bg-white/5 rounded-lg border border-gray-700">
-                        <p class="font-bold text-accent-orange">Launcher v2</p>
-                        <p class="text-sm text-slate">Module search (<code>Ctrl+F</code>), hover cards in Advanced Options, and an in-app viewer for the manual and change log.</p>
+                        <p class="font-bold text-accent-orange">Device Diagnostic</p>
+                        <p class="text-sm text-slate">Read-only Connected Devices and Drivers view: for each USB, COM or LAN device, whether Windows sees it, whether it has a driver, and any Windows error code.</p>
                     </div>
                     <div class="p-4 bg-white/5 rounded-lg border border-gray-700">
-                        <p class="font-bold text-accent-orange">Packaging &amp; CI</p>
-                        <p class="text-sm text-slate">Cleaner wheel and a wider CI matrix (Python 3.10-3.13, Linux GUI smoke test).</p>
+                        <p class="font-bold text-accent-orange">Plotter, Fixes &amp; CI</p>
+                        <p class="text-sm text-slate">Excel (BOM / UTF-16) and WinDETA (cp1252) files now load; Pfeiffer TPG 361, memristor legend and Cryo-con 34 fixes; CI on Python 3.10-3.15.</p>
                     </div>
                 </div>
             </div>
@@ -638,7 +638,8 @@ pip install .</code></pre>
                 <div class="card p-8 rounded-lg text-left">
                     <p class="text-light-slate mb-4">PICA evolved from simple offline scripts in 2022 to a full-stack automated suite. Release builds are on the <a href="https://github.com/prathameshnium/PICA-Python-Instrument-Control-and-Automation/releases" target="_blank" rel="noopener noreferrer" class="text-accent-orange hover:underline">releases page</a>.</p>
                     <ul class="list-disc list-inside text-light-slate mb-4">
-                        <li><strong>v1.0.7 (Latest):</strong> Linux install guide, Keithley 2400 memristor modules, C-V module v2, K6221/2182 custom-list I-V, launcher module search and hover cards. Available on <a href="https://pypi.org/project/pica-suite/" class="text-accent-orange hover:underline">PyPI</a>.</li>
+                        <li><strong>v1.0.8 (Latest):</strong> Novocontrol Alpha-AN modules (experimental, not yet run on hardware), wheel reduced from 9.9 MB to 3.3 MB, faster launcher, read-only Connected Devices and Drivers diagnostic, and CI on Python 3.10-3.15. Available on <a href="https://pypi.org/project/pica-suite/" class="text-accent-orange hover:underline">PyPI</a>.</li>
+                        <li><strong>v1.0.7:</strong> Linux install guide, Keithley 2400 memristor modules, C-V module v2, K6221/2182 custom-list I-V, launcher module search and hover cards. Available on <a href="https://pypi.org/project/pica-suite/" class="text-accent-orange hover:underline">PyPI</a>.</li>
                         <li><strong>v1.0.6:</strong> Advanced Lakeshore step control, Cryo-con 34 and Lakeshore 340 support, AC resistivity (SR830 / 197A), PPMS dielectric protocol, Novocontrol Alpha-AN (experimental), launcher v2 and diagnostic tools.</li>
                         <li><strong>v1.0.5:</strong> E4980A frequency and temperature scans, Lakeshore 350 direct and step control, K6517B poling and new utilities.</li>
                         <li><strong>v1.0.4:</strong> Documentation release: Read the Docs integration and automated preprint PDF build.</li>
@@ -718,10 +719,10 @@ pip install .</code></pre>
   author       = {Deshmukh, Prathamesh Keshao and Mukherjee, Sudip},
   title        = {{PICA: Advanced High-Precision Transport Measurement Automation with Python}},
   month        = oct,
-  day          = 17,
+  day          = 27,
   year         = 2026,
   publisher    = {Zenodo},
-  version      = {1.0.7},
+  version      = {1.0.8},
   doi          = {10.5281/zenodo.18377216},
   url          = {https://doi.org/10.5281/zenodo.18377216}
 }

@@ -17,4 +17,4 @@ PUBLICATIONS
 
 SOFTWARE / PREPRINTS
 
-6. Deshmukh, P., Mukherjee, S. (2026). PICA: Advanced High-Precision Transport Measurement Automation with Python (v1.0.1). Zenodo. https://doi.org/10.5281/zenodo.18377217
+6. Deshmukh, P., Mukherjee, S. (2026). PICA: Advanced High-Precision Transport Measurement Automation with Python (v1.0.8). Zenodo. https://doi.org/10.5281/zenodo.18377216
