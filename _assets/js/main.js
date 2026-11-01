@@ -151,6 +151,7 @@
                         <a href="https://gitlab.com/prathameshnium" target="_blank" rel="noopener noreferrer" class="${profileLink}"><i class="fab fa-gitlab w-6 mr-2" aria-hidden="true"></i> GitLab</a>
                         <a href="https://orcid.org/0009-0008-3278-0837" target="_blank" rel="noopener noreferrer" class="${profileLink}"><i class="fab fa-orcid w-6 mr-2" aria-hidden="true"></i> ORCID</a>
                         <a href="https://www.scopus.com/authid/detail.uri?authorId=59544780300" target="_blank" rel="noopener noreferrer" class="${profileLink}"><i class="fas fa-file-alt w-6 mr-2" aria-hidden="true"></i> Scopus</a>
+                        <a href="https://openalex.org/authors/A5107399061" target="_blank" rel="noopener noreferrer" class="${profileLink}"><i class="fas fa-database w-6 mr-2" aria-hidden="true"></i> OpenAlex</a>
                         <a href="https://csr.academia.edu/PrathameshDeshmukh" target="_blank" rel="noopener noreferrer" class="${profileLink}"><i class="fas fa-book-open w-6 mr-2" aria-hidden="true"></i> Academia</a>
                         <a href="https://www.webofscience.com/wos/author/record/OFN-9289-2025" target="_blank" rel="noopener noreferrer" class="${profileLink}"><i class="fas fa-flask w-6 mr-2" aria-hidden="true"></i> Web of Science</a>
                         <a href="https://sciprofiles.com/profile/prathamesh-Deshmukh" target="_blank" rel="noopener noreferrer" class="${profileLink}"><i class="fas fa-atom w-6 mr-2" aria-hidden="true"></i> SciProfiles</a>
