@@ -342,6 +342,38 @@
         });
     }
 
+    // Copy a ready-made citation from any [data-citation] button
+    function setupCitationButtons() {
+        const copyText = text => {
+            if (navigator.clipboard && window.isSecureContext) return navigator.clipboard.writeText(text);
+            const area = document.createElement('textarea');
+            area.value = text;
+            area.setAttribute('readonly', '');
+            area.style.position = 'fixed';
+            area.style.opacity = '0';
+            document.body.appendChild(area);
+            area.select();
+            document.execCommand('copy');
+            area.remove();
+            return Promise.resolve();
+        };
+
+        document.querySelectorAll('[data-citation]').forEach(button => {
+            button.addEventListener('click', () => {
+                copyText(button.dataset.citation).then(() => {
+                    button.innerHTML = '<i class="fas fa-check" aria-hidden="true"></i>';
+                    button.classList.add('copied');
+                    button.setAttribute('aria-label', 'Citation copied');
+                    setTimeout(() => {
+                        button.innerHTML = '<i class="fas fa-copy" aria-hidden="true"></i>';
+                        button.classList.remove('copied');
+                        button.setAttribute('aria-label', 'Copy citation');
+                    }, 2000);
+                });
+            });
+        });
+    }
+
     // Load the interactive layer (scroll reveal, filters, lightbox) next to this
     // file. The script waits for its stylesheet so nothing animates unstyled.
     function loadInteractive() {
@@ -397,6 +429,7 @@
         setupDesktopSubmenus();
         setupMobileMenu();
         setupCopyButtons();
+        setupCitationButtons();
         setupScrollEffects();
         loadInteractive();
     });
