@@ -1,0 +1,110 @@
+# Prathamesh Deshmukh | Publications, Full Text
+
+> Full plain-text abstracts, highlights and citations for every publication listed on https://prathameshnium.github.io/Prathamesh_Deshmukh_Academic_Portfolio/pages/research.html. Generated from that page; the DOI records are the authoritative source. Short summary: https://prathameshnium.github.io/Prathamesh_Deshmukh_Academic_Portfolio/llms.txt
+
+Author: Prathamesh Keshao Deshmukh, PhD scholar, UGC-DAE Consortium for Scientific Research, Mumbai Centre (Savitribai Phule Pune University). ORCID 0009-0008-3278-0837. OpenAlex A5107399061.
+
+Notation: "_" marks a subscript (T_N2 is T with subscript N2) and "^" a power of ten (10^3).
+
+## Exploration of near room temperature magnetoelectric coupling in BaFe10Sc2O19:KNbO3 composite
+
+- **Authors**: Prathamesh Deshmukh, Srishti Kashyap, Swastika Mukherjee, Surbhi Gupta, Sudip Mukherjee
+- **Journal**: Journal of Physics and Chemistry of Solids (2024)
+- **DOI**: https://doi.org/10.1016/j.jpcs.2024.112309
+- **Topics**: Multiferroics, Magnetoelectric, Magnetodielectric, Dielectric
+- **Citation**: Deshmukh, P., Kashyap, S., Mukherjee, S., Gupta, S., & Mukherjee, S. (2024). Exploration of near room temperature magnetoelectric coupling in BaFe10Sc2O19:KNbO3 composite. Journal of Physics and Chemistry of Solids, 196, 112309. https://doi.org/10.1016/j.jpcs.2024.112309
+
+### Highlights
+
+- Strain-mediated coupling of the magnetic-electric properties of the composite systems.
+- Distinct non-disperse ferroelectric-like anomaly coinciding with magnetic transition.
+- Noticeable negative magnetodielectric response with 5.4%@1 kHz near room temperature.
+- Magnetoelectric coupling relies on flexomagnetoelectric response.
+
+### Abstract
+
+The consequential experimental endeavour has been undertaken to investigate and control the strain-mediated coupling of the magnetic and electric properties of the composite systems composed of Sc-doped BaFe₁₂O₁₉ and KNbO₃. A distinct non-disperse ferroelectric-like anomaly is observed T_weak ~ 265 K, which concomitantly coincides with the magnetic T_cone transition. The observation of external magnetic field dependence dielectric response shows a noticeable decrease in permittivity values, indicating a negative magnetodielectric response. The maximum intrinsic magnetodielectric response is seen in the vicinity of room temperature with the magnetodielectric ratio of 5.4% @ 1 kHz. The linearity of -Δɛ′(H)% vs. M² plot is phenomenologically described with the Ginzburg–Landau theory with the magnetoelectric coupling term γP²M². The magnetoelectric coupling relies on strain to induce crystal deformations (flexomagnetoelectric response) on either the ferroelectric phase through magnetostriction or in the magnetic phase through the converse piezoelectric effect. Strain-induced changes in the magnetic as well as dielectric properties of the composites lead to strong magnetoelectric coupling to throw more light exploring a potential candidate for room-temperature multiferroic materials.
+
+## Exploring the role of Cu1+ in quasi-1D Cu1−xLixO (x = 0.025)
+
+- **Authors**: Prathamesh Deshmukh, Pradip Kumar Jana, Swastika Mukherjee, Srishti Kashyap, Manisha Venkatesh, Sudhindra Rayaprol, Sudip Mukherjee
+- **Journal**: Journal of Alloys and Compounds (2025)
+- **DOI**: https://doi.org/10.1016/j.jallcom.2025.181833
+- **Topics**: Cuprates, Neutron diffraction, Charge transport, Dielectric
+- **Citation**: Deshmukh, P., Jana, P. K., Mukherjee, S., Kashyap, S., Venkatesh, M., Rayaprol, S., & Mukherjee, S. (2025). Exploring the role of Cu1+ in quasi-1D Cu1−xLixO (x = 0.025). Journal of Alloys and Compounds, 1036, 181833. https://doi.org/10.1016/j.jallcom.2025.181833
+
+### Highlights
+
+- Influence of hole-doping on structural, magnetic, transport properties of CuO.
+- XPS confirms the presence of Cu¹⁺ and Cu³⁺ in addition to Cu²⁺.
+- Cu¹⁺ helps to maintain a high dielectric constant at low temperature.
+- Lowering of commensurate and incommensurate transition temperatures observed.
+- Near antiferromagnetic ordering, p-type to n-type transition observed.
+
+### Abstract
+
+The influences of hole-doping in cupric oxide leads to a localization of charge carriers, accompanied by changes in crystal structure, magnetic and transport properties. The crystallographic structure and phase purity of the properly sintered sample is characterized by temperature-dependent neutron diffraction (ND) measurements where the composition is found as Cu0.975Li0.025O (CLO). Interestingly, the formation of Cu1+ and Cu3+ in addition to the Cu2+ was confirmed from the x-ray photoelectron spectroscopy (XPS) study in CLO system. Magnetization measurements show shifting in commensurate and incommensurate transition temperatures T_N1 ~ 82 K and T_N2 ~ 204 K respectively, highlighting the sensitive correlation between structural parameters and antiferromagnetically ordered quasi-1D spin arrangement. Temperature-dependent ordered magnetic moment (ground state) of Cu in CLO is calculated from ND data using a mean-field equation which coincides concomitantly with incommensurate antiferromagnetic transition T_N2. Above and below the said antiferromagnetic ordering temperature, a changeover was concluded from p-type to n-type conduction mechanism. The Cu1+ specimens in CLO maintain a high dielectric value (~10^3) even at low temperature. The Cu1+ and charge order domains significantly influence the intriguing transport behavior (hole-hopping between Cu2+ and Cu3+) of CLO, with their effects strongly dependent on the antiferromagnetically ordered spin structures.
+
+## Negative capacitance and magnetodielectric effect in Cu2O-CuO ceramics
+
+- **Authors**: Swastika Mukherjee, Srishti Kashyap, Prathamesh Deshmukh, Riya Roy, Souvik Chatterjee, Sudip Mukherjee
+- **Journal**: Ceramics International (2025)
+- **DOI**: https://doi.org/10.1016/j.ceramint.2025.04.264
+- **Topics**: Cuprates, Magnetodielectric, Charge transport, Dielectric
+- **Citation**: Mukherjee, S., Kashyap, S., Deshmukh, P., Roy, R., Chatterjee, S., & Mukherjee, S. (2025). Negative capacitance and magnetodielectric effect in Cu2O-CuO ceramics. Ceramics International, 51(20), 30716–30722. https://doi.org/10.1016/j.ceramint.2025.04.264
+
+### Abstract
+
+The present experimental study reveals that the influence of the strong spin-charge-lattice correlation in Cu2O-CuO ceramics leads to a localization of charge carriers, accompanied by changes in crystal structure, transport conduction, and magnetic transition. In the low-frequency region, existence of significant negative capacitance behavior, inductive loop and phase angle dependence (sign changes from positive to negative) concomitantly coincides, described by hopping mechanism of charge carriers between two Cu species (Cu2+ and Cu1+). Further, in the high-frequency domain, coupling of holes (electrons) and spin are observed by dielectric anomaly near the incommensurate magnetic phase transition temperature (T_N2 ~ 230 K). In addition, a distinct non-dispersive ferroelectric-like anomaly is observed around T_m ~ 320 K, where asymmetric charge-hopping introduces a large dipole moment via bridging oxygen with Cu2+−δ - O - Cu1+−δ. Finally, the external dc magnetic field (9 tesla) causes a sizable decrease of ε′ value ongoing approximately above 200 K along with disappearance of T_m ~ 320 K, representing the negative magneto-dielectric (MD) effect. This intriguing characteristic near the vicinity of magnetic transition can be established by the mechanism of charge-hopping-mediated MD effect, where the external applied field favors the double-exchange magnetic interaction by reducing the dipole moment and hence the dielectric permittivity value associated with the disappearance of the dielectric anomaly occurs.
+
+## Rigid lattice, short-range spin correlations and hopping-dominated charge dynamics in stoichiometric Na2Cu2TeO6
+
+- **Authors**: Shubham Patil, Prathamesh Deshmukh, S.D. Kaushik
+- **Journal**: Journal of Physics and Chemistry of Solids (2026)
+- **DOI**: https://doi.org/10.1016/j.jpcs.2026.113952
+- **Topics**: Cuprates, Neutron diffraction, Charge transport, Dielectric
+- **Citation**: Patil, S., Deshmukh, P., & Kaushik, S. D. (2026). Rigid lattice, short-range spin correlations and hopping-dominated charge dynamics in stoichiometric Na2Cu2TeO6. Journal of Physics and Chemistry of Solids, 218, 113952. https://doi.org/10.1016/j.jpcs.2026.113952
+
+### Highlights
+
+- Phase-pure Na₂Cu₂TeO₆ confirmed by XRD, neutron diffraction, and SEM-EDS.
+- Neutron diffraction confirms a rigid monoclinic C2/m lattice with full Na occupancy.
+- No magnetic bragg peaks down to 3 K; ordered Cu moment is below 0.1μB per Cu.
+- Strong short-range AFM correlations and a spin-gapped ground state.
+- 3D VRH conduction and non-Debye dielectric relaxation with Eₐ ~0.5–0.6 eV.
+
+### Abstract
+
+Na₂Cu₂TeO₆ is a distorted honeycomb cuprate in which Cu²⁺ ions form low-dimensional magnetic networks. Here, phase-pure Na₂Cu₂TeO₆ is synthesized and characterized using room-temperature X-ray diffraction, temperature-dependent neutron powder diffraction (3–300 K), SEM–EDS, magnetization, specific heat, UV–visible spectroscopy, and broadband dielectric spectroscopy. Rietveld refinements confirm a monoclinic C2/m structure with a comparatively rigid Cu₂TeO₆ framework, characterized by a small volumetric thermal expansion coefficient (αᵥ ≈ 2.4 × 10⁻⁵ K⁻¹) and Cu–O bond variations below 0.5% between 3 and 300 K. No magnetic Bragg peaks are observed down to 3 K, constraining any ordered moment to <0.1μB/Cu and demonstrating the absence of long-range magnetic order. The dc susceptibility shows a broad maximum near 160 K and a large antiferromagnetic Curie–Weiss temperature (θCW ≈ −170 K), consistent with strong short-range correlations in weakly coupled alternating AF–FM chains. Specific heat further supports a spin-gapped low-dimensional magnetic state with a broad magnetic entropy release. UV–visible spectroscopy reveals a direct optical gap (E_g ≈ 2.1 eV), while the dc conductivity follows three-dimensional variable-range hopping, indicating strong carrier localization. Dielectric measurements show non-Debye relaxation, with the characteristic relaxation frequency following Arrhenius behavior with an activation energy Eₐ ≈ 0.5–0.6 eV. These results establish Na₂Cu₂TeO₆ as a structurally robust, quasi-one-dimensional cuprate in which short-range antiferromagnetism coexists with highly localized ionic and electronic dynamics within a common distorted lattice.
+
+## Magneto-Photoactivated Gold Plasmonic Nano-Islands and Quantum Dot Assemblies for ppt-Level NO2 Detection
+
+- **Authors**: Pratyasha Rudra, Indrajeet Mandal, Renqian Zhou, Soupitak Pal, Ananya Nandi, Velaga Srihari, Sandip Bysakh, Kusampal Yadav, Prathamesh Deshmukh, Devajyoti Mukherjee, Eswaraiah Varrla, N. M. Anoop Krishnan, Shahab Ahmad, Amarnath R. Allu, Swastik Mondal
+- **Journal**: Small (2026)
+- **DOI**: https://doi.org/10.1002/smll.75971
+- **Topics**: Gas sensing, Plasmonics, Nanomaterials
+- **Citation**: Rudra, P., Mandal, I., Zhou, R., Pal, S., Nandi, A., Srihari, V., Bysakh, S., Yadav, K., Deshmukh, P., Mukherjee, D., Varrla, E., Krishnan, N. M. A., Ahmad, S., Allu, A. R., & Mondal, S. (2026). Magneto-Photoactivated Gold Plasmonic Nano-Islands and Quantum Dot Assemblies for ppt-Level NO2 Detection. Small, e75971. https://doi.org/10.1002/smll.75971
+
+### Abstract
+
+The intrinsic instability and limited chemical reactivity of metal nanoparticles have long restricted their direct integration in chemiresistive gas sensing. Here, we present a highly selective, tunable, ultra-stable, and ultra-sensitive NO2 sensor derived from gold nano-islands (GNIs) and quantum dot (QD) assemblies anchored on a reactive sodium aluminophosphosilicate glass matrix (H1-glass). Thermal dewetting of sputtered Au films at 550°C under ambient conditions initiates a reactive glass-metal interaction (RGMI), leading to the formation of Au-rich core/semiconducting shell GNIs along with spatially dispersed QDs on the glass surface. Magnetometry and magnetic force microscopy reveal the emergence of room-temperature ferromagnetism across the GNI array. The resulting H1-Au sensor, featuring robustly embedded GNIs and QDs, demonstrates an exceptional chemiresistive response of 73.5% toward 40 ppm NO2, with a remarkable detection limit of 50 ppb, and maintains full functionality at temperatures down to 0°C. Notably, the synergistic application of external magnetic fields and light irradiation further amplifies the sensor response to 11.67% at an ultralow concentration of 50 ppt NO2, outperforming all previously reported chemiresistive gas sensing platforms. These findings establish RGMI-stabilized GNIs as a highly reliable and versatile platform for ultra-trace, low-temperature gas detection, with broad implications for chemical, environmental, and biomedical monitoring applications.
+
+## PICA: Advanced High-Precision Transport Measurement Automation with Python (software)
+
+- **Authors**: Prathamesh Deshmukh, Sudip Mukherjee
+- **Type**: Open-source software (MIT licence); preprint dated 22 December 2025 on OSF (https://osf.io/7qk2s/). Not peer-reviewed.
+- **DOI**: https://doi.org/10.5281/zenodo.18377216 (Zenodo concept DOI, resolves to the latest version)
+- **Package**: https://pypi.org/project/pica-suite/
+- **Project page**: https://prathameshnium.github.io/Prathamesh_Deshmukh_Academic_Portfolio/pages/project-pica.html
+- **Citation**: Deshmukh, P., & Mukherjee, S. (2026). PICA: Advanced High-Precision Transport Measurement Automation with Python [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.18377216
+
+### Key Capabilities
+
+- Resistance measurements covering 24 orders of magnitude (10^-8 to 10^16 Ω).
+- Multiprocessing (UI-Isolation) & fault-tolerant architecture.
+- Hardware support: Keithley, Keysight, Lakeshore; validated with a Quantum Design PPMS.
+- Measurement types: I-V, R vs T, Capacitance (20 Hz to 2 MHz), and ultra-low pyroelectric current (resolution ≈10^-15 A).
+
+### Abstract
+
+PICA (Python-based Instrument Control and Automation) is a modular open-source software suite designed to automate advanced transport measurements for electronic devices and material samples. It provides an extensible, unified GUI-based framework to coordinate high-precision instruments including current sources (DC/AC), nanovoltmeters, electrometers, impedance analysers, and temperature controllers.

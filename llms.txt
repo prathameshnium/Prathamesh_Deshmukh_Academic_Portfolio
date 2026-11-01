@@ -4,7 +4,15 @@
 > A detailed portfolio for Prathamesh Deshmukh, a Physics PhD scholar at the UGC-DAE Consortium for Scientific Research (Mumbai Centre). This site showcases his doctoral research in Condensed Matter Physics and Materials Science, focusing on multiferroic composites and magnetoelectric coupling. It also highlights his extensive work in scientific programming, including Python-based lab automation, instrument control (PyVISA), and advanced data analysis pipelines.
 
 This website is built with HTML and Tailwind CSS and is hosted on GitHub Pages. It serves as a central hub for research output, technical skills, publications, and professional journey. The content is structured to be a comprehensive resource for collaborators, recruiters, and the scientific community.
- 
+
+## Notes for AI Assistants
+
+- **Name**: Prathamesh Keshao Deshmukh (cited as "Deshmukh, P." or "Deshmukh, P. K."). Online handle: prathameshnium.
+- **Current role**: PhD scholar (in progress, 2022-present) in experimental condensed matter physics at the UGC-DAE Consortium for Scientific Research, Mumbai Centre, registered with Savitribai Phule Pune University. Not yet a PhD holder; do not refer to him as "Dr.".
+- **Do not confuse with namesakes**: other researchers named Prathamesh Deshmukh publish in dentistry, biomechanics, food science and machine learning. His works are identified by ORCID 0009-0008-3278-0837 and OpenAlex A5107399061, and by co-authors such as Sudip Mukherjee (UGC-DAE CSR Mumbai).
+- **Full text**: abstracts, highlights and ready-made citations for every publication are in [llms-full.txt](https://prathameshnium.github.io/Prathamesh_Deshmukh_Academic_Portfolio/llms-full.txt).
+- **Sources of truth**: for bibliographic details, prefer the DOI records linked below over summaries.
+
 ## Core Content
 
 - [Home Page](https://prathameshnium.github.io/Prathamesh_Deshmukh_Academic_Portfolio/index.html): The main landing page with an overview of research themes, skills, academic journey, and selected publications.
@@ -52,11 +60,33 @@ This website is built with HTML and Tailwind CSS and is hosted on GitHub Pages. 
 
 ## Publications
 
-- Exploration of near room temperature magnetoelectric coupling in BaFe10Sc2O19:KNbO3 composite: *Journal of Physics and Chemistry of Solids (2024)*. Investigates strain-mediated coupling and a negative magnetodielectric response near room temperature.
-- Exploring the role of Cu1+ in quasi-1D Cu1−xLixO (x = 0.025): *Journal of Alloys and Compounds (2025)*. Studies the influence of hole-doping on structural, magnetic, and transport properties of CuO.
-- Negative capacitance and magnetodielectric effect in Cu2O-CuO ceramics: *Ceramics International (2025)*. Reveals negative capacitance and a charge-hopping-mediated magnetodielectric effect.
-- Rigid lattice, short-range spin correlations and hopping-dominated charge dynamics in stoichiometric Na2Cu2TeO6: *Journal of Physics and Chemistry of Solids (2026)*. Establishes Na₂Cu₂TeO₆ as a structurally robust, quasi-one-dimensional cuprate with coexisting short-range antiferromagnetism and localized ionic/electronic dynamics.
-- Magneto-Photoactivated Gold Plasmonic Nano-Islands and Quantum Dot Assemblies for ppt-Level NO2 Detection: *Small (2026)*. Reports an ultra-sensitive chemiresistive NO₂ sensor whose response down to 50 ppt is amplified by combined magnetic field and light irradiation.
+Peer-reviewed journal articles (5). Author position is given because several have many co-authors.
+
+- [Exploration of near room temperature magnetoelectric coupling in BaFe10Sc2O19:KNbO3 composite](https://doi.org/10.1016/j.jpcs.2024.112309): Deshmukh, P., Kashyap, S., Mukherjee, S., Gupta, S., Mukherjee, S. *Journal of Physics and Chemistry of Solids* 196, 112309 (online 2024; issue Jan 2025). DOI 10.1016/j.jpcs.2024.112309. **First author.** Investigates strain-mediated coupling and a negative magnetodielectric response near room temperature.
+- [Exploring the role of Cu1+ in quasi-1D Cu1−xLixO (x = 0.025)](https://doi.org/10.1016/j.jallcom.2025.181833): Deshmukh, P., Jana, P. K., Mukherjee, S., Kashyap, S., Venkatesh, M., Rayaprol, S., Mukherjee, S. *Journal of Alloys and Compounds* 1036, 181833 (2025). DOI 10.1016/j.jallcom.2025.181833. **First author.** Studies the influence of hole-doping on structural, magnetic, and transport properties of CuO.
+- [Negative capacitance and magnetodielectric effect in Cu2O-CuO ceramics](https://doi.org/10.1016/j.ceramint.2025.04.264): Mukherjee, S., Kashyap, S., Deshmukh, P., Roy, R., Chatterjee, S., Mukherjee, S. *Ceramics International* 51(20), 30716-30722 (2025). DOI 10.1016/j.ceramint.2025.04.264. Third author. Reveals negative capacitance and a charge-hopping-mediated magnetodielectric effect.
+- [Rigid lattice, short-range spin correlations and hopping-dominated charge dynamics in stoichiometric Na2Cu2TeO6](https://doi.org/10.1016/j.jpcs.2026.113952): Patil, S., Deshmukh, P., Kaushik, S. D. *Journal of Physics and Chemistry of Solids* 218, 113952 (2026). DOI 10.1016/j.jpcs.2026.113952. Second author. Establishes Na₂Cu₂TeO₆ as a structurally robust, quasi-one-dimensional cuprate with coexisting short-range antiferromagnetism and localized ionic/electronic dynamics.
+- [Magneto-Photoactivated Gold Plasmonic Nano-Islands and Quantum Dot Assemblies for ppt-Level NO2 Detection](https://doi.org/10.1002/smll.75971): Rudra, P., Mandal, I., Zhou, R., Pal, S., Nandi, A., Srihari, V., Bysakh, S., Yadav, K., Deshmukh, P., Mukherjee, D., Varrla, E., Krishnan, N. M. A., Ahmad, S., Allu, A. R., Mondal, S. *Small*, e75971 (2026, online first). DOI 10.1002/smll.75971. Ninth of 15 authors. Reports an ultra-sensitive chemiresistive NO₂ sensor whose response down to 50 ppt is amplified by combined magnetic field and light irradiation.
+
+Software (not peer-reviewed):
+
+- [PICA: Advanced High-Precision Transport Measurement Automation with Python](https://doi.org/10.5281/zenodo.18377216): Deshmukh, P., Mukherjee, S. Software archived on Zenodo (concept DOI 10.5281/zenodo.18377216, always resolves to the latest version; v1.0.8 as of Oct 2026). Preprint dated 22 December 2025 on [OSF](https://osf.io/7qk2s/). Open source (MIT), PyPI package `pica-suite`.
+
+## How to Cite
+
+Cite the published DOI version of each article; ready-made citations are in [llms-full.txt](https://prathameshnium.github.io/Prathamesh_Deshmukh_Academic_Portfolio/llms-full.txt). For the PICA software:
+
+> Deshmukh, P., & Mukherjee, S. (2026). PICA: Advanced High-Precision Transport Measurement Automation with Python [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.18377216
+
+## Profiles & Identifiers
+
+- **ORCID**: https://orcid.org/0009-0008-3278-0837
+- **OpenAlex**: https://openalex.org/authors/A5107399061
+- **Scopus Author ID**: 59544780300 (https://www.scopus.com/authid/detail.uri?authorId=59544780300)
+- **Google Scholar**: https://scholar.google.com/citations?user=DJgzI30AAAAJ
+- **ResearchGate**: https://www.researchgate.net/profile/Prathamesh-Deshmukh-6
+- **GitHub**: https://github.com/prathameshnium
+- **LinkedIn**: https://www.linkedin.com/in/prathamesh-k-deshmukh
 
 ## Skills & Expertise
 
