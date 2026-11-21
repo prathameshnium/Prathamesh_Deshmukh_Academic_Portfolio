@@ -343,7 +343,7 @@
         });
     }
 
-    // Copy a ready-made citation from any [data-citation] button
+    // Copy a ready-made citation ([data-citation]) or a DOI link ([data-copy-doi])
     function setupCitationButtons() {
         const copyText = text => {
             if (navigator.clipboard && window.isSecureContext) return navigator.clipboard.writeText(text);
@@ -359,16 +359,20 @@
             return Promise.resolve();
         };
 
-        document.querySelectorAll('[data-citation]').forEach(button => {
+        document.querySelectorAll('[data-citation], [data-copy-doi]').forEach(button => {
+            const isDoi = button.hasAttribute('data-copy-doi');
+            const originalHtml = button.innerHTML;
+            const originalLabel = button.getAttribute('aria-label') || (isDoi ? 'Copy DOI' : 'Copy citation');
             button.addEventListener('click', () => {
-                copyText(button.dataset.citation).then(() => {
+                const text = isDoi ? button.dataset.copyDoi : button.dataset.citation;
+                copyText(text).then(() => {
                     button.innerHTML = '<i class="fas fa-check" aria-hidden="true"></i>';
                     button.classList.add('copied');
-                    button.setAttribute('aria-label', 'Citation copied');
+                    button.setAttribute('aria-label', isDoi ? 'DOI copied' : 'Citation copied');
                     setTimeout(() => {
-                        button.innerHTML = '<i class="fas fa-copy" aria-hidden="true"></i>';
+                        button.innerHTML = originalHtml;
                         button.classList.remove('copied');
-                        button.setAttribute('aria-label', 'Copy citation');
+                        button.setAttribute('aria-label', originalLabel);
                     }, 2000);
                 });
             });

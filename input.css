@@ -112,4 +112,9 @@
 @layer components {
     .abstract-credit { font-size: 0.625rem; line-height: 1.3; opacity: 0.4; transition: opacity 0.2s ease; }
     .abstract-credit:hover { opacity: 1; }
+    /* Publication title and DOI links on research.html */
+    .pub-title-link { color: inherit; text-decoration: none; transition: color 0.2s ease; }
+    .pub-title-link:hover, .pub-title-link:focus-visible { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 4px; }
+    .doi-link { color: theme('colors.light-slate'); text-decoration: underline; text-decoration-color: theme('colors.slate / 40%'); text-underline-offset: 3px; overflow-wrap: anywhere; transition: color 0.2s ease; }
+    .doi-link:hover, .doi-link:focus-visible { color: theme('colors.accent-orange'); text-decoration-color: currentColor; }
 }
