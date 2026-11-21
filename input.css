@@ -107,3 +107,9 @@
     .external-link { display: flex; align-items: center; padding: 0.75rem 1.5rem; background-color: theme('colors.card-bg'); transition: all 0.3s ease; color: theme('colors.light-slate'); }
     .external-link:hover { background-color: theme('colors.slate / 50%'); color: theme('colors.accent-orange'); }
 }
+
+/* Publisher credit line under reproduced abstracts: small and muted, full strength on hover */
+@layer components {
+    .abstract-credit { font-size: 0.625rem; line-height: 1.3; opacity: 0.4; transition: opacity 0.2s ease; }
+    .abstract-credit:hover { opacity: 1; }
+}

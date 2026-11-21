@@ -15,6 +15,8 @@ PUBLICATIONS
 
 5. Rudra, P., Mandal, I., Zhou, R., Pal, S., Nandi, A., Srihari, V., Bysakh, S., Yadav, K., Deshmukh, P., Mukherjee, D., Varrla, E., Krishnan, N. M. A., Ahmad, S., Allu, A. R., Mondal, S. (2026). Magneto-Photoactivated Gold Plasmonic Nano-Islands and Quantum Dot Assemblies for ppt-Level NO2 Detection. Small, e75971. https://doi.org/10.1002/smll.75971
 
+6. Kashyap, S., Pathak, A. K., Deshmukh, P., Mukherjee, S., Jha, P., Batabyal, S. K., Mukherjee, S. (2026). Room-Temperature Magnetoelectric Behavior in a Photoferroic SbCoSI Chalcohalide System. Inorganic Chemistry. https://doi.org/10.1021/acs.inorgchem.6c03227
+
 SOFTWARE / PREPRINTS
 
-6. Deshmukh, P., Mukherjee, S. (2026). PICA: Advanced High-Precision Transport Measurement Automation with Python (v1.0.8). Zenodo. https://doi.org/10.5281/zenodo.18377216
+7. Deshmukh, P., Mukherjee, S. (2026). PICA: Advanced High-Precision Transport Measurement Automation with Python (v1.0.8). Zenodo. https://doi.org/10.5281/zenodo.18377216
