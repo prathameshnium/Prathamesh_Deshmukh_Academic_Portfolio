@@ -46,7 +46,7 @@ jobs:
           mkdir -p _site/.well-known
           cp -r *.html pages _assets _site/
           cp favicon.ico favicon-*.png apple-touch-icon.png android-chrome-*.png site.webmanifest _site/
-          cp robots.txt sitemap.xml humans.txt llms.txt security.txt LICENSE CITATION.cff _site/
+          cp robots.txt sitemap.xml humans.txt llms.txt llms-full.txt security.txt LICENSE CITATION.cff _site/
           cp security.txt _site/.well-known/security.txt
           rm -f _site/_assets/README.md
 

@@ -14,7 +14,7 @@
 
 /* SITE */
 
-    Last update: 2025
+    Last update: 2026/11/21
     Standards: HTML5, CSS3
     Components: Tailwind CSS
     Software: Visual Studio Code
