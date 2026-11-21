@@ -34,7 +34,7 @@
     <meta property="twitter:description" content="A modular software suite for automating laboratory measurements in physics research.">
     <meta property="twitter:image" content="https://raw.githubusercontent.com/prathameshnium/PICA-Python-Instrument-Control-and-Automation/main/pica/assets/Images/screenshots/00_PICA_Launcher.png">
 
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; font-src 'self' https://cdnjs.cloudflare.com; img-src 'self' data: https://raw.githubusercontent.com https://github.com https://upload.wikimedia.org https://www.vectorlogo.zone https://static.wikia.nocookie.net https://seeklogo.com https://codecov.io https://zenodo.org https://joss.theoj.org https://img.shields.io https://placehold.co; connect-src 'self';">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https://raw.githubusercontent.com https://github.com https://upload.wikimedia.org https://www.vectorlogo.zone https://static.wikia.nocookie.net https://seeklogo.com https://codecov.io https://zenodo.org https://joss.theoj.org https://img.shields.io https://placehold.co; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests;">
     <meta name="robots" content="index, follow">
     <meta name="referrer" content="strict-origin-when-cross-origin">
     <!-- Styles and Fonts -->
@@ -46,8 +46,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
     <link rel="manifest" href="../site.webmanifest">
     <link rel="stylesheet" href="../_assets/fonts.css">
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../_assets/vendor/fontawesome/icons.css">
 <!-- SEO: JSON-LD Structured Data -->
     <script type="application/ld+json">
     {
@@ -89,7 +88,7 @@
             <div class="max-w-3xl mx-auto">
                 <div class="card p-8 md:p-12 rounded-lg">
                     <img src="https://raw.githubusercontent.com/prathameshnium/static-files/main/projects/pica/logo/pica-logo-nbg.png" 
-                         onerror="this.onerror=null;this.src='https://placehold.co/128x128/1f2937/f59e0b?text=PICA'" 
+                         data-fallback-src="https://placehold.co/128x128/1f2937/f59e0b?text=PICA" 
                          alt="PICA Logo" width="128" height="128"
                          class="w-32 h-32 mx-auto mb-6">
                     <h1 class="text-4xl md:text-5xl font-bold section-title mb-4">PICA: Python-based Instrument Control and Automation</h1>

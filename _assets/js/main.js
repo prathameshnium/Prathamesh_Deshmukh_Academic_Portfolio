@@ -165,13 +165,32 @@
             <p><a href="https://github.com/prathameshnium/prathameshnium.github.io/blob/main/LICENSE" target="_blank" rel="noopener noreferrer" class="hover:text-accent-orange transition-colors">&copy; 2026 Prathamesh Keshao Deshmukh. All Rights Reserved.</a></p>
         </div>`;
 
-    // Hide preloader once everything has loaded
-    window.addEventListener('load', () => {
+    // Hide the preloader as soon as the page is parsed and the header/footer are
+    // injected. Waiting for 'load' kept the page hidden until every font, icon
+    // font and image had finished downloading.
+    document.addEventListener('DOMContentLoaded', () => {
         const preloader = document.getElementById('preloader');
         if (preloader) {
             preloader.style.display = 'none';
         }
     });
+
+    // Fallback images without inline onerror handlers (CSP-friendly):
+    // <img src="..." data-fallback-src="...">
+    function setupImageFallbacks() {
+        document.querySelectorAll('img[data-fallback-src]').forEach(img => {
+            const useFallback = () => {
+                const fallback = img.dataset.fallbackSrc;
+                img.removeAttribute('data-fallback-src');
+                if (fallback) img.src = fallback;
+            };
+            if (img.complete && img.naturalWidth === 0) {
+                useFallback();
+            } else {
+                img.addEventListener('error', useFallback, { once: true });
+            }
+        });
+    }
 
     // Generic dropdown handler (hover + click + Escape) used for the
     // "more links" menus on the home page and in the footer
@@ -435,6 +454,7 @@
         setupMobileMenu();
         setupCopyButtons();
         setupCitationButtons();
+        setupImageFallbacks();
         setupScrollEffects();
         loadInteractive();
     });
